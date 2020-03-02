@@ -115,8 +115,8 @@ module.exports = {
     noEmitOnErrors: true,
     minimizer: [
       new TerserPlugin({
-        sourceMap: true,
-        cache: true,
+        sourceMap: false,
+        cache: false,
         parallel: true,
         terserOptions: {
           output: {
