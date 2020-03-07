@@ -1,6 +1,8 @@
-@import "../../common/text";
-@import "../../common/colors";
-@import "../../common/variables";
+@import "../../common/partials/text";
+@import "../../common/partials/colors";
+@import "../../common/partials/variables";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 * {
   box-sizing: border-box;
