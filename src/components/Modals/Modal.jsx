@@ -10,7 +10,7 @@ class Modal extends PureComponent {
     this.state = { children: null, show: null };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     document.addEventListener('keydown', (event) => {
       if (event.keyCode === 27) {
         this.props.closeModal();
