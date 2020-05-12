@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
-import modalTypes from './modalTypes';
+import modalMapping from './modalMapping';
 import { closeModal } from '../../actions/modalActions';
 
 const ModalRoot = ({
@@ -53,7 +53,7 @@ ModalRoot.propTypes = {
 const mapStateToProps = ({ modal }) => ({
   modalProps: modal.modalProps,
   modalOpen: modal.modalType.length > 0,
-  SpecificModal: modalTypes[modal.modalType],
+  SpecificModal: modalMapping[modal.modalType],
   modalType: modal.modalType,
 });
 
