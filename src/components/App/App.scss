@@ -40,6 +40,11 @@ a {
   margin: 0 auto;
 }
 
+.title {
+  font-size: $font-size-title;
+  margin-bottom: 50px;
+}
+
 .long-ver-line {
   height: 587px;
   border: 1px solid #8B8B8B;

@@ -73,24 +73,21 @@
   .about-us {
     margin-top: 188px;
 
-    .about-us-title {
-      font-size: $font-size-title;
-      margin-bottom: 50px;
-    }
-
     .about-us-flex {
       display: flex;
+      justify-content: space-between;
 
       .text {
         max-width: 285px;
+        line-height: 150%;
         font-size: $font-size-small-regular;
 
         &:first-child {
-          max-width: 255px;
+          max-width: 260px;
         }
 
         &:not(:first-child) {
-          padding-left: 22px;
+          padding-left: 15px;
         }
       }
 
@@ -98,15 +95,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 22px;
 
         .hor-line {
           width: 610px;
           height: 0;
           border: 1px solid $gray;
+          width: 100%;
 
           &:not(:last-child) {
-            margin-bottom: 78px;
+            margin-bottom: 105px;
           }
         }
 
@@ -116,6 +113,7 @@
 
           .text {
             max-width: 261px;
+            line-height: 150%;
           }
 
           .mid-right {
@@ -124,11 +122,12 @@
 
             .button-wrapper {
               display: flex;
+              height: 100%;
 
               .about-us-button {
                 background-color: #575757;
-                padding: 10px 20px;
-                margin: 69px 40px;
+                padding: 27px 20px;
+                margin: 69px 75px;
                 color: $white;
                 font-size: $font-size-small-regular;
 
@@ -143,7 +142,75 @@
             }
           }
         }
+
       }
+    }
+  }
+
+  .our-team {
+    margin-top: 100px;
+
+    .width-container {
+
+      .content-wrapper {
+        display: flex;
+        border-left: 2px solid $gray;
+        border-right: 2px solid $gray;
+        padding: 0 63px;
+        font-size: $font-size-small-regular;
+
+        .top {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 25px;
+
+          .ver-line {
+            height: 120px;
+            width: 0;
+            border: 1px solid $gray;
+            margin-left: -40px;
+          }
+        }
+
+        .mid {
+          margin-bottom: 25px;
+
+          .title {
+            font-size: $font-size-small-regular;
+            margin-bottom: 15px;
+          }
+
+          .area {
+            max-width: 149px;
+            word-break: break-all;
+          }
+        }
+
+        .single-lawyer {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          border-right: 2px solid $gray;
+          padding-right: 43px;
+          margin-right: 100px;
+        }
+
+        .single-lawyer-reverse {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column-reverse;
+          border-right: 2px solid $gray;
+          padding-right: 43px;
+          margin-right: 100px;
+        }
+
+      }
+    }
+    .yellow-box {
+      height: 398px;
+      width: 100%;
+      background-color: $yellow;
+      margin-bottom: -300px;
     }
   }
 }
