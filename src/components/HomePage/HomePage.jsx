@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 // import PropTypes from 'prop-types';
 import logo from '../../images/logo.png';
 import homepage from '../../images/homepage.png';
@@ -40,6 +41,8 @@ const HomePage = () => (
         <div className="box" />
       </div>
     </div>
+
+    <Footer />
   </div>
 );
 

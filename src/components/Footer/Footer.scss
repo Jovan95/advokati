@@ -1,0 +1,72 @@
+@import '../../common/partials/text';
+@import '../../common/partials/colors';
+@import "../../common/partials/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-small;
+  margin-top: 100px;
+  padding: 45px 100px 18px 100px;
+  background-color: #F3F3F3;
+
+
+  .footer-title {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .footer-link {
+    @include hover-transition;
+
+    &:hover {
+      color: $black-hover;
+    }
+
+    &:not(:last-child) {  margin-bottom: 17px; }
+  }
+
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 51px;
+
+    .left {
+      display: flex;
+
+      .left-left {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left-right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+      }
+    }
+
+    .mid {
+      .logo { margin: 40px auto; }
+    }
+
+    .right {
+      display: flex;
+
+      .right-left {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .bottom { text-align: center; }
+}
