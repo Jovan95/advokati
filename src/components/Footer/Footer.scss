@@ -33,38 +33,25 @@
     justify-content: space-between;
     margin-bottom: 51px;
 
-    .left {
+    .flex {
       display: flex;
 
-      .left-left {
+      .flex-column {
         display: flex;
         flex-direction: column;
-      }
 
-      .left-right {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
+        &.right {
+          margin-left: 100px;
+        }
       }
     }
 
     .mid {
-      .logo { margin: 40px auto; }
-    }
-
-    .right {
-      display: flex;
-
-      .right-left {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .right-right {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-      }
+      .logo {
+         padding-top: 30px;
+         max-width: 90px;
+         max-height: 90px;
+       }
     }
   }
 

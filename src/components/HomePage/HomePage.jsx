@@ -4,7 +4,7 @@ import { LAWYERS } from 'constants/Lawyers';
 import Footer from '../Footer/Footer';
 // import PropTypes from 'prop-types';
 import Milos from '../../images/Milos.png';
-import logo from '../../images/logo.png';
+import headerLogo from '../../images/headerLogo.png';
 import homepage from '../../images/homepage.png';
 import './HomePage.scss';
 
@@ -16,26 +16,26 @@ const HomePage = () => {
       <div className="header">
         <div className="header-left">
           <div className="logo">
-            <img src={logo} alt="logo" className="logo" />
+            <img src={headerLogo} alt="logo" className="logo" />
           </div>
           <div className="grid-item">
-            <Link to="/">O nama</Link>
+            <Link to="/">O NAMA</Link>
           </div>
           <div className="grid-item">
-            <Link to="/">Advokati</Link>
+            <Link to="/">ADVOKATI</Link>
           </div>
           <div className="grid-item">
-            <Link to="/">Oblasti</Link>
+            <Link to="/">OBLASTI</Link>
           </div>
           <div className="grid-item">
-            <Link to="/">Kontakt</Link>
+            <Link to="/">KONTAKT</Link>
           </div>
           <div className="grid-item" />
           <div className="grid-item">
             eng|srb
           </div>
           <div className="grid-item">
-            <div className="title">MILOŠ LEKIĆ</div>
+            <div className="header-title">MILOŠ LEKIĆ</div>
             <p className="title-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
@@ -94,6 +94,7 @@ const HomePage = () => {
                 id, position, img, name, area, title,
               }) => (
                 <div
+                  key={`lawyer-${id}`}
                   className={position === activeLawyerPosition ? 'single-lawyer' : 'single-lawyer-reverse'}
                 >
                   <div className="top">

@@ -1,10 +1,12 @@
 @import '../../common/partials/text';
 @import '../../common/partials/colors';
+@import "../../common/partials/variables";
 
 .homepage {
   .header {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 
     .header-left {
       display: grid;
@@ -12,8 +14,13 @@
       grid-auto-rows: minmax(0, auto);
       margin-left: 100px;
       border-left: 2px solid $gray;
+      height: 70vh;
 
-      .logo { margin: 15px auto; }
+      .logo {
+          margin: 5px auto;
+          max-width: 95px;
+          max-height: 95px;
+      }
 
       .grid-item {
         font-size: 15px;
@@ -29,7 +36,7 @@
           text-align: left;
           max-width: 468px;
 
-          .title {
+          .header-title {
             font-size: $font-size-title;
             color: $gray;
           }
@@ -71,23 +78,18 @@
   }
 
   .about-us {
-    margin-top: 188px;
 
     .about-us-flex {
       display: flex;
       justify-content: space-between;
 
       .text {
-        max-width: 285px;
+        max-width: 270px;
         line-height: 150%;
         font-size: $font-size-small-regular;
 
         &:first-child {
           max-width: 260px;
-        }
-
-        &:not(:first-child) {
-          padding-left: 15px;
         }
       }
 
@@ -125,12 +127,17 @@
               height: 100%;
 
               .about-us-button {
-                background-color: #575757;
-                padding: 27px 20px;
-                margin: 69px 75px;
+                background-color: $dark-gray;
+                padding: 15px 25px;
+                margin: 82px 93px;
                 color: $white;
                 font-size: $font-size-small-regular;
 
+                @include hover-transition;
+
+                &:hover {
+                  color: $dark-gray-hover;
+                }
               }
 
               .small-hor-line {
@@ -142,7 +149,6 @@
             }
           }
         }
-
       }
     }
   }
@@ -162,7 +168,6 @@
         .top {
           display: flex;
           justify-content: space-around;
-          margin-bottom: 25px;
 
           .ver-line {
             height: 120px;
@@ -202,6 +207,10 @@
           border-right: 2px solid $gray;
           padding-right: 43px;
           margin-right: 100px;
+
+          img {
+            margin-bottom: 25px;
+          }
         }
 
       }
@@ -210,7 +219,7 @@
       height: 398px;
       width: 100%;
       background-color: $yellow;
-      margin-bottom: -300px;
+      margin-bottom: -290px;
     }
   }
 }

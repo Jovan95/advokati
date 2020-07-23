@@ -2,7 +2,11 @@ $gray: #8B8B8B;
 $red: #C02727;
 $yellow: #F7F2E5;
 $white: #FFFFFF;
+$dark-gray: #575757;
 
 
 $black: #000000;
 $black-hover: lighten($black, 50);
+
+
+$dark-gray-hover: lighten($dark-gray, 20);
