@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LAWYERS } from 'constants/Lawyers';
+import { AREAS } from 'constants/Areas';
 import Footer from '../Footer/Footer';
 // import PropTypes from 'prop-types';
 import Milos from '../../images/Milos.png';
@@ -10,6 +11,9 @@ import './HomePage.scss';
 
 const HomePage = () => {
   const [activeLawyerPosition] = useState(LAWYERS[0].position);
+  const [activeArea, setActiveArea] = useState(AREAS[0].id);
+
+  const activeTab = AREAS.find(({ id }) => id === activeArea);
 
   return (
     <div className="homepage">
@@ -118,6 +122,53 @@ const HomePage = () => {
                 </div>
               ))
             }
+          </div>
+        </div>
+      </div>
+
+      <div className="areas">
+        <div className="width-container">
+          <div className="title">EKSPERTIZE/OBLASTI</div>
+          <div className="content-wrapper">
+            <div className="top">
+              <div className="left">
+                <div className="lines">
+                  <div className="short-hor-line" />
+                  <div className="short-hor-line" />
+                  <div className="short-hor-line" />
+                  <div className="short-hor-line" />
+                </div>
+                <div className="tabs">
+                  {
+                    AREAS.map(({ id }) => (
+                      <div
+                        id={id}
+                        key={`tab-${id}`}
+                        className={id === activeArea ? 'tab active' : 'tab'}
+                        onClick={(e) => { setActiveArea(parseInt(e.target.id, 10)); }}
+                      >
+                        OBLAST {id}
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+              <div className="right">
+                <div className="text">{ activeTab.text }</div>
+                <div className="right-button">
+                  <div className="button-wrapper">
+                    <div className="button">
+                      <Link to="/">SAZNAJ VISE</Link>
+                    </div>
+                    <div className="line" />
+                  </div>
+                  <div className="medium-hor-line" />
+                </div>
+              </div>
+            </div>
+            <div className="bottom">
+              <div className="long-line" />
+            </div>
           </div>
         </div>
       </div>

@@ -215,11 +215,135 @@
 
       }
     }
+
     .yellow-box {
       height: 398px;
       width: 100%;
       background-color: $yellow;
       margin-bottom: -290px;
+    }
+  }
+
+  .areas {
+    margin-top: 140px;
+
+    .width-container {
+      .content-wrapper {
+        border-top: 2px solid $gray;
+        border-bottom: 2px solid $gray;
+
+        .top {
+          display: flex;
+
+          .left {
+            display: flex;
+
+            .lines {
+              display: flex;
+              flex-direction: column;
+
+              .short-hor-line {
+                width: 190px;
+                height: 0;
+                border: 1px solid $gray;
+                margin-bottom: 95px;
+
+                &:first-child {
+                  margin-top: 95px;
+                }
+              }
+            }
+
+            .tabs {
+              display: flex;
+              flex-direction: column;
+              margin: 93px 130px 93px 20px;
+
+              .tab {
+                font-size: $font-size-small-regular;
+                font-weight: bold;
+                max-width: 150px;
+                width: 100%;
+
+                &:not(:last-child) {
+                  margin-bottom: 30px;
+                }
+
+                &.active {
+                  font-size: $font-size-regular;
+                  font-weight: normal;
+                  width: 100%;
+                  max-width: 150px;
+                }
+              }
+            }
+          }
+
+          .right {
+            display: flex;
+            margin-top: 33px;
+
+            .text {
+              column-count: 1;
+              max-width: 383px;
+              max-height: 410px;
+              font-size: $font-size-small-regular;
+              line-height: 150%;
+            }
+
+            .right-button {
+              margin-left: 30px;
+
+              .button-wrapper {
+                max-width: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 365px;
+                margin-top: 238px;
+
+                .button {
+                  background-color: $dark-gray;
+                  padding: 15px 25px;
+                  color: $white;
+                  font-size: $font-size-small-regular;
+
+                  @include hover-transition;
+
+                  &:hover {
+                    color: $dark-gray-hover;
+                  }
+                }
+
+                .line {
+                  max-width: 190px;
+                  width: 100%;
+                  height: 0px;
+                  border: 1px solid $gray;
+                }
+              }
+
+              .medium-hor-line {
+                max-width: 398px;
+                width: 100%;
+                height: 0px;
+                border: 1px solid $gray;
+                margin-top: 70px;
+              }
+            }
+          }
+        }
+
+        .bottom {
+
+          .long-line {
+            height: 0px;
+            border: 1px solid $gray;
+            width: 100%;
+            margin-bottom: 95px;
+          }
+        }
+      }
     }
   }
 }
