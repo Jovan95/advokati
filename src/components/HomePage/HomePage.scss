@@ -3,58 +3,6 @@
 @import "../../common/partials/variables";
 
 .homepage {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-
-    .header-left {
-      display: grid;
-      grid-template-columns: repeat(7, 105px);
-      grid-auto-rows: minmax(0, auto);
-      margin-left: 100px;
-      border-left: 2px solid $gray;
-      height: 70vh;
-
-      .logo {
-          margin: 5px auto;
-          max-width: 95px;
-          max-height: 95px;
-      }
-
-      .grid-item {
-        font-size: 15px;
-        padding: 37px 10px;
-        text-align: center;
-
-        &:last-child {
-          grid-column-start: 1;
-          grid-column-end: 5;
-          grid-row-start: 3;
-          grid-row-end: 5;
-          padding-left: 32px;
-          text-align: left;
-          max-width: 468px;
-
-          .header-title {
-            font-size: $font-size-title;
-            color: $gray;
-          }
-
-          .title-about {
-            font-size: $font-size-regular;
-            color: $gray;
-          }
-        }
-        &:not(:last-child) {
-          height: 390px;
-          border-left: 2px solid $gray;
-        }
-      }
-    }
-
-    .header-right {
-
       .image {
         .header-img {
           position: relative;
@@ -74,8 +22,6 @@
         top: 420px;
         right: 0;
       }
-    }
-  }
 
   .about-us {
 
@@ -97,16 +43,24 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 50%;
 
         .hor-line {
-          width: 610px;
+          max-width: 610px;
           height: 0;
           border: 1px solid $gray;
           width: 100%;
 
           &:not(:last-child) {
-            margin-bottom: 105px;
+
           }
+        }
+
+        .med-hor-line {
+          max-width: 295px;
+          width: 100%;
+          height: 0;
+          border: 1px solid $gray;
         }
 
         .mid {
@@ -119,12 +73,15 @@
           }
 
           .mid-right {
-            border-top: 2px solid $gray;
-            border-bottom: 2px solid $gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 294px;
+            width: 100%;
 
             .button-wrapper {
               display: flex;
-              height: 100%;
+              justify-content: space-between;
 
               .about-us-button {
                 background-color: $dark-gray;
@@ -299,7 +256,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 365px;
+                width: 365px; // ?
                 margin-top: 238px;
 
                 .button {

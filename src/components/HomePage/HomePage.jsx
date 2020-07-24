@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { LAWYERS } from 'constants/Lawyers';
-import { AREAS } from 'constants/Areas';
-import Footer from '../Footer/Footer';
-// import PropTypes from 'prop-types';
+import { LAWYERS } from 'constants/lawyers';
+import { AREAS } from 'constants/areas';
+import PropTypes from 'prop-types';
 import Milos from '../../images/Milos.png';
-import headerLogo from '../../images/headerLogo.png';
 import homepage from '../../images/homepage.png';
 import './HomePage.scss';
 
@@ -17,39 +15,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <div className="header">
-        <div className="header-left">
-          <div className="logo">
-            <img src={headerLogo} alt="logo" className="logo" />
-          </div>
-          <div className="grid-item">
-            <Link to="/">O NAMA</Link>
-          </div>
-          <div className="grid-item">
-            <Link to="/">ADVOKATI</Link>
-          </div>
-          <div className="grid-item">
-            <Link to="/">OBLASTI</Link>
-          </div>
-          <div className="grid-item">
-            <Link to="/">KONTAKT</Link>
-          </div>
-          <div className="grid-item" />
-          <div className="grid-item">
-            eng|srb
-          </div>
-          <div className="grid-item">
-            <div className="header-title">MILOŠ LEKIĆ</div>
-            <p className="title-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div className="header-right">
-          <div className="image">
-            <img src={homepage} className="header-img" alt="homepage" />
-          </div>
-          <div className="box" />
-        </div>
-      </div>
+      <div className="header" />
 
       <div className="about-us">
         <div className="width-container">
@@ -62,10 +28,8 @@ const HomePage = () => {
               Advokat Miloš Lekić poseduje potrebne Sertifikate i Licence za odbranu maloletnih lica u postupcima u Republici Srbiji, za zastupanje oštećenih maloletnih lica a može postupati u svim krivičnim, parničnim, vanparničnim, upravnim i drugim predmetima i u svim drugim oblastima advokatskog rada u Republici Srbiji. Advokatska kancelarija Miloša Lekića danas ima još tri stalno zaposlena advokata te četiri advokatska pripravnika. Advokatska kancelarija je danas specijalizovana za pružanje usluga iz oblasti privrednog, korporativnog prava kao i prava iz oblasti ustavnih garancija fizičkih lica kao pojedinaca te njihove zaštite u ostvarivanju navedenih prava pred domaćim I međunarodnim sudovima. Takođe zastupnici smo, i zastupali pravna lica (Zastava automobili ad u
             </div>
             <div className="line-text">
-              <div className="top">
-                <div className="hor-line" />
-                <div className="hor-line" />
-              </div>
+              <div className="hor-line" />
+              <div className="hor-line" />
               <div className="mid">
                 <div className="mid-left">
                   <div className="text">
@@ -73,16 +37,16 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="mid-right">
+                  <div className="med-hor-line" />
                   <div className="button-wrapper">
-                    <div className="about-us-button"><Link to="/">SAZNAJ VISE</Link></div>
+                    <Link className="button" to="/">SAZNAJ VISE</Link>
                     <div className="small-hor-line" />
                   </div>
+                  <div className="med-hor-line" />
                 </div>
               </div>
-              <div className="bot">
-                <div className="hor-line" />
-                <div className="hor-line" />
-              </div>
+              <div className="hor-line" />
+              <div className="hor-line" />
             </div>
           </div>
         </div>
@@ -172,8 +136,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

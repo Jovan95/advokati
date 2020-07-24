@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { connect, Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
+import AboutUs from '../AboutUs/AboutUs';
+import LawyerPage from '../LawyerPage/LawyerPage';
+import Footer from '../common/Footer/Footer';
+import Header from '../common/Header/Header';
 import ModalRoot from '../Modals/ModalRoot';
 import Page404 from '../Page404/Page404';
 
@@ -16,10 +20,14 @@ const App = ({ store }) => (
     <BrowserRouter>
       <div className="app">
         <Suspense fallback={<div className="loader-between-pages" />}>
+          <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="*" component={Page404} />
+            <Route exact path="/about-us" component={AboutUs} />
+            <Route exact path="/lawyers" component={LawyerPage} />
           </Switch>
+          <Footer />
         </Suspense>
 
         <ModalRoot />

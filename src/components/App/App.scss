@@ -36,8 +36,9 @@ a {
 }
 
 .width-container {
-  max-width: 1238px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 .title {
@@ -46,10 +47,18 @@ a {
   font-weight: bold;
 }
 
-.long-ver-line {
-  height: 587px;
-  border: 1px solid #8B8B8B;
-  width: 0px;
+.button {
+  background-color: $dark-gray;
+  padding: 15px 25px;
+  text-align: center;
+  color: $white;
+  font-size: $font-size-small-regular;
+
+  @include hover-transition;
+
+  &:hover {
+    color: $dark-gray-hover;
+  }
 }
 
 input:invalid {
