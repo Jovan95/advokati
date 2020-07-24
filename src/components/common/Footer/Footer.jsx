@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import footerLogo from '../../../images/footerLogo.png';
+import headerLogo from '../../../images/headerLogo.png';
 import './Footer.scss';
 
 const Footer = () => (
@@ -25,7 +25,7 @@ const Footer = () => (
       </div>
       <div className="mid">
         <div className="logo">
-          <img className="logo" src={footerLogo} alt="logo" />
+          <img className="logo" src={headerLogo} alt="logo" />
         </div>
       </div>
       <div className="flex">
