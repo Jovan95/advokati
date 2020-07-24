@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
 import PropTypes from 'prop-types';
+
 import Milos from '../../images/Milos.png';
 import homepage from '../../images/homepage.png';
+import arrow from '../../images/arrow.png';
 import './HomePage.scss';
 
 const HomePage = () => {
@@ -15,7 +17,26 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <div className="header" />
+      <div className="header-area">
+        <div className="left">
+          <div className="lines">
+            <div className="long-line" />
+            <div className="long-line" />
+            <div className="long-line" />
+            <div className="long-line" />
+            <div className="long-line" />
+          </div>
+          <div className="text">
+            <div className="header-title">miloš lekić</div>
+            <div className="header-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div className="arrow" />
+        </div>
+        <div className="right">
+          <img className="header-image" src={homepage} alt="homepage" />
+          <div className="box" />
+        </div>
+      </div>
 
       <div className="about-us">
         <div className="width-container">
@@ -112,6 +133,7 @@ const HomePage = () => {
                         onClick={(e) => { setActiveArea(parseInt(e.target.id, 10)); }}
                       >
                         OBLAST {id}
+                        <img className="arrow" src={arrow} alt="arrow" />
                       </div>
                     ))
                   }
@@ -120,6 +142,18 @@ const HomePage = () => {
               <div className="right">
                 <div className="text">{ activeTab.text }</div>
                 <div className="right-button">
+                  {
+                    activeTab.text2 ? (
+                      <div className="text2">{activeTab.text2}</div>
+                    )
+                      :
+                      (
+                        <div className="lines">
+                          <div className="medium-hor-line" />
+                          <div className="medium-hor-line" />
+                        </div>
+                      )
+                  }
                   <div className="button-wrapper">
                     <div className="button">
                       <Link to="/">SAZNAJ VISE</Link>
