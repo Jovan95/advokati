@@ -1,0 +1,50 @@
+@import '../../common/partials/text';
+@import '../../common/partials/colors';
+@import "../../common/partials/variables";
+
+
+.about-us {
+  .header-area {
+    display: flex;
+
+    .links-area {
+      display: flex;
+
+      .long-line {
+        height: 585px;
+        width: 0;
+        border: 1px solid $gray;
+        margin-left: 94px;
+      }
+
+      .text-line-area {
+        display: flex;
+        flex-direction: column;
+
+        .lines {
+          display: flex;
+
+          .medium-line {
+            height: 495px;
+            width: 0;
+            border: 1px solid $gray;
+            margin-left: 94px;
+          }
+        }
+
+        .text {
+          text-transform: uppercase;
+          font-size: $font-size-title;
+          line-height: 61px;
+          color: $dark-gray;
+        }
+      }
+    }
+
+    .about-us-img {
+      .about-img {
+
+      }
+    }
+  }
+}

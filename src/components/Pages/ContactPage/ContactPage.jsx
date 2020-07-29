@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-import './AboutUs.scss';
+import './ContactPage.scss';
 
-const AboutUs = () => {
+const ContactPage = () => {
   console.log('Hello!');
 
   return (
-    <div className="header">
+    <div className="contact-page">
       <h1>Hello</h1>
     </div>
   );
 };
 
-AboutUs.propTypes = {};
+ContactPage.propTypes = {};
 
-export default AboutUs;
+export default ContactPage;
