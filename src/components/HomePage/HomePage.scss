@@ -8,7 +8,6 @@
     height: 80vh;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 55px;
 
     .left {
       border-left: 2px solid $gray;
@@ -167,8 +166,12 @@
   }
 
   .our-team {
-    margin-top: 100px;
 
+    .title {
+      z-index: 5;
+      position: relative;
+      padding-top: 60px;
+    }
     .width-container {
       .content-wrapper {
         display: flex;
@@ -195,7 +198,7 @@
         .mid {
           margin-bottom: 25px;
 
-          .title {
+          .lawyer-title {
             font-size: $font-size-small-regular;
             margin-bottom: 15px;
           }
@@ -240,8 +243,6 @@
   }
 
   .areas {
-    margin-top: 140px;
-
     .width-container {
       .content-wrapper {
         border-top: 2px solid $gray;
@@ -370,6 +371,71 @@
             border: 1px solid $gray;
             width: 100%;
             margin-bottom: 95px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    .width-container {
+      .content-wrapper {
+        display: flex;
+        border-left: 2px solid $gray;
+        border-right: 2px solid $gray;
+
+        .long-line {
+          height: 660px;
+          width: 0;
+          border: 1px solid $gray;
+          margin-left: 95px;
+        }
+
+        .small-line {
+          height: 120px;
+          width: 0;
+          border: 1px solid $gray;
+          margin-left: 95px;
+        }
+
+        .text-lines-area {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 65px;
+            margin-bottom: 95px;
+
+            .text-item {
+              max-width: 250px;
+              margin-bottom: 35px;
+
+              .item-title {
+                font-size: $font-size-small-regular;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 15px;
+              }
+
+              .item-about {
+                font-size: $font-size-small-regular;
+                line-height: 20px;
+              }
+            }
+          }
+
+          .lines {
+            display: flex;
+          }
+        }
+
+        .map-lines-area {
+          .lines {
+            display: flex;
           }
         }
       }

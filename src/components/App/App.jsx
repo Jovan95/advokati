@@ -23,9 +23,9 @@ const App = ({ store }) => (
           <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route path="*" component={Page404} />
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/lawyers" component={LawyerPage} />
+            <Route path="*" component={Page404} />
           </Switch>
           <Footer />
         </Suspense>

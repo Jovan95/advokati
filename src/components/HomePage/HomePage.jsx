@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
-import PropTypes from 'prop-types';
+import MapView from '../Map/Map';
 
 import Milos from '../../images/Milos.png';
 import homepage from '../../images/homepage.png';
 import arrow from '../../images/arrow.png';
+import email from '../../images/email.png';
 import './HomePage.scss';
 
 const HomePage = () => {
   const [activeLawyerPosition] = useState(LAWYERS[0].position);
-  const [activeArea, setActiveArea] = useState(AREAS[0].id);
 
+  const [activeArea, setActiveArea] = useState(AREAS[0].id);
   const activeTab = AREAS.find(({ id }) => id === activeArea);
 
   return (
@@ -40,7 +42,7 @@ const HomePage = () => {
 
       <div className="about-us">
         <div className="width-container">
-          <div className="title">O NAMA</div>
+          <div className="title">o nama</div>
           <div className="about-us-flex">
             <div className="text">
               Rođen je 10.12.1981. godine u Beogradu. Završio je osnovnu i srednju školu u Beogradu. 2000 godine upisuje Pravni fakultet u Beogradu a koji završava 2005 godine. i nakon završetka osnovnih studija edukaciju i usavršavanje nastavlja na Univerzitetu Berkley USA i u drugim obrazovnim institucijama u Sjedinjenim američkim državama gde je i magistrirao na trgovinskom pravu u međunarodnom poslovanju 2008 godine. Bio je najmladji advokat koji je ikada postupao-branio pred Višim sudom u Beogradu-posebno odeljenje Višeg suda okrivljene od osnivanja specijalnog suda u Beogradu 2003 godine za krivična dela iz oblasti privrednog kriminala. Advokaturom se bavi od 2009 godine te je član advokatske komore Beograda i advokatske komore Srbije
@@ -76,11 +78,11 @@ const HomePage = () => {
       <div className="our-team">
         <div className="yellow-box" />
         <div className="width-container">
-          <div className="title">NAŠ TIM</div>
+          <div className="title">naš tim</div>
           <div className="content-wrapper">
             {
               LAWYERS.map(({
-                id, position, img, name, area, title,
+                id, position, img, name, area, lawyerTitle,
               }) => (
                 <div
                   key={`lawyer-${id}`}
@@ -93,7 +95,7 @@ const HomePage = () => {
                   </div>
                   <div className="mid">
                     <div className="name">{name}</div>
-                    <div className="title">{title}</div>
+                    <div className="lawyer-title">{lawyerTitle}</div>
                     <div className="area">
                       Oblast/Ekspertiza:
                       {area}
@@ -113,7 +115,7 @@ const HomePage = () => {
 
       <div className="areas">
         <div className="width-container">
-          <div className="title">EKSPERTIZE/OBLASTI</div>
+          <div className="title">ekspertize/oblasti</div>
           <div className="content-wrapper">
             <div className="top">
               <div className="left">
@@ -166,6 +168,54 @@ const HomePage = () => {
             </div>
             <div className="bottom">
               <div className="long-line" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact">
+        <div className="width-container">
+          <div className="title">kontakt</div>
+          <div className="content-wrapper">
+            <div className="long-line" />
+            <div className="text-lines-area">
+              <div className="text">
+                <div className="text-item">
+                  <div className="item-title">ime firme</div>
+                  <div className="item-about">Milos Lekic</div>
+                </div>
+                <div className="text-item">
+                  <div className="item-title">adresa</div>
+                  <div className="item-about">Bulevar Oslobodjenja 115, 11 000 Beograd </div>
+                </div>
+                <div className="text-item">
+                  <div className="item-title">kontakt telefon</div>
+                  <div className="item-about">011 32 12 123</div>
+                </div>
+                <div className="text-item">
+                  <div className="item-title">e-mail</div>
+                  <div className="item-about"><img src={email} alt="email" /></div>
+                </div>
+              </div>
+              <div className="lines">
+                <div className="small-line" />
+                <div className="small-line" />
+                <div className="small-line" />
+              </div>
+            </div>
+            <div className="long-line" />
+            <div className="long-line" />
+            <div className="long-line" />
+            <div className="map-lines-area">
+              <div className="lines">
+                <div className="small-line" />
+                <div className="small-line" />
+                <div className="small-line" />
+                <div className="small-line" />
+              </div>
+              <div className="map">
+                <h1>Map</h1>
+              </div>
             </div>
           </div>
         </div>
