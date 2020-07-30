@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
-import MapView from '../Map/Map';
+import MapView from '../../Map/Map';
 
-import Milos from '../../images/Milos.png';
-import homepage from '../../images/homepage.png';
-import arrow from '../../images/arrow.png';
-import email from '../../images/email.png';
+import Milos from '../../../images/Milos.png';
+import homepage from '../../../images/homepage.png';
+import arrow from '../../../images/arrow.png';
+import email from '../../../images/email.png';
 import './HomePage.scss';
 
 const HomePage = () => {
@@ -135,7 +135,7 @@ const HomePage = () => {
                         onClick={(e) => { setActiveArea(parseInt(e.target.id, 10)); }}
                       >
                         OBLAST {id}
-                        <img className="arrow" src={arrow} alt="arrow" />
+                        <img className="arrow-right" src={arrow} alt="arrow" />
                       </div>
                     ))
                   }
@@ -174,6 +174,7 @@ const HomePage = () => {
       </div>
 
       <div className="contact">
+        <div className="big-yellow-box" />
         <div className="width-container">
           <div className="title">kontakt</div>
           <div className="content-wrapper">
@@ -208,6 +209,7 @@ const HomePage = () => {
             <div className="long-line" />
             <div className="map-lines-area">
               <div className="lines">
+                <div className="small-line" />
                 <div className="small-line" />
                 <div className="small-line" />
                 <div className="small-line" />

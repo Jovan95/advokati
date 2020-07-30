@@ -1,34 +1,41 @@
-@import '../../common/partials/text';
-@import '../../common/partials/colors';
-@import "../../common/partials/variables";
+@import '../../../common/partials/text';
+@import '../../../common/partials/colors';
+@import "../../../common/partials/variables";
 
 
 .about-us {
   .header-area {
     display: flex;
+    justify-content: space-between;
 
     .links-area {
       display: flex;
+      margin-left: 145px;
 
       .long-line {
         height: 585px;
         width: 0;
         border: 1px solid $gray;
-        margin-left: 94px;
+
+        &:last-child {
+          margin-left: 115px
+        }
       }
 
       .text-line-area {
         display: flex;
         flex-direction: column;
+        margin-left: 115px;
+        width: 250px;
 
         .lines {
           display: flex;
+          justify-content: space-between;
 
           .medium-line {
             height: 495px;
             width: 0;
             border: 1px solid $gray;
-            margin-left: 94px;
           }
         }
 
@@ -37,6 +44,14 @@
           font-size: $font-size-title;
           line-height: 61px;
           color: $dark-gray;
+          margin-top: 20px;
+          padding-left: 8px;
+        }
+        .arrow {
+          width: 30px;
+          height: 30px;
+          margin-top: 15px;
+          align-self: center;
         }
       }
     }
@@ -44,6 +59,70 @@
     .about-us-img {
       .about-img {
 
+      }
+    }
+  }
+
+  .width-container {
+    margin-top: 115px;
+
+    .medium-line {
+      width: 475px;
+      height: 0px;
+      border: 1px solid $gray;
+      margin-bottom: 60px;
+    }
+
+    .small-line {
+      width: 120px;
+      height: 0px;
+      border: 1px solid $gray;
+      margin-bottom: 95px;
+    }
+
+    .page-about {
+      margin-left: 215px;
+      margin-bottom: 50px;
+
+      .page-title {
+        font-size: $font-size-title;
+        margin-bottom: 10px;
+      }
+
+      .title-about {
+        font-size: $font-size-large;
+        text-transform: uppercase;
+      }
+    }
+
+    .page-content {
+      display: flex;
+      justify-content: space-between;
+
+      .lines {
+        margin-top: 45px;
+      }
+
+      .page-text {
+        line-height: 20px;
+        font-size: $font-size-small-regular;
+        max-width: 1000px;
+
+        .office-owner {
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 50px;
+        }
+
+        .owner {
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 50px;
+        }
+
+        .text-content:not(:last-child) {
+          margin-bottom: 30px;
+        }
       }
     }
   }
