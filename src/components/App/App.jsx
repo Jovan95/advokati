@@ -7,6 +7,7 @@ import AboutUsPage from '../Pages/AboutUsPage/AboutUsPage';
 import LawyerPage from '../Pages/LawyerPage/LawyerPage';
 import AreasPage from '../Pages/AreasPage/AreasPage';
 import ContactPage from '../Pages/ContactPage/ContactPage';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import Footer from '../common/Footer/Footer';
 import Header from '../common/Header/Header';
 import ModalRoot from '../Modals/ModalRoot';
@@ -21,18 +22,20 @@ const App = ({ store }) => (
   <Provider store={store}>
     <BrowserRouter>
       <div className="app">
+        <Header />
         <Suspense fallback={<div className="loader-between-pages" />}>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/about-us" component={AboutUsPage} />
-            <Route exact path="/lawyers" component={LawyerPage} />
-            <Route exact path="/areas" component={AreasPage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Route path="*" component={Page404} />
-          </Switch>
-          <Footer />
+          <ScrollToTop>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/about-us" component={AboutUsPage} />
+              <Route exact path="/lawyers" component={LawyerPage} />
+              <Route exact path="/areas" component={AreasPage} />
+              <Route exact path="/contact" component={ContactPage} />
+              <Route path="*" component={Page404} />
+            </Switch>
+          </ScrollToTop>
         </Suspense>
+        <Footer />
 
         <ModalRoot />
       </div>
