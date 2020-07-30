@@ -222,7 +222,7 @@ const HomePage = () => {
                 <div className="small-line" />
               </div>
               <div className="map">
-                <h1>Map</h1>
+                <MapView />
               </div>
             </div>
           </div>

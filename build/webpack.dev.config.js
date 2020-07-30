@@ -82,8 +82,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: ['raw-loader'],
+      test: /\.css$/,
+      include: /stylesheets|node_modules/,
+      use: ["style-loader", "css-loader"]
       },
     ]
   },
