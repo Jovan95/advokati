@@ -3,12 +3,9 @@
 @import "partials/variables";
 
 .areas {
-  .container {
-    display: flex;
-    align-items: flex-end;
-    .width-container {
-      width: 100%;
-    }
+
+  .width-container {
+    width: 100%;
   }
 
   .width-container {

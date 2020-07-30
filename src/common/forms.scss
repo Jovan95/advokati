@@ -1,5 +1,5 @@
 @import 'partials/colors';
-@import 'partials/variables';
+@import 'partials/text';
 @import 'partials/variables';
 
 .form-wrapper {
@@ -8,8 +8,8 @@
 
   .form-item-wrapper {
     position: relative;
-    border: 1px solid $gray;
-    padding: 19px 23px;
+    background-color: #E9E9E9;
+    padding: 25px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -40,9 +40,9 @@
 
     label {
       display: flex;
-      align-items: center;
-      font-size: $font-size-small + 0.1;
+      font-size: $font-size-small-regular;
       color: $gray;
+      width: 100%;
     }
 
     .second-label {
@@ -84,6 +84,7 @@
         text-align: left;
         flex-grow: 1;
         font-size: $font-size-small + 0.1;
+        height: 270px;
       }
     }
   }
