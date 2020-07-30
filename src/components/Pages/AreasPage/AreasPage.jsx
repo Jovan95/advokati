@@ -20,7 +20,7 @@ const AreasPage = () => {
   } = activeTab;
 
   return (
-    <div className="areas">
+    <div className="areas-page">
       <div className="container">
         <div className="width-container">
           <div className="gray-title">ekspertize/oblasti</div>
