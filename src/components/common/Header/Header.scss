@@ -11,6 +11,7 @@
       line-height: 18px;
       text-transform: uppercase;
       padding: 30px 25px;
+      font-weight: bold;
 
       @include hover-transition;
 
@@ -18,8 +19,9 @@
         color: $black-hover;
       }
 
-      &:first-child {
-        padding-top: 10px;
+      &.active {
+        margin-top: 50px;
+        font-weight: normal;
       }
     }
 
@@ -37,18 +39,23 @@
 
     .nav-wrapper-gray {
       display: flex;
-      margin: 0 35px;
       max-height: 120px;
 
       .nav-item {
         border-right: 2px solid $gray;
 
+        &:first-child {
+          padding-top: 10px;
+        }
+
         &:last-child {
           border-left: 2px solid $gray;
         }
 
-        &:first-child {
-          padding-top: 10px;
+        &.active {
+          margin-top: 0;
+          padding-top: 50px;
+          font-weight: normal;
         }
       }
 
