@@ -40,6 +40,9 @@
     .nav-wrapper-gray {
       display: flex;
       max-height: 120px;
+      position: absolute;
+      top: 0;
+      width: 100%;
 
       .nav-item {
         border-right: 2px solid $gray;
