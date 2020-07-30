@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { aboutUs } from 'constants/aboutUs';
@@ -19,6 +19,12 @@ const AboutUsPage = () => {
     text5,
   } = aboutUs;
 
+  const pageContent = useRef(null);
+
+  const scrollToContent = () => {
+    window.scrollTo({ top: pageContent.current.offsetTop - 20, behavior: 'smooth' });
+  };
+
   return (
     <div className="about-us">
       <div className="header-area">
@@ -31,7 +37,7 @@ const AboutUsPage = () => {
               <div className="medium-line" />
             </div>
             <div className="text">o nama</div>
-            <div className="arrow" />
+            <div onClick={scrollToContent} className="arrow" />
           </div>
           <div className="long-line" />
         </div>
@@ -40,38 +46,41 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div className="width-container">
-        <div className="page-about">
-          <div className="page-title">{pageTitle}</div>
-          <div className="title-about">{pageAbout}</div>
-        </div>
-        <div className="medium-line" />
-        <div className="page-content">
-          <div className="lines">
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
-            <div className="small-line" />
+      <div ref={pageContent} className="content-wrapper">
+        <div className="big-yellow-box" />
+        <div className="width-container">
+          <div className="page-about">
+            <div className="page-title">{pageTitle}</div>
+            <div className="title-about">{pageAbout}</div>
           </div>
-          <div className="page-text">
-            <div className="office-owner">{officeOwner}</div>
-            <div className="owner">{owner}</div>
-            <div className="text-content">{text}</div>
-            <div className="text-content">{text2}</div>
-            <div className="text-content">{text3}</div>
-            <div className="text-content">{text4}</div>
-            <div className="text-content">{text5}</div>
+          <div className="medium-line" />
+          <div className="page-content">
+            <div className="lines">
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+              <div className="small-line" />
+            </div>
+            <div className="page-text">
+              <div className="office-owner">{officeOwner}</div>
+              <div className="owner">{owner}</div>
+              <div className="text-content">{text}</div>
+              <div className="text-content">{text2}</div>
+              <div className="text-content">{text3}</div>
+              <div className="text-content">{text4}</div>
+              <div className="text-content">{text5}</div>
+            </div>
           </div>
+          <div className="medium-line" />
         </div>
-        <div className="medium-line" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
@@ -17,6 +17,12 @@ const HomePage = () => {
   const [activeArea, setActiveArea] = useState(AREAS[0].id);
   const activeTab = AREAS.find(({ id }) => id === activeArea);
 
+  const aboutUsRef = useRef(null);
+
+  const scrollToAboutUs = () => {
+    window.scrollTo({ top: aboutUsRef.current.offsetTop - 20, behavior: 'smooth' });
+  };
+
   return (
     <div className="homepage">
       <div className="header-area">
@@ -32,7 +38,7 @@ const HomePage = () => {
             <div className="header-title">miloš lekić</div>
             <div className="header-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
-          <div className="arrow" />
+          <div onClick={scrollToAboutUs} className="arrow" />
         </div>
         <div className="right">
           <img className="header-image" src={homepage} alt="homepage" />
@@ -40,7 +46,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="about-us">
+      <div ref={aboutUsRef} className="about-us">
         <div className="width-container">
           <div className="title">o nama</div>
           <div className="about-us-flex">
