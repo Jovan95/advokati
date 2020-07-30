@@ -2,6 +2,15 @@
 @import '../../../common/partials/colors';
 @import "../../../common/partials/variables";
 
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 396px;
+  }
+}
+
 .homepage {
 
   .header-area {
@@ -19,10 +28,12 @@
         max-width: 500%;
 
         .long-line {
-          height: 396px;
+          height: 0;
           width: 0;
           border: 1px solid $gray;
           margin-left: 120px;
+          animation: grow ease-in 0.5s;
+          animation-fill-mode: forwards;
         }
       }
 
