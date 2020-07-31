@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
+import { LAWYERS, OPTIONS } from 'constants/lawyers';
 
 import './LawyerPage.scss';
 
@@ -10,7 +10,11 @@ const LawyerPage = () => {
 
   return (
     <div className="lawyer-page">
-      <h1>Hello</h1>
+      <div className="container">
+        <div className="width-container">
+
+        </div>
+      </div>
     </div>
   );
 };

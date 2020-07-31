@@ -24,3 +24,11 @@ export const LAWYERS = [
     img: 'Milos.png',
   },
 ];
+
+export const OPTIONS = {
+  options: [
+    { label: 'Bankarstvo i finansije', value: 0 },
+    { label: 'Radno pravo', value: 1 },
+    { label: 'reorganziacija i stecaj', value: 2 },
+  ],
+};
