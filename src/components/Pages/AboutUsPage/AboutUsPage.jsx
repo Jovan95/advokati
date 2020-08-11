@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { aboutUs } from 'constants/aboutUs';
+import ImageLoader from '../../ImageLoader/ImageLoader';
 
 import aboutUsImg from '../../../images/aboutUsImg.png';
 import './AboutUsPage.scss';
@@ -42,7 +43,7 @@ const AboutUsPage = () => {
           <div className="long-line" />
         </div>
         <div className="about-us-img">
-          <img className="about-img" src={aboutUsImg} alt="aboutUs" />
+          <ImageLoader className="about-img" src={aboutUsImg} alt="aboutUs" />
         </div>
       </div>
 

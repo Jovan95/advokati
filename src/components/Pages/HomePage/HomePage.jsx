@@ -5,6 +5,7 @@ import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
 import MapView from '../../Map/MapView';
 import Carousel from '../../Carousel/Carousel';
+import ImageLoader from '../../ImageLoader/ImageLoader';
 
 import Milos from '../../../images/Milos.png';
 import homepage from '../../../images/homepage.png';
@@ -42,7 +43,7 @@ const HomePage = () => {
           <div onClick={scrollToAboutUs} className="arrow" />
         </div>
         <div className="right">
-          <img className="header-image" src={homepage} alt="homepage" />
+          <ImageLoader className="header-image" src={homepage} alt="homepage" />
           <div className="box" />
         </div>
       </div>
@@ -87,7 +88,7 @@ const HomePage = () => {
         <div className="width-container">
           <div className="title">naš tim</div>
           <div className="content-wrapper">
-            <Carousel slidesPerView={12}>
+            <Carousel slidesPerView={1}>
               {
                 LAWYERS.map(({
                   id, position, img, name, area, lawyerTitle,
@@ -111,7 +112,7 @@ const HomePage = () => {
                     </div>
                     <div className="bot">
                       <div className="lawyer-image">
-                        <img src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
+                        <ImageLoader src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
                       </div>
                     </div>
                   </div>
@@ -144,7 +145,7 @@ const HomePage = () => {
                         onClick={(e) => { setActiveArea(parseInt(e.target.id, 10)); }}
                       >
                         OBLAST {id}
-                        <img className="arrow-right" src={arrow} alt="arrow" />
+                        <ImageLoader className="arrow-right" src={arrow} alt="arrow" />
                       </div>
                     ))
                   }
@@ -204,7 +205,7 @@ const HomePage = () => {
                 </div>
                 <div className="text-item">
                   <div className="item-title">e-mail</div>
-                  <div className="item-about"><img src={email} alt="email" /></div>
+                  <div className="item-about"><ImageLoader src={email} alt="email" /></div>
                 </div>
               </div>
               <div className="lines">

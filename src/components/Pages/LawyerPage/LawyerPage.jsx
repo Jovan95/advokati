@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { LAWYERS, OPTIONS } from 'constants/lawyers';
 import Select from 'react-select';
+import ImageLoader from '../../ImageLoader/ImageLoader';
 
 import './LawyerPage.scss';
 
@@ -51,7 +52,7 @@ const LawyerPage = () => {
                   <div className="line" />
                 </div>
                 <div className="middle">
-                  <img className="lawyer-img" src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
+                  <ImageLoader className="lawyer-img" src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
                   <div className="name">
                     {name}
                   </div>
