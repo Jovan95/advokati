@@ -35,7 +35,7 @@ const LawyerPage = () => {
         <div className="area-title">
           {activeTitle}
         </div>
-        <div className={activeFieldLawyers.length < 3 ? 'lawyers-container around' : 'lawyers-container'}>
+        <div className={activeFieldLawyers.length < 4 ? 'lawyers-container around' : 'lawyers-container'}>
           {
             (area.length === 0 ? LAWYERS : activeFieldLawyers).map(({
               name, lawyerTitle, id, img, area,

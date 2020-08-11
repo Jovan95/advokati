@@ -6,7 +6,7 @@ export const LAWYERS = [
     lawyerTitle: 'CEO',
     area: 'Ime oblasti',
     img: 'Milos.png',
-    value: [0, 2],
+    value: [0, 1],
   },
   {
     id: 1,
@@ -35,12 +35,21 @@ export const LAWYERS = [
     img: 'Milos.png',
     value: [1],
   },
+  {
+    id: 4,
+    position: 'bottom',
+    name: 'Mitar Lekic',
+    lawyerTitle: 'CEO',
+    area: 'Ime oblasti',
+    img: 'Milos.png',
+    value: [1],
+  },
 ];
 
 export const OPTIONS = {
   options: [
     { value: 0, label: 'Bankarstvo i finansije' },
     { value: 1, label: 'Radno pravo' },
-    { value: 2, label: 'reorganziacija i stecaj' },
+    { value: 2, label: 'Reorganziacija i stecaj' },
   ],
 };
