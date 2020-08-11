@@ -6,6 +6,41 @@
   .width-container {
     width: 100%;
     margin-bottom: 30px;
+
+    .react-select__control {
+      border-radius: 0;
+      border-top: 2px solid $gray;
+      border-bottom: 2px solid $gray;
+      padding: 8px 0px;
+      border-left: none;
+      border-right: none;
+      background-color: transparent;
+    }
+
+    .react-select__menu {
+      border: none;
+      background-color: $yellow;
+      border-radius: 0;
+      color: #303030;
+      border-top: 2px solid $gray;
+      border-bottom: 2px solid $gray;
+    }
+
+    .react-select__option {
+      &:hover {
+        @include hover-transition;
+        background-color: $dark-gray-hover;
+        color: $white;
+      }
+    }
+    .react-select__control--is-focused {
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      box-shadow: none;
+    }
+    .react-select__indicator-separator {
+      display: none;
+    }
   }
 
   .width-container {
@@ -19,6 +54,7 @@
     .lawyers-container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       border-top: 2px solid $gray;
       margin-top: 50px;
 

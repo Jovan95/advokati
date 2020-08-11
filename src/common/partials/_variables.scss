@@ -41,6 +41,19 @@
   animation: hello $duration;
 }
 
+@mixin grow($duration, $height) {
+  @keyframes grow {
+    from {
+      height: 0;
+    }
+    to {
+      height: $height;
+    }
+  }
+
+  animation: grow $duration;
+}
+
 @mixin flex-center {
   display: flex;
   align-items: center;

@@ -7,7 +7,7 @@ import Select from 'react-select';
 import './LawyerPage.scss';
 
 const LawyerPage = () => {
-  const [area, setArea] = useState([OPTIONS.options[0].value]);
+  const [area, setArea] = useState([]);
   const [activeTitle, setActiveTitle] = useState('');
 
   const activeFieldLawyers = LAWYERS.filter(lawyer => lawyer.value.indexOf(area) >= 0);
@@ -26,6 +26,7 @@ const LawyerPage = () => {
               console.log(item.value, 'areaId');
             }}
             placeholder="PRETRAZI PO OBLASTI"
+            classNamePrefix="react-select"
           />
         </div>
       </div>
@@ -36,7 +37,7 @@ const LawyerPage = () => {
         </div>
         <div className={activeFieldLawyers.length < 3 ? 'lawyers-container around' : 'lawyers-container'}>
           {
-            activeFieldLawyers.map(({
+            (area.length === 0 ? LAWYERS : activeFieldLawyers).map(({
               name, lawyerTitle, id, img, area,
             },
             ) => (

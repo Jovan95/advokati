@@ -2,14 +2,7 @@
 @import '../../../common/partials/colors';
 @import "../../../common/partials/variables";
 
-@keyframes grow {
-  from {
-    height: 0;
-  }
-  to {
-    height: 396px;
-  }
-}
+
 
 .homepage {
 
@@ -28,6 +21,7 @@
         max-width: 500%;
 
         .long-line {
+          @include grow(350, 396px);
           height: 0;
           width: 0;
           border: 1px solid $gray;
