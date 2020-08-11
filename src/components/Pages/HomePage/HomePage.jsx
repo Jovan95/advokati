@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
 import MapView from '../../Map/MapView';
+import Carousel from '../../Carousel/Carousel';
 
 import Milos from '../../../images/Milos.png';
 import homepage from '../../../images/homepage.png';
@@ -86,35 +87,37 @@ const HomePage = () => {
         <div className="width-container">
           <div className="title">naš tim</div>
           <div className="content-wrapper">
-            {
-              LAWYERS.map(({
-                id, position, img, name, area, lawyerTitle,
-              }) => (
-                <div
-                  key={`lawyer-${id}`}
-                  className={position === activeLawyerPosition ? 'single-lawyer' : 'single-lawyer-reverse'}
-                >
-                  <div className="top">
-                    <div className="ver-line" />
-                    <div className="ver-line" />
-                    <div className="ver-line" />
-                  </div>
-                  <div className="mid">
-                    <div className="name">{name}</div>
-                    <div className="lawyer-title">{lawyerTitle}</div>
-                    <div className="area">
-                      Oblast/Ekspertiza:
-                      {area}
+            <Carousel slidesPerView={12}>
+              {
+                LAWYERS.map(({
+                  id, position, img, name, area, lawyerTitle,
+                }) => (
+                  <div
+                    key={`lawyer-${id}`}
+                    className={position === activeLawyerPosition ? 'single-lawyer' : 'single-lawyer-reverse'}
+                  >
+                    <div className="top">
+                      <div className="ver-line" />
+                      <div className="ver-line" />
+                      <div className="ver-line" />
+                    </div>
+                    <div className="mid">
+                      <div className="name">{name}</div>
+                      <div className="lawyer-title">{lawyerTitle}</div>
+                      <div className="area">
+                        Oblast/Ekspertiza:
+                        {area}
+                      </div>
+                    </div>
+                    <div className="bot">
+                      <div className="lawyer-image">
+                        <img src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
+                      </div>
                     </div>
                   </div>
-                  <div className="bot">
-                    <div className="lawyer-image">
-                      <img src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
+                ))
+              }
+            </Carousel>
           </div>
         </div>
       </div>

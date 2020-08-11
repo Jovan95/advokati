@@ -36,7 +36,7 @@ class MapView extends React.Component {
              width: '420px',
              height: '370px',
              position: 'realative',
-             top: '-50px'
+             top: '-50px',
            }
            }
         />
