@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
-import MapView from '../../Map/Map';
+import MapView from '../../Map/MapView';
 
 import Milos from '../../../images/Milos.png';
 import homepage from '../../../images/homepage.png';

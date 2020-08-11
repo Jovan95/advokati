@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
-import MapView from '../../Map/Map';
+import MapView from '../../Map/MapViewContact';
 
 
 import email from '../../../images/email.png';
