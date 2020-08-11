@@ -8,6 +8,7 @@ import './LawyerPage.scss';
 
 const LawyerPage = () => {
   const [area, setArea] = useState([OPTIONS.options[0].value]);
+  const [activeTitle, setActiveTitle] = useState('');
 
   const activeFieldLawyers = LAWYERS.filter(lawyer => lawyer.value.indexOf(area) >= 0);
   console.log(activeFieldLawyers);
@@ -21,22 +22,26 @@ const LawyerPage = () => {
             options={OPTIONS.options}
             onChange={(item) => {
               setArea(item.value);
-              console.log(item.value, 'area');
+              setActiveTitle(item.label);
+              console.log(item.value, 'areaId');
             }}
+            placeholder="PRETRAZI PO OBLASTI"
           />
         </div>
       </div>
 
       <div className="width-container">
+        <div className="area-title">
+          {activeTitle}
+        </div>
         <div className="lawyers-container">
           {
             activeFieldLawyers.map(({
               name, lawyerTitle, id, img, area,
             },
             ) => (
-              <div className="single-lawyer">
+              <div key={id} className="single-lawyer">
                 <div className="small-lines">
-                  <div className="line" />
                   <div className="line" />
                   <div className="line" />
                   <div className="line" />
@@ -45,7 +50,7 @@ const LawyerPage = () => {
                   <div className="line" />
                 </div>
                 <div className="middle">
-                  <img src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
+                  <img className="lawyer-img" src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
                   <div className="name">
                     {name}
                   </div>
@@ -54,14 +59,12 @@ const LawyerPage = () => {
                   {area}
                 </div>
                 <div className="small-lines">
-                  <div className="line">
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                    <div className="line" />
-                  </div>
+                  <div className="line" />
+                  <div className="line" />
+                  <div className="line" />
+                  <div className="line" />
+                  <div className="line" />
+                  <div className="line" />
                 </div>
               </div>
             ))

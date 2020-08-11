@@ -9,19 +9,49 @@
   }
 
   .width-container {
+
+    .area-title {
+      text-transform: uppercase;
+      font-size: $font-size-medium - 0.2;
+      font-weight: bold;
+      margin-top: 60px;
+    }
     .lawyers-container {
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid $gray;
+      margin-top: 50px;
+
       .single-lawyer {
         display: flex;
+        margin-top: 50px;
 
         .small-lines {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          
+          margin-top: 50px;
+
           .line {
             width: 43px;
             height: 0;
             border: 1px solid $gray;
+          }
+        }
+
+        .middle {
+            margin: 0 50px;
+
+          .lawyer-img {
+          }
+
+          .name {
+            margin: 27px 0 15px 0;
+          }
+
+          .area {
+            margin-top: 15px;
+            text-transform: uppercase;
           }
         }
       }
