@@ -6,29 +6,32 @@ export const LAWYERS = [
     lawyerTitle: 'CEO',
     area: 'Ime oblasti',
     img: 'Milos.png',
+    value: [0, 2],
   },
   {
     id: 1,
     position: 'top',
-    name: 'Milos Lekic',
+    name: 'Marko Lekic',
     lawyerTitle: 'CEO',
     area: 'Ime oblasti',
     img: 'Milos.png',
+    value: [0],
   },
   {
     id: 2,
     position: 'bottom',
-    name: 'Milos Lekic',
+    name: 'Milan Lekic',
     lawyerTitle: 'CEO',
     area: 'Ime oblasti',
     img: 'Milos.png',
+    value: [0, 1, 2],
   },
 ];
 
 export const OPTIONS = {
   options: [
-    { label: 'Bankarstvo i finansije', value: 0 },
-    { label: 'Radno pravo', value: 1 },
-    { label: 'reorganziacija i stecaj', value: 2 },
+    { value: 0, label: 'Bankarstvo i finansije' },
+    { value: 1, label: 'Radno pravo' },
+    { value: 2, label: 'reorganziacija i stecaj' },
   ],
 };

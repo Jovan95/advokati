@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
+import MapView from '../../Map/Map';
 
 
 import email from '../../../images/email.png';
@@ -50,7 +51,7 @@ const ContactPage = () => {
                   <div className="small-line" />
                 </div>
                 <div className="map">
-                  <h1>MAP</h1>
+                  <MapView />
                 </div>
               </div>
             </div>
