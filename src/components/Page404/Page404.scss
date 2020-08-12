@@ -1,0 +1,15 @@
+@import "partials/text";
+@import "partials/colors";
+
+.page-404 {
+  .container {
+    .width-container {
+      width: 100%;
+      .message {
+        font-size: $font-size-title;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
