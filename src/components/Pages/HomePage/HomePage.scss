@@ -81,7 +81,7 @@
       justify-content: space-between;
 
       .text {
-        max-width: 270px;
+        max-width: 237px;
         line-height: 150%;
         font-size: $font-size-small-regular;
 
@@ -118,7 +118,7 @@
           justify-content: space-between;
 
           .text {
-            max-width: 261px;
+            max-width: 370px;
             line-height: 150%;
           }
 
@@ -275,12 +275,16 @@
               flex-direction: column;
               margin: 93px 80px 93px 20px;
 
-
                 .tab {
                   font-size: $font-size-small-regular;
                   font-weight: bold;
-                  width: 130px;
+                  width: 265px;
                   cursor: pointer;
+                  display: flex;
+
+                  .area-title {
+                    word-break: break-all;
+                  }
 
                   &:not(:last-child) {
                     margin-bottom: 40px;
@@ -289,13 +293,14 @@
                   &.active {
                     font-size: $font-size-regular;
                     font-weight: normal;
-                    width: 145px;
+                    width: 265px;
                     transition: all 120ms cubic-bezier(.165,.84,.44,1);
                   }
                 }
 
                 .arrow-right {
                   margin-left: 10px;
+                  align-self: center;
                 }
             }
           }
@@ -317,7 +322,9 @@
                 max-width: 400px;
                 font-size: $font-size-small-regular;
                 line-height: 150%;
-                margin-bottom: 105px;
+                margin-bottom: 50px;
+                max-height: 215px;
+                height: 100%;
               }
 
               .lines {
