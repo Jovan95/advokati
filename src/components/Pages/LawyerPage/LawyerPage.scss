@@ -41,6 +41,12 @@
     .react-select__indicator-separator {
       display: none;
     }
+
+    .react-select__control {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   .width-container {

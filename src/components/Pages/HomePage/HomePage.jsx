@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { LAWYERS } from 'constants/lawyers';
 import { AREAS } from 'constants/areas';
 import MapView from '../../Map/MapView';
-import Carousel from '../../Carousel/Carousel';
+import CarouselSlider from '../../Carousel/CarouselSlider';
 import ImageLoader from '../../ImageLoader/ImageLoader';
 
 import Milos from '../../../images/Milos.png';
@@ -88,37 +88,37 @@ const HomePage = () => {
         <div className="width-container">
           <div className="title">naš tim</div>
           <div className="content-wrapper">
-            <Carousel slidesPerView={1}>
+            <CarouselSlider>
               {
                 LAWYERS.map(({
                   id, position, img, name, area, lawyerTitle,
                 }) => (
-                  <div
-                    key={`lawyer-${id}`}
-                    className={position === activeLawyerPosition ? 'single-lawyer' : 'single-lawyer-reverse'}
-                  >
-                    <div className="top">
-                      <div className="ver-line" />
-                      <div className="ver-line" />
-                      <div className="ver-line" />
-                    </div>
-                    <div className="mid">
-                      <div className="name">{name}</div>
-                      <div className="lawyer-title">{lawyerTitle}</div>
-                      <div className="area">
-                        Oblast/Ekspertiza:
-                        {area}
+                  <div className="content" key={`lawyer-${id}`}>
+                    <div className={position === 'top' ? 'single-lawyer-reverse' : 'single-lawyer'}>
+                      <div className="top">
+                        <div className="ver-line" />
+                        <div className="ver-line" />
+                        <div className="ver-line" />
+                      </div>
+                      <div className="mid">
+                        <div className="name">{name}</div>
+                        <div className="lawyer-title">{lawyerTitle}</div>
+                        <div className="area">
+                          Oblast/Ekspertiza:
+                          {area}
+                        </div>
+                      </div>
+                      <div className="bot">
+                        <div className="lawyer-image">
+                          <ImageLoader src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
+                        </div>
                       </div>
                     </div>
-                    <div className="bot">
-                      <div className="lawyer-image">
-                        <ImageLoader src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
-                      </div>
-                    </div>
+                    <div className="long-line" />
                   </div>
                 ))
               }
-            </Carousel>
+            </CarouselSlider>
           </div>
         </div>
       </div>

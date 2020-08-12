@@ -175,54 +175,58 @@
         margin-top: 100px;
         border-left: 2px solid $gray;
         border-right: 2px solid $gray;
-        padding: 0 115px;
         font-size: $font-size-small-regular;
 
-        .top {
+        .content {
           display: flex;
-          justify-content: space-around;
 
-          .ver-line {
-            height: 120px;
+          .long-line {
+            height: 661px;
             width: 0;
             border: 1px solid $gray;
-            margin-left: -40px;
-          }
-        }
-
-        .mid {
-          margin-bottom: 25px;
-
-          .lawyer-title {
-            font-size: $font-size-small-regular;
-            margin-bottom: 15px;
           }
 
-          .area {
-            max-width: 149px;
-            word-break: break-all;
+          .top {
+            display: flex;
+            justify-content: space-between;
+
+            .ver-line {
+              height: 120px;
+              width: 0;
+              border: 1px solid $gray;
+            }
           }
-        }
 
-        .single-lawyer {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column;
-          border-right: 2px solid $gray;
-          padding-right: 43px;
-          margin-right: 80px;
-        }
-
-        .single-lawyer-reverse {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column-reverse;
-          border-right: 2px solid $gray;
-          padding-right: 43px;
-          margin-right: 80px;
-
-          img {
+          .mid {
             margin-bottom: 25px;
+
+            .lawyer-title {
+              font-size: $font-size-small-regular;
+              margin-bottom: 15px;
+            }
+
+            .area {
+              max-width: 149px;
+              word-break: break-all;
+            }
+          }
+
+          .single-lawyer {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-right: 71px;
+          }
+
+          .single-lawyer-reverse {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            padding-right: 71px;
+
+            img {
+              margin-bottom: 25px;
+            }
           }
         }
       }

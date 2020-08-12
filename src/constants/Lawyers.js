@@ -28,7 +28,7 @@ export const LAWYERS = [
   },
   {
     id: 3,
-    position: 'bottom',
+    position: 'top',
     name: 'Milivoje Lekic',
     lawyerTitle: 'CEO',
     area: 'Ime oblasti',
