@@ -44,7 +44,7 @@ const AreasPage = () => {
                       id={id}
                       key={`link-${id}`}
                       className={id === activeArea ? 'link active' : 'link'}
-                      onClick={(e) => { setActiveArea(parseInt(e.target.id, 10)); }}
+                      onClick={() => { setActiveArea(id); }}
                     >
                       Oblast {id}
                       <img className="arrow-right" src={arrow} alt="arrow" />

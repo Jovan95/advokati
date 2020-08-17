@@ -54,3 +54,14 @@ export const AREAS = [
     help: 'Takođe zastupnici smo, i zastupali pravna lica (Zastava automobili ad u stečaju, Magnohrom doo u stečaju, Jugoeksport korporacija u stečaju deoničarsko društvo, Prvi maj Pirot ad u stečaju, Elektroporcelan ad u stečaju, Pobeda Promet ad u stečaju, BD agro ad u stečaju PKB voćarske plantaže u stečaju) i drugih posebnih pravnih subjekata',
   },
 ];
+
+export const OPTIONS = {
+  options: [
+    { value: 1, label: 'Krivično pravo' },
+    { value: 2, label: 'Korporativno pravo' },
+    { value: 3, label: 'Naknada štete' },
+    { value: 4, label: 'Opšta parnica' },
+    { value: 5, label: 'Porodično pravo' },
+    { value: 6, label: 'Ljudska prava' },
+  ],
+};

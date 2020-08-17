@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Select from 'react-select';
 import { LAWYERS } from 'constants/lawyers';
-import { AREAS } from 'constants/areas';
+import { AREAS, OPTIONS } from 'constants/areas';
 import MapView from '../../Map/MapView';
 import CarouselSlider from '../../Carousel/CarouselSlider';
 import ImageLoader from '../../ImageLoader/ImageLoader';
@@ -15,10 +16,9 @@ import './HomePage.scss';
 
 const HomePage = () => {
   const [activeLawyerPosition] = useState(LAWYERS[0].position);
-
   const [activeArea, setActiveArea] = useState(AREAS[0].id);
-  const activeTab = AREAS.find(({ id }) => id === activeArea);
 
+  const activeTab = AREAS.find(({ id }) => id === activeArea);
   const aboutUsRef = useRef(null);
 
   const scrollToAboutUs = () => {
@@ -135,6 +135,15 @@ const HomePage = () => {
                   <div className="short-hor-line" />
                   <div className="short-hor-line" />
                 </div>
+                <Select
+                  options={OPTIONS.options}
+                  onChange={(item) => {
+                    setActiveArea(item.value);
+                  }}
+                  className="homepage-select"
+                  placeholder="PRETRAZI PO OBLASTI"
+                  classNamePrefix="react-select"
+                />
                 <div className="tabs">
                   {
                     AREAS.map(({ id, title }) => (
