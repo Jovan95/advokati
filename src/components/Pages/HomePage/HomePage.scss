@@ -1264,6 +1264,19 @@
 
 @include mobile-break {
   .homepage {
+
+    .header-area {
+      .right {
+        .header-image {
+          display: none;
+        }
+
+        .box {
+          display: none;
+        }
+      }
+    }
+
     .about-us {
       .width-container {
         .about-us-flex {
