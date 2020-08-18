@@ -927,7 +927,7 @@
           .mid {
             .mid-left {
               .text {
-                font-size: $font-size-small-regular - 0.4;
+                font-size: $font-size-small-regular - 0.3;
               }
             }
             .mid-right {
@@ -1214,7 +1214,7 @@
               margin-left: 0;
 
               .text-item {
-                margin-top: 20px;
+                margin-top: 55px;
               }
             }
           }
@@ -1275,6 +1275,7 @@
           .text {
             text-align: justify;
             max-width: 335px;
+            font-size: 13px;
 
             &:nth-child(2) {
               margin-left: 0;
@@ -1287,6 +1288,9 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 30px;
+
+            .mid {
+            }
           }
         }
       }
