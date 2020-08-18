@@ -1007,7 +1007,7 @@
     .title {
       text-align: center;
     }
-    
+
     .header-area {
       .left {
         max-height: 450px;
@@ -1273,10 +1273,12 @@
           text-align: center;
 
           .text {
+            text-align: justify;
+            max-width: 335px;
+
             &:nth-child(2) {
               margin-left: 0;
               margin-top: 50px;
-              text-align: center;
             }
           }
           .line-text {
@@ -1295,6 +1297,18 @@
       .width-container {
         .content-wrapper {
           .top {
+
+            .right {
+              .text {
+                text-align: justify;
+              }
+
+              .right-button {
+                .text2 {
+                  text-align: justify;
+                }
+              }
+            }
             .left {
               .homepage-select {
                 display: block;
@@ -1302,7 +1316,6 @@
                 margin: 30px auto;
 
                 .react-select__control {
-                  max-width: 500px;
                   border-radius: 0;
                   border-top: 2px solid $gray;
                   border-bottom: 2px solid $gray;
@@ -1327,11 +1340,17 @@
                     color: $white;
                   }
                 }
+
+                .react-select__placeholder {
+                  font-size: 14px;
+                }
+
                 .react-select__control--is-focused {
                   border-top: 2px solid $blue;
                   border-bottom: 2px solid $blue;
                   box-shadow: none;
                 }
+
                 .react-select__indicator-separator {
                   display: none;
                 }
