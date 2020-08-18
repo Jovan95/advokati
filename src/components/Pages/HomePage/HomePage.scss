@@ -259,6 +259,7 @@
 
             .homepage-select {
               display: none;
+              max-width: 600px;
             }
 
             .lines {
@@ -585,6 +586,16 @@
             }
           }
         }
+
+        .contact {
+          .width-container {
+            .content-wrapper {
+              .long-line {
+                margin-left: 90px;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -688,6 +699,25 @@
           }
         }
       }
+
+      .contact {
+        .big-yellow-box {
+          max-width: 980px;
+          max-height: 650px;
+        }
+        .width-container {
+          .content-wrapper {
+            .text {
+              margin-top: 80px;
+            }
+
+            .long-line {
+              margin-left: 80px;
+              height: 700px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -703,6 +733,21 @@
         .box {
           max-width: 600px;
           top: 400px;
+        }
+      }
+    }
+
+    .contact {
+      .width-container {
+        .content-wrapper {
+          .map-lines-area {
+            .lines {
+              justify-content: space-around;
+            }
+          }
+          .small-line {
+            margin-left: 80px;
+          }
         }
       }
     }
@@ -856,6 +901,19 @@
         }
       }
     }
+
+    .contact {
+      .width-container {
+        .content-wrapper {
+          margin-bottom: 50px;
+          justify-content: space-around;
+
+          .long-line {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -874,6 +932,30 @@
             }
             .mid-right {
               max-height: 190px;
+            }
+          }
+        }
+      }
+    }
+
+      .contact {
+        .big-yellow-box {
+          max-width: 880px;
+          max-height: 650px;
+        }
+
+        .width-container {
+          .content-wrapper {
+            .text-lines-area {
+              .text {
+                .text-item {
+                  max-width: 200px;
+
+                  .item-about {
+                    font-size: 15px;
+                }
+
+              }
             }
           }
         }
@@ -980,6 +1062,48 @@
         }
       }
     }
+
+    .contact {
+      .big-yellow-box {
+        max-width: 1000px;
+      }
+      .width-container {
+        .content-wrapper {
+          flex-direction: column-reverse;
+
+          .text-lines-area {
+            .lines {
+              justify-content: space-around;
+
+              .small-line {
+                margin-left: 0;
+              }
+            }
+
+            .text {
+              margin-top: 40px;
+              flex-direction: row;
+              margin-left: 50px;
+              justify-content: space-around;
+
+              .text-item {
+                margin-top: 35px;
+              }
+            }
+          }
+
+          .map-lines-area {
+            .lines {
+              justify-content: space-evenly;
+
+              .small-line {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1016,6 +1140,14 @@
           max-width: 400px;
           max-height: 200px;
           top: 310px;
+        }
+      }
+    }
+
+    .contact {
+      .width-container {
+        .content-wrapper {
+
         }
       }
     }
@@ -1062,6 +1194,35 @@
           max-width: 380px;
           max-height: 180px;
           top: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .homepage {
+    .contact {
+      .width-container {
+        .content-wrapper {
+          .text-lines-area {
+            .text {
+              flex-direction: column;
+              text-align: center;
+              align-self: center;
+              margin-left: 0;
+
+              .text-item {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .map-lines-area {
+            .lines {
+              margin: 0;
+            }
+          }
         }
       }
     }
@@ -1136,7 +1297,6 @@
             .left {
               .homepage-select {
                 display: block;
-                max-width: 400px;
                 width: 100%;
                 margin: 30px auto;
 

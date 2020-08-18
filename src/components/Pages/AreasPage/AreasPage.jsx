@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AREAS } from 'constants/areas';
+import { AREAS } from 'constants/Areas';
 import PropTypes from 'prop-types';
 
 import arrow from '../../../images/arrow.png';

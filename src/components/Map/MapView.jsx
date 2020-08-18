@@ -29,7 +29,7 @@ class MapView extends React.Component {
   render() {
     return (
       <div className="leaf-map-wrapper">
-        <div id="mapid" style={{ width: '500px', height: '500px', margin: '40px 0px 0px 50px' }} />
+        <div id="mapid" style={{ width: '100%', height: '100%', margin: '40px 0px 0px 50px' }} />
       </div>
     );
   }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { LAWYERS, OPTIONS } from 'constants/lawyers';
 import Select from 'react-select';
+import { LAWYERS, OPTIONS } from '../../../constants/Lawyers';
 import ImageLoader from '../../ImageLoader/ImageLoader';
 
 import './LawyerPage.scss';
