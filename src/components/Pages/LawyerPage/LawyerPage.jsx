@@ -11,6 +11,7 @@ const LawyerPage = () => {
   const [area, setArea] = useState([]);
   const [activeTitle, setActiveTitle] = useState('');
 
+
   const activeFieldLawyers = LAWYERS.filter(lawyer => lawyer.value.indexOf(area) >= 0);
   console.log(activeFieldLawyers);
 

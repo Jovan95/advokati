@@ -48,6 +48,58 @@
             }
           }
 
+          .areas-select, .css-2b097c-container {
+            display: none;
+            width: 100%;
+            margin: 30px auto;
+
+            .react-select__control {
+              border-radius: 0;
+              border-top: 2px solid $gray;
+              border-bottom: 2px solid $gray;
+              padding: 8px 0px;
+              border-left: none;
+              border-right: none;
+              background-color: transparent;
+            }
+            .react-select__menu {
+              border: none;
+              background-color: $yellow;
+              border-radius: 0;
+              color: #303030;
+              border-top: 2px solid $gray;
+              border-bottom: 2px solid $gray;
+            }
+
+            .react-select__option {
+              &:hover {
+                @include hover-transition;
+                background-color: $dark-gray-hover;
+                color: $white;
+              }
+            }
+
+            .react-select__placeholder {
+              font-size: 14px;
+            }
+
+            .react-select__control--is-focused {
+              border-top: 2px solid $blue;
+              border-bottom: 2px solid $blue;
+              box-shadow: none;
+            }
+
+            .react-select__indicator-separator {
+              display: none;
+            }
+
+            .react-select__control {
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
           .links {
             display: flex;
             flex-direction: column;
@@ -62,6 +114,7 @@
               @include hover-transition;
 
               &.active {
+                @include hover-transition;
                 font-size: $font-size-regular;
                 font-weight: normal;
               }
@@ -106,6 +159,135 @@
           max-height: 192px;
           margin-bottom: 55px;
           height: 100%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1265px) {
+    .container {
+      .width-container {
+        .gray-title {
+          font-size: $font-size-title - 1;
+        }
+      }
+    }
+
+    .width-container {
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .right {
+          margin-top: 40px;
+          text-align: justify;
+        }
+
+        .left {
+          .top {
+            .links {
+              flex-direction: row;
+              align-items: center;
+              height: 100px;
+
+              .link {
+                border: 2px solid $gray;
+                margin: 0;
+                padding: 10px 24px;
+                justify-content: center;
+                background-color: $gray;
+                margin-bottom: 0;
+                color: $white;
+                font-weight: normal;
+
+                &.active {
+                  background-color: $gray-hover;
+                  font-size: $font-size-small-regular;
+                  color: $white;
+                  margin-top: 0;
+                }
+
+                &:hover {
+                  background-color: $yellow;
+                  color: $black;
+                }
+
+                .arrow-right {
+                  display: none;
+                }
+              }
+            }
+
+            .lines {
+              display: none;
+            }
+
+          }
+
+          .bottom {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .container {
+      .width-container {
+        .gray-title {
+          font-size: $font-size-title - 2;
+        }
+      }
+    }
+
+    .width-container {
+      .content-wrapper {
+        .right {
+          .section {
+            max-height: 100%;
+
+            .section-about {
+              font-size: $font-size-medium-small;
+            }
+          }
+
+          .right-title {
+            font-size: $font-size-title - 2.5;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 845px) {
+    .width-container {
+      .content-wrapper {
+        .left {
+          width: 100%;
+          .top {
+            .area-select {
+              display: block;
+              width: 100%;
+            }
+            .links {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile-break {
+    .width-container {
+      .content-wrapper {
+        .section {
+          margin-bottom: 25px;
+
+          .section-about {
+            font-size: $font-size-small;
+          }
         }
       }
     }

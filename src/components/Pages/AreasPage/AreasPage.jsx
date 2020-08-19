@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AREAS } from 'constants/Areas';
+import { AREAS, OPTIONS } from 'constants/Areas';
+import Select from 'react-select';
 import PropTypes from 'prop-types';
 
 import arrow from '../../../images/arrow.png';
@@ -10,8 +11,10 @@ const AreasPage = () => {
   const [activeArea, setActiveArea] = useState(AREAS[0].id);
   const activeTab = AREAS.find(({ id }) => id === activeArea);
 
+
   const {
     id,
+    title,
     text,
     text2,
     areaAbout,
@@ -37,16 +40,25 @@ const AreasPage = () => {
                 <div className="small-line" />
                 <div className="small-line" />
               </div>
+              <Select
+                options={OPTIONS.options}
+                onChange={(item) => {
+                  setActiveArea(item.value);
+                }}
+                className="area-select"
+                placeholder="PRETRAZI PO OBLASTI"
+                classNamePrefix="react-select"
+              />
               <div className="links">
                 {
-                  AREAS.map(({ id }) => (
+                  AREAS.map(({ id, title }) => (
                     <div
                       id={id}
                       key={`link-${id}`}
                       className={id === activeArea ? 'link active' : 'link'}
                       onClick={() => { setActiveArea(id); }}
                     >
-                      Oblast {id}
+                      {title}
                       <img className="arrow-right" src={arrow} alt="arrow" />
                     </div>
                   ))
@@ -61,7 +73,7 @@ const AreasPage = () => {
             </div>
           </div>
           <div className="right">
-            <div className="right-title">oblast {id}</div>
+            <div className="right-title">{title}</div>
             <div className="section">
               <div className="section-title">o oblasti</div>
               <div className="section-about">
