@@ -1292,7 +1292,7 @@
 
           .text {
             text-align: justify;
-            max-width: 335px;
+            max-width: 460px;
             font-size: 13px;
 
             &:nth-child(2) {
@@ -1307,7 +1307,37 @@
             align-items: center;
             margin-top: 30px;
 
+            .med-hor-line {
+              max-width: 100%;
+            }
+
             .mid {
+              flex-direction: column;
+
+              .mid-right {
+                max-width: 100%;
+
+                .button-wrapper {
+                  margin: 30px 0;
+                  flex-direction: column;
+
+                  .small-hor-line {
+                    max-width: 100%;
+                    width: 80%;  
+                  }
+
+                  .button {
+                    width: 45%;
+                    align-self: center;
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+
+              .text {
+                max-width: 460px;
+                margin-bottom: 30px;
+              }
             }
           }
         }
