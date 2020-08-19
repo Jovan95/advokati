@@ -53,12 +53,14 @@ const LawyerPage = () => {
                 </div>
                 <div className="middle">
                   <ImageLoader className="lawyer-img" src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
-                  <div className="name">
-                    {name}
+                  <div className="lawyer-about">
+                    <div className="name">
+                      {name}
+                    </div>
+                    {lawyerTitle}
+                    <div className="area">oblast/ekspertiza</div>
+                    {area}
                   </div>
-                  {lawyerTitle}
-                  <div className="area">oblast/ekspertiza</div>
-                  {area}
                 </div>
                 <div className="small-lines">
                   <div className="line" />
