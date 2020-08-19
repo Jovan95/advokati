@@ -1,3 +1,7 @@
+@import "partials/text";
+@import "partials/colors";
+@import "partials/variables";
+
 .leaf-map-wrapper {
   // position: relative;
   // width: 100%;
@@ -28,11 +32,6 @@
     }
   }
 
-  @media only screen and (max-width: 975px) {
-    height: 450px;
-    width: 605px;
-    margin: 0 auto;
-  }
 
   @media only screen and (max-width: 880px) {
     height: 450px;
@@ -45,4 +44,11 @@
     width: 400px;
   }
 
+  @include mobile-break {
+    height: 300px !important;
+
+    .leaflet-container {
+      width: 100% !important;
+    }
+  }
 }

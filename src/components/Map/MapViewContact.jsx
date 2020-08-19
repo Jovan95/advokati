@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet';
 
-import './MapView.scss';
+import './MapViewContact.scss';
 
 class MapView extends React.Component {
   componentDidMount() {
