@@ -1212,9 +1212,14 @@
               text-align: center;
               align-self: center;
               margin-left: 0;
+              margin-top: 105px;
 
               .text-item {
-                margin-top: 55px;
+                margin:  0;
+
+                &:not(:last-child) {
+                  margin: 0 0 55px 0;
+                }
               }
             }
           }
