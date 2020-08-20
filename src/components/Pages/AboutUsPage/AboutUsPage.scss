@@ -418,7 +418,7 @@
       .about-us-img {
         display: none;
       }
-      
+
       .links-area {
         .long-line:last-child {
           margin-left: -88px;
@@ -449,6 +449,13 @@
 
   @include mobile-break {
     .header-area {
+      justify-content: center;
+
+      .links-area {
+        margin: 0;
+        
+      }
+
       .about-us-img {
         display: none;
       }

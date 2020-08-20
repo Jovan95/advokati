@@ -245,6 +245,11 @@
 
   .areas {
     .width-container {
+
+      .title {
+        word-break: break-all;
+      }
+
       .content-wrapper {
         border-top: 2px solid $gray;
         border-bottom: 2px solid $gray;
@@ -1307,10 +1312,22 @@
   .homepage {
 
     .header-area {
+
+      .left {
+        margin: 0 auto;
+
+        .text {
+          .header-about {
+            max-width: 360px;
+          }
+        }
+      }
+
       .right {
         .header-image {
           display: none;
         }
+
 
         .box {
           display: none;
@@ -1484,6 +1501,24 @@
                     font-size: $font-size-small + 0.1;
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .homepage {
+    .contact {
+      .width-container {
+        .content-wrapper {
+          .map-lines-area {
+            .map {
+              .leaf-map-wrapper {
+                width: 270px !important;
               }
             }
           }
