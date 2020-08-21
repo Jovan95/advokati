@@ -11,7 +11,6 @@ const AreasPage = () => {
   const [activeArea, setActiveArea] = useState(AREAS[0].id);
   const activeTab = AREAS.find(({ id }) => id === activeArea);
   const location = useLocation();
-  const pageContent = useRef(null);
 
   const exactArea = (location.search).split('?');
 
@@ -57,7 +56,7 @@ const AreasPage = () => {
                 placeholder="PRETRAZI PO OBLASTI"
                 classNamePrefix="react-select"
               />
-              <div className="links" ref={pageContent}>
+              <div className="links">
                 {
                   AREAS.map(({ id, title }) => (
                     <div

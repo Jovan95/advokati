@@ -182,6 +182,24 @@
   }
 }
 
+@media only screen and (max-width:1200px) {
+  .header {
+    .content-wrapper {
+      .nav-wrapper-gray {
+        .nav-item:last-child {
+
+        }
+
+        .line-wrapper {
+          .small-line:not(:last-child) {
+            margin-right: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width:1170px) {
   .header {
     .content-wrapper {
@@ -191,6 +209,22 @@
       }
       .nav-item {
         padding: 30px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1110px) {
+  .header {
+    .content-wrapper {
+      .nav-wrapper-gray {
+        .nav-item:last-child {
+          border: 0;
+        }
+        
+        .line-wrapper {
+          display: none;
+        }
       }
     }
   }
