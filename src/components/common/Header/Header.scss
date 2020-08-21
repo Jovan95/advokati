@@ -97,6 +97,7 @@
       text-transform: uppercase;
       padding: 30px 25px;
       font-weight: bold;
+      z-index: 25;
 
       @include hover-transition;
 
@@ -114,7 +115,7 @@
       max-width: 95px;
       max-height: 95px;
       float: right;
-      z-index: 30;
+      z-index: 25;
     }
 
     .nav-wrapper, &.gray {
@@ -221,7 +222,7 @@
         .nav-item:last-child {
           border: 0;
         }
-        
+
         .line-wrapper {
           display: none;
         }
@@ -359,9 +360,19 @@
             .nav-item {
               color: $black;
               border: 0;
+              font-size: 17px;
+
+              &:not(:last-child) {
+                margin-bottom: 30px;
+              }
 
               &:first-child, &:last-child {
                 border: 0;
+              }
+
+              &:hover {
+                font-size: 19px;
+                @include hover-transition;
               }
             }
           }
