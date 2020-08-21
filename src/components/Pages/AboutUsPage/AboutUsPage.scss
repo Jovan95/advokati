@@ -285,8 +285,8 @@
   .header-area {
     .about-us-img {
       .about-img {
-        width: 400px;
-        margin-left: 80px;
+        width: 320px;
+        margin-left: 120px;
       }
     }
   }
@@ -330,14 +330,23 @@
     }
   }
 
+  @media only screen and (max-width: 920px) {
+    .header-area {
+      .about-us-img {
+        .about-img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 880px) {
     .header-area {
       .about-us-img {
         .about-img {
-          width: 450px;
+          margin-left: -40px;
         }
       }
-
       .links-area {
         margin-left: 88px;
 
@@ -407,6 +416,18 @@
             }
           }
 
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .header-area {
+      .about-us-img {
+        .about-img {
+          width: 250px;
+          margin-left: 250px;
+          margin-left: -30px;
         }
       }
     }
