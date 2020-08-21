@@ -13,9 +13,14 @@ const AreasPage = () => {
   const location = useLocation();
 
   const exactArea = (location.search).split('?');
+  console.log(exactArea);
 
   useEffect(() => {
-    setActiveArea(parseInt(exactArea[1], 10));
+    if (exactArea) {
+      setActiveArea(parseInt(exactArea[1], 10));
+    } else {
+      setActiveArea(AREAS[0].id);
+    }
   });
 
 

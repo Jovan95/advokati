@@ -73,7 +73,7 @@
 
             .react-select__option {
               font-size: $font-size-medium-small - 0.1;
-              
+
               &:hover {
                 @include hover-transition;
                 background-color: $dark-gray-hover;
