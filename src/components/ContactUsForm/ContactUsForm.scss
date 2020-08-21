@@ -6,7 +6,6 @@
 .form-wrapper {
 
   .form-item-wrapper {
-    max-height: 50px;
     height: 100%;
     padding: 0;
 
@@ -27,8 +26,13 @@
       padding-left: 10px;
     }
 
-    .form-item-wrapper-textarea .input-values {
+    &.form-item-wrapper-textarea {
+      max-height: initial;
+    }
+
+    &.form-item-wrapper-textarea .input-values textarea {
       font-size: 2rem !important;
+      font-family: "Montserrat", sans-serif;
     }
 
     label {

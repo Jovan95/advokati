@@ -16,7 +16,7 @@ class ContactUsForm extends Component {
 
   render() {
     const {
-      handleSubmit, onSubmit, submittingForm, submittingFormError, pristine, invalid, submittingFormSuccess,
+      handleSubmit, onSubmit, submittingForm, submittingFormError, error, submittingFormSuccess,
     } = this.props;
 
     return (
@@ -38,7 +38,7 @@ class ContactUsForm extends Component {
 
           <Field
             id="contact-email"
-            name="email"
+            name="number"
             labelText="TELEFON"
             placeholder="TELEFON"
             wrapperClassName="form-item-wrapper right"
@@ -49,7 +49,7 @@ class ContactUsForm extends Component {
 
           <Field
             id="contact-number"
-            name="number"
+            name="email"
             placeholder="E-MAIL"
             labelText="E-MAIL"
             component={InputComponent}
@@ -83,9 +83,9 @@ class ContactUsForm extends Component {
           <button
             className="button white"
             type="submit"
-            disabled={pristine || invalid || submittingForm}
+            disabled={error || submittingForm}
           >
-            { submittingForm ? 'POŠALJI' : 'ŠALJE SE' }
+            { submittingForm ? 'ŠALJE SE' : 'POŠALJI' }
           </button>
         </div>
       </form>

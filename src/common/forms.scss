@@ -8,17 +8,21 @@
 
   .form-item-wrapper {
     position: relative;
-    background-color: #E9E9E9;
-    padding: 25px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 10px;
+
+    input, textarea {
+      padding: 25px 20px;
+      background-color: #E9E9E9;
+    }
 
     &.wrapper-error {
       padding: 0;
       border-color: $red;
 
-      .input-values {
+      .input-values input {
         padding: 19px 23px;
       }
     }
@@ -56,7 +60,6 @@
       width: 100%;
       color: white;
       border: none;
-      background: transparent;
       font-size: $font-size-extra-large;
       text-align: right;
       min-width: 0;
