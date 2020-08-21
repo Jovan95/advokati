@@ -30,6 +30,7 @@ class ContactUsForm extends Component {
             id="contact-first-last-name"
             name="firstLastName"
             labelText="IME"
+            placeholder="IME"
             component={InputComponent}
             showErrorText
             disabled={submittingForm}
@@ -39,6 +40,7 @@ class ContactUsForm extends Component {
             id="contact-email"
             name="email"
             labelText="TELEFON"
+            placeholder="TELEFON"
             wrapperClassName="form-item-wrapper right"
             component={InputComponent}
             disabled={submittingForm}
@@ -48,6 +50,7 @@ class ContactUsForm extends Component {
           <Field
             id="contact-number"
             name="number"
+            placeholder="E-MAIL"
             labelText="E-MAIL"
             component={InputComponent}
             showErrorText
@@ -57,6 +60,7 @@ class ContactUsForm extends Component {
           <Field
             id="contact-message"
             name="message"
+            placeholder="VAŠA PORUKA"
             labelText="VAŠA PORUKA"
             component={TextAreaComponent}
             showErrorText
