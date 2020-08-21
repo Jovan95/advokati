@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { AREAS, OPTIONS } from 'constants/Areas';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
@@ -10,6 +10,14 @@ import './AreasPage.scss';
 const AreasPage = () => {
   const [activeArea, setActiveArea] = useState(AREAS[0].id);
   const activeTab = AREAS.find(({ id }) => id === activeArea);
+  const location = useLocation();
+  const pageContent = useRef(null);
+
+  const exactArea = (location.search).split('?');
+
+  useEffect(() => {
+    setActiveArea(parseInt(exactArea[1], 10));
+  });
 
 
   const {
@@ -49,7 +57,7 @@ const AreasPage = () => {
                 placeholder="PRETRAZI PO OBLASTI"
                 classNamePrefix="react-select"
               />
-              <div className="links">
+              <div className="links" ref={pageContent}>
                 {
                   AREAS.map(({ id, title }) => (
                     <div
@@ -99,6 +107,7 @@ const AreasPage = () => {
   );
 };
 
-AreasPage.propTypes = {};
+AreasPage.propTypes = {
+};
 
 export default AreasPage;

@@ -70,7 +70,7 @@ const HomePage = () => {
                 <div className="mid-right">
                   <div className="med-hor-line" />
                   <div className="button-wrapper">
-                    <Link className="button" to="/">SAZNAJ VISE</Link>
+                    <Link className="button" to="/about-us">SAZNAJ VISE</Link>
                     <div className="small-hor-line" />
                   </div>
                   <div className="med-hor-line" />
@@ -179,7 +179,7 @@ const HomePage = () => {
                   }
                   <div className="button-wrapper">
                     <div className="button">
-                      <Link to="/">SAZNAJ VISE</Link>
+                      <Link to={`areas/?${activeTab.id}`}>SAZNAJ VISE</Link>
                     </div>
                     <div className="line" />
                   </div>
