@@ -16,7 +16,7 @@ const AreasPage = () => {
   console.log(exactArea);
 
   useEffect(() => {
-    if (exactArea) {
+    if (exactArea[1]) {
       setActiveArea(parseInt(exactArea[1], 10));
     } else {
       setActiveArea(AREAS[0].id);
