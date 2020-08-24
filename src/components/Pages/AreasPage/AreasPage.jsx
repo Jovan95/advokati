@@ -21,7 +21,7 @@ const AreasPage = () => {
     } else {
       setActiveArea(AREAS[0].id);
     }
-  } ,[]);
+  }, []);
 
 
   const {

@@ -15,6 +15,7 @@
       border-left: 2px solid $gray;
       max-height: 595px;
       margin-left: 142px;
+      z-index: 20;
 
       .lines {
         display: flex;
@@ -509,7 +510,6 @@
             .top {
               .left {
                 .lines {
-
                 }
                 .tabs {
 
@@ -1340,6 +1340,7 @@
 
       .left {
         margin: 0 auto;
+        z-index: 0;
 
         .text {
           .header-about {
