@@ -107,8 +107,7 @@ ContactUsForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   resetContactUsForm: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  pristine: PropTypes.bool.isRequired,
-  invalid: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = ({ general }) => ({

@@ -10,17 +10,17 @@ const Footer = () => (
       <div className="flex">
         <div className="flex-column">
           <div className="footer-title">O NAMA</div>
-          <div className="footer-link"><Link to="/">O NAMA</Link></div>
-          <div className="footer-link"><Link to="/">ADVOKATI</Link></div>
-          <div className="footer-link"><Link to="/">OBLASTI</Link></div>
-          <div className="footer-link"><Link to="/">KONTAKT</Link></div>
+          <div className="footer-link"><Link to="/about-us">O NAMA</Link></div>
+          <div className="footer-link"><Link to="/lawyers">ADVOKATI</Link></div>
+          <div className="footer-link"><Link to="/areas">OBLASTI</Link></div>
+          <div className="footer-link"><Link to="/contact">KONTAKT</Link></div>
         </div>
         <div className="flex-column right">
           <div className="footer-title">KONTAKT</div>
-          <div className="footer-link"><Link to="/">ADRESA</Link></div>
-          <div className="footer-link"><Link to="/">EMAIL</Link></div>
-          <div className="footer-link"><Link to="/">TELEFON1</Link></div>
-          <div className="footer-link"><Link to="/">TELEFON1</Link></div>
+          <div className="footer-link"><Link to="/contact">ADRESA</Link></div>
+          <div className="footer-link"><Link to="/contact">EMAIL</Link></div>
+          <div className="footer-link"><Link to="/contact">TELEFON1</Link></div>
+          <div className="footer-link"><Link to="/contact">TELEFON1</Link></div>
         </div>
       </div>
       <div className="mid">

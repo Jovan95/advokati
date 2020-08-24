@@ -172,7 +172,6 @@
     }
     .width-container {
       .content-wrapper {
-        display: flex;
         position: relative;
         z-index: 5;
         margin-top: 100px;
@@ -218,14 +217,14 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            padding-right: 71px;
+            margin-right: 71px;
           }
 
           .single-lawyer-reverse {
             display: flex;
             justify-content: space-between;
             flex-direction: column-reverse;
-            padding-right: 71px;
+            margin-right: 71px;
 
             img {
               margin-bottom: 25px;
@@ -501,6 +500,14 @@
       }
     }
   }
+
+@media only screen and (max-width: 1385px) {
+  .homepage {
+    .our-team {
+
+    }
+  }
+}
 
   @media only screen and (max-width: 1360px) {
     .homepage {

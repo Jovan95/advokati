@@ -15,16 +15,16 @@ const CarouselSlider = ({
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1325 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 400, min: 464 },
-      items: 3,
+      breakpoint: { max: 1325, min: 650 },
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 3,
+      breakpoint: { max: 650, min: 0 },
+      items: 1,
     },
   };
 

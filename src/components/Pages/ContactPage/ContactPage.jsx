@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
@@ -9,13 +9,17 @@ import email from '../../../images/email.png';
 import './ContactPage.scss';
 
 const ContactPage = () => {
-  console.log('Hello!');
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo({ top: contactRef.current.offsetTop - 20, behavior: 'smooth' });
+  }, []);
 
   return (
     <div className="contact-page">
       <div className="container">
         <div className="width-container">
-          <div className="gray-title">kontakt</div>
+          <div ref={contactRef} className="gray-title">kontakt</div>
         </div>
       </div>
 
