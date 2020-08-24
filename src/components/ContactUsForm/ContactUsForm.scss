@@ -5,6 +5,10 @@
 
 .form-wrapper {
 
+  .form-item-wrapper div.form-item-error {
+    padding: 0 !important;
+  }
+
   .form-item-wrapper {
     height: 100%;
     padding: 0;
@@ -12,12 +16,6 @@
     .input-values {
       height: 100%;
       color: $black;
-    }
-
-    .wrapper-error {
-      .input-values {
-        padding: 0;
-      }
     }
 
     .form-item {
