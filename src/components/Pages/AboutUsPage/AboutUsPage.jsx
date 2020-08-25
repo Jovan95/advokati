@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import t from 'translate';
 import PropTypes from 'prop-types';
 import { aboutUs } from 'constants/aboutUs';
 import ImageLoader from '../../ImageLoader/ImageLoader';
@@ -37,7 +38,7 @@ const AboutUsPage = () => {
               <div className="medium-line" />
               <div className="medium-line" />
             </div>
-            <div className="text">o nama</div>
+            <div className="text">{t('about_us.header.title')}</div>
             <div onClick={scrollToContent} className="arrow" />
           </div>
           <div className="long-line" />
