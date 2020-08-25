@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
+import t from 'translate';
 import { LAWYERS } from '../../../constants/Lawyers';
 import { AREAS, OPTIONS } from '../../../constants/Areas';
 import MapView from '../../Map/MapView';
@@ -38,7 +39,7 @@ const HomePage = () => {
           </div>
           <div className="text">
             <div className="header-title">miloš lekić</div>
-            <div className="header-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div className="header-about">{t('homepage.motto')}</div>
           </div>
           <div onClick={scrollToAboutUs} className="arrow" />
         </div>

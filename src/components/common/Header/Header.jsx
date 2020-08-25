@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import t from 'translate';
 import PropTypes from 'prop-types';
 
 
@@ -48,10 +49,10 @@ const Header = ({ location: { pathname } }) => {
         <label className="menu-icon" htmlFor="menu-btn" onClick={changeChecked}><span className="navicon" /></label>
 
         <div className={pathname === '/' || pathname === '/about-us' ? 'nav-wrapper' : 'nav-wrapper-gray'}>
-          <Link onClick={closeMenu} to="/about-us" className={pathname === '/about-us' ? 'nav-item active' : 'nav-item'}>o nama</Link>
-          <Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>advokati</Link>
-          <Link onClick={closeMenu} to="/areas" className={pathname === '/areas' ? 'nav-item active' : 'nav-item'}>oblasti</Link>
-          <Link onClick={closeMenu} to="/contact" className={pathname === '/contact' ? 'nav-item active' : 'nav-item'}>kontakt</Link>
+          <Link onClick={closeMenu} to="/about-us" className={pathname === '/about-us' ? 'nav-item active' : 'nav-item'}>{t('header.about')}</Link>
+          <Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>{t('header.lawyers')}</Link>
+          <Link onClick={closeMenu} to="/areas" className={pathname === '/areas' ? 'nav-item active' : 'nav-item'}>{t('header.areas')}</Link>
+          <Link onClick={closeMenu} to="/contact" className={pathname === '/contact' ? 'nav-item active' : 'nav-item'}>{t('header.contact')}</Link>
           {
             pathname !== '/' && '/about-us' && (
             <div className="line-wrapper">

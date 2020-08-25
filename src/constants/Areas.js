@@ -1,7 +1,9 @@
+import t from 'translate';
+
 export const AREAS = [
   {
     id: 1,
-    title: 'Krivično pravo',
+    title: /* t('areas.law') */ 'Krivično pravo',
     text: 'Za odbranu je svakako od značaja i novina koja se ogleda u prikupljanju dokaza i predlaganju istih. Prema aktuelnom zakonodavstvu, odbrana kao i okrivljeni kao stranke u postupku imaju prava da predlažu dokaze koje idu u korist okrivljenom, ali sve dokaze na kojima se zasniva odbrana okrivljenog su dužni da predlože najkasnije na pripremnom ročištu ili na prvom glavnom pretresu ukoliko pripremno ročište nije održano, uz upozorenje suda da se neće izvoditi oni dokazi koji su bili poznati, a nisu predloženi u ovom periodu. U ovakvoj situaciji je od velikog značaja da efikasnost branioca bude na visini zadatka kako se ne bi ugrozila odbrana okrivljenog koja bi imala za posledicu nepovoljniji položaj samog okrivljenog u toku trajanja krivičnog postupka.',
     text2: 'Aktuelni Zakonik o krivičnom postupku predviđa još brojne novine kojima se daje značajna uloga braniocima u toku trajanja istrage kao i u toku trajanja krivičnih postupaka. Ono što je sigurno je to da najvažniji interes svakog branioca treba da bude pružanje najdelotvornije odbrane okrivljenom pred organima postupka uz potpuno raspolaganje stručnog znanja i veština.',
     areaAbout: 'Rođen je 10.12.1981. godine u Beogradu. Završio je osnovnu i srednju školu u Beogradu. 2000 godine upisuje Pravni fakultet u Beogradu a koji završava 2005 godine. i nakon završetka osnovnih studija edukaciju i usavršavanje nastavlja na Univerzitetu Berkley USA i u drugim obrazovnim institucijama u Sjedinjenim američkim državama gde je i magistrirao na trgovinskom pravu u međunarodnom poslovanju 2008 godine. Bio je najmladji advokat koji je ikada postupao-branio pred Višim sudom u Beogradu-posebno odeljenje Višeg suda okrivljene od osnivanja specijalnog suda u Beogradu 2003 godine za krivična dela iz oblasti privrednog kriminala. Advokaturom se bavi od 2009 godine te je član advokatske komore Beograda i advokatske komore Srbije Advokat Miloš Lekić poseduje ',
