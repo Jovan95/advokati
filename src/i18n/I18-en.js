@@ -89,6 +89,7 @@ export default  {
     },
   },
   lawyers: {
+    select: 'SEARCH BY AREA',
     title: 'lawyers',
     options: {
       label1: 'Criminal Law',

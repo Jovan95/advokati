@@ -59,7 +59,7 @@ const AreasPage = () => {
                   setActiveArea(item.value);
                 }}
                 className="area-select"
-                placeholder="PRETRAZI PO OBLASTI"
+                placeholder={t('lawyers.select')}
                 classNamePrefix="react-select"
               />
               <div className="links">

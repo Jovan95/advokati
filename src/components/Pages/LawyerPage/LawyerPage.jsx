@@ -28,7 +28,7 @@ const LawyerPage = () => {
               setActiveTitle(item.label);
               console.log(item.value, 'areaId');
             }}
-            placeholder="PRETRAZI PO OBLASTI"
+            placeholder={t('lawyers.select')}
             classNamePrefix="react-select"
           />
         </div>

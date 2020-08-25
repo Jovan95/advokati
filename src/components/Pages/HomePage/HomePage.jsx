@@ -142,7 +142,7 @@ const HomePage = () => {
                     setActiveArea(item.value);
                   }}
                   className="homepage-select"
-                  placeholder="PRETRAZI PO OBLASTI"
+                  placeholder={t('lawyers.select')}
                   classNamePrefix="react-select"
                 />
                 <div className="tabs">

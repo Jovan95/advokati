@@ -89,6 +89,7 @@ export default  {
     },
   },
   lawyers: {
+    select: 'PRETRAZI PO OBLASTI',
     title: 'advokati',
     options: {
       label1: 'Krivicno Pravo',
