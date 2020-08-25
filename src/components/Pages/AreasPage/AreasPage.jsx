@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AREAS, OPTIONS } from 'constants/Areas';
+import t from 'translate';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
 
@@ -38,7 +39,7 @@ const AreasPage = () => {
     <div className="areas-page">
       <div className="container">
         <div className="width-container">
-          <div className="gray-title">ekspertize/oblasti</div>
+          <div className="gray-title">{t('homepage.team.area')}</div>
         </div>
       </div>
 
