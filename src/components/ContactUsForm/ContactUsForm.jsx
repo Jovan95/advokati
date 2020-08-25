@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import t from 'translate';
 import { reduxForm, Field } from 'redux-form';
 import { submitContactUsForm, resetContactUsForm } from 'actions/generalActions';
 import InputComponent from '../Forms/InputComponent';
@@ -31,17 +32,17 @@ class ContactUsForm extends Component {
             id="contact-first-last-name"
             name="firstLastName"
             labelText="IME"
-            placeholder="IME"
+            placeholder={t('common.name')}
             component={InputComponent}
             showErrorText
             disabled={submittingForm}
           />
 
           <Field
-            id="contact-email"
+            id="contact-number"
             name="number"
             labelText="TELEFON"
-            placeholder="TELEFON"
+            placeholder={t('common.number')}
             wrapperClassName="form-item-wrapper right"
             component={InputComponent}
             disabled={submittingForm}
@@ -61,7 +62,7 @@ class ContactUsForm extends Component {
           <Field
             id="contact-message"
             name="message"
-            placeholder="VAŠA PORUKA"
+            placeholder={t('common.message')}
             labelText="VAŠA PORUKA"
             component={TextAreaComponent}
             showErrorText
@@ -86,7 +87,7 @@ class ContactUsForm extends Component {
             type="submit"
             disabled={pristine || invalid || submittingForm}
           >
-            { submittingForm ? 'ŠALJE SE' : 'POŠALJI' }
+            { submittingForm ? t('common.sending') : t('common.send') }
           </button>
         </div>
       </form>

@@ -1,9 +1,13 @@
 /* eslint-disable */
 export default {
   common: {
-      name: 'ime',
+      name: 'NAME',
       learn: 'LEARN MORE',
       area: 'area name',
+      number: 'MOBILE PHONE',
+      message: 'YOUR MESSAGE',
+      send: 'SEND',
+      sending: 'SENDING',
   },
   constants: {
     areas: {
