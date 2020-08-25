@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import t from 'translate';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
 import { LAWYERS, OPTIONS } from '../../../constants/Lawyers';
@@ -19,7 +20,7 @@ const LawyerPage = () => {
     <div className="lawyer-page">
       <div className="container">
         <div className="width-container">
-          <div className="gray-title">advokati</div>
+          <div className="gray-title">{ t('lawyers.title') }</div>
           <Select
             options={OPTIONS.options}
             onChange={(item) => {
@@ -59,7 +60,7 @@ const LawyerPage = () => {
                       {name}
                     </div>
                     {lawyerTitle}
-                    <div className="area">oblast/ekspertiza</div>
+                    <div className="area">{t('homepage.team.area')}</div>
                     {area}
                   </div>
                 </div>

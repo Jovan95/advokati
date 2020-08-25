@@ -3,6 +3,7 @@ export default {
   common: {
       name: 'ime',
       learn: 'LEARN MORE',
+      area: 'area name',
   },
   constants: {
     areas: {
@@ -79,6 +80,17 @@ export default {
       text3: `We also represented legal entities (Zastava automobili ad in bankruptcy, Magnohrom doo in bankruptcy, Jugoeksport corporation in bankruptcy joint stock company, Prvi maj Pirot ad in bankruptcy, Elektroporcelan ad in bankruptcy, Pobeda Promet ad in bankruptcy, BD agro ad in bankruptcy PKB fruit plantations in bankruptcy) and other special legal entities on the territory of the Republic of Serbia (legal entities in restructuring and bankruptcy). In 2015-2017, the office was an expert advisor to the RS-Agency for Licensing of Bankruptcy Trustees (ALSU), RS-Agency for Traffic Safety (ABS) in 2014-2015, local governments (city of Zajecar 2013-2016), where it actively participated in the development and the implementation of bylaws as well as the development of public-private partnership (PPI) projects with both domestic and international investors. The office especially has great experience in the work of state and local self-government on the territory of the Republic of Serbia, where it actively participated in increasing the efficiency and consolidation of both state and local self-government bodies on the territory of RS.`,
       text4: `Lekić Law Office today represents a large number of foreign (VICTOR GROUP GMBH; FUJITSU-SIEMENS; PACOM INTERNATIONAL; PLASTIC AD; SHANGHAI ELECTRIC; BJELJINA GAS DOO) and domestic legal entities (ADP DOO; GRAFO MARKET DOO; DP NOVI SAD GAS) lawyer has extensive experience in the field of banking and collection of receivables in favor of banks and other legal entities (the office represents AGROBANKA AD as well as NOVA AGROBANKA AD in bankruptcy proceedings as well as collection of due and outstanding liabilities by both legal entities and individuals). Lawyer Miloš Lekić was the president and member of the Management Board of the company "Socially-owned enterprise Novi Sad GAS" in 2018-2019 (the largest distributor of natural gas to end users in the territory of RS). The law office deals with and has experience with the collection of utility services (collection of debts from consumers, both commercial and natural persons). Also, the law office performed and actively participated in the expropriation of land (public interest-gasification) on the territory of Bosnia and Herzegovina, Republika Srpska and participated in the proceedings before the "Commission for Concessions of Republika Srpska".`,
       text5: `We especially note the great experience in the proceedings before the "Competition Council" of Bosnia and Herzegovina in the proceedings initiated by that body as an independent body against legal entities for preventing, restricting or distorting market competition in Bosnia and Herzegovina and outside BiH. had an impact on its territory. The Office also participated in the conclusion of agreements (legal regulations) between legal entities-economic entities, which as such could be or have been the subject of examination by the "Competition Council" of Bosnia and Herzegovina. In particular, we have many years of experience in advocating for and protecting human and minority rights before the RS Constitutional Court and the International Court of Justice in Strasbourg. We provide legal protection and cooperation to persons with special needs (pro bono) as well as protection of the rights of minors and women in court and administrative proceedings and criminal proceedings as attorneys for victims of crimes in the field of domestic violence. So far, we have participated and legally assisted in the establishment and monitoring of the work of non-governmental organizations and associations dealing with protection from domestic violence as well as organizations dealing with equalization of positions of both sexes in accordance with the RS Constitution and other positive legal regulations. specified matter.`,
+    },
+  },
+  lawyers: {
+    title: 'lawyers',
+    options: {
+      label1: 'Criminal Law',
+      label2: 'Corporate Law',
+      label3: 'Indemnity',
+      label4: 'General litigation',
+      label5: 'Family Law',
+      label6: 'Human Rights',
     }
   }
 };
