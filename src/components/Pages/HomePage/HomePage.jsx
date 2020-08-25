@@ -87,7 +87,7 @@ const HomePage = () => {
       <div className="our-team">
         <div className="yellow-box" />
         <div className="width-container">
-          <div className="title">naš tim</div>
+          <div className="title">{t('homepage.team.title')}</div>
           <div className="content-wrapper">
             <CarouselSlider>
               {

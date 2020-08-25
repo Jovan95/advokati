@@ -54,7 +54,8 @@ export default {
       text3: `We also represented legal entities (Zastava automobili ad in bankruptcy, Magnohrom doo in bankruptcy, Jugoeksport corporation in bankruptcy joint stock company, Prvi maj Pirot ad in bankruptcy, Elektroporcelan ad in bankruptcy, Pobeda Promet ad in bankruptcy, BD agro ad in bankruptcy PKB fruit plantations in bankruptcy) and other special legal entities ...`,
     },
     team: {
-      area: 'Area/Expertise:'
+      area: 'Area/Expertise:',
+      title: 'our team',
     },
     areas: {
       title: 'Area/Expertise',
@@ -62,9 +63,11 @@ export default {
     },
     contact: {
       title: 'contact',
-      comp: 'NAME OF THE COMPANY',
+      comp: 'company name',
       address: 'address',
-      phone: 'contact phone'
+      phone: 'contact phone',
+      write: 'write to us',
+      write_about: 'We are at your disposal for any additional questions',
     }
   },
   about_us: {

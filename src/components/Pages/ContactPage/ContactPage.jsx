@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import t from 'translate';
 import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
 import MapView from '../../Map/MapViewContact';
@@ -19,7 +20,7 @@ const ContactPage = () => {
     <div className="contact-page">
       <div className="container">
         <div className="width-container">
-          <div ref={contactRef} className="gray-title">kontakt</div>
+          <div ref={contactRef} className="gray-title">{t('homepage.contact.title')}</div>
         </div>
       </div>
 
@@ -36,11 +37,11 @@ const ContactPage = () => {
                   <div className="small-line" />
                 </div>
                 <div className="text-about">
-                  <div className="text-title">ime firme</div>
+                  <div className="text-title">{t('homepage.contact.comp')}</div>
                   <div className="text-descrip">Milos Lekic</div>
-                  <div className="text-title">adresa</div>
+                  <div className="text-title">{t('homepage.contact.address')}</div>
                   <div className="text-descrip">Bulevar Oslobodjenja 115, 11 000 Beograd</div>
-                  <div className="text-title">kontakt telefon</div>
+                  <div className="text-title">{t('homepage.contact.phone')}</div>
                   <div className="text-descrip">011 32 12 123</div>
                   <div className="text-title">e-mail</div>
                   <div><img className="text-img" src={email} alt="email" /></div>
@@ -61,8 +62,8 @@ const ContactPage = () => {
             </div>
             <div className="right">
               <div className="form-about">
-                <div className="form-title">pisite nam</div>
-                <div className="form-descrip">Stojimo vam na raspolaganju za sva dodatna pitanja</div>
+                <div className="form-title">{t('homepage.contact.write')}</div>
+                <div className="form-descrip">{t('homepage.contact.write_about')}</div>
               </div>
               <div className="contact-us">
                 <ContactUsForm />
