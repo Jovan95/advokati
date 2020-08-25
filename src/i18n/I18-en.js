@@ -8,6 +8,7 @@ export default {
       message: 'YOUR MESSAGE',
       send: 'SEND',
       sending: 'SENDING',
+      title: 'about us',
   },
   constants: {
     areas: {
@@ -44,7 +45,6 @@ export default {
     },
   },
   header: {
-    about: 'about us',
     lawyers: 'lawyers',
     areas: 'areas',
     contact: 'contact',
@@ -52,7 +52,6 @@ export default {
   homepage: {
     motto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     about: {
-      about: 'about us',
       text1: `Lawyer Milos Lekić was born on December 10, 1981. years in Belgrade. He finished primary and secondary school in Belgrade. In 2000, he enrolled at the Faculty of Law in Belgrade, graduating in 2005. and after completing his undergraduate studies, he continued his education and training at the University of Berkeley USA and other educational institutions in the United States, where he also received a master's degree in commercial law in international business in 2008. He was the youngest lawyer to ever act - he defended before the High Court in Belgrade - a special department of the High Court accused since the establishment of the special court in Belgrade in 2003 for crimes in the field of economic crime. He has been practicing law since 2009 and is a member of the Belgrade Bar Association and the Serbian Bar Association.`,
       text2: `Lawyer Miloš Lekić has the necessary Certificates and Licenses for the defense of minors in proceedings in the Republic of Serbia, to represent injured minors and can act in all criminal, litigation, non-litigation, administrative and other cases and in all other areas of advocacy in the Republic of Serbia. Today, Miloš Lekić's law office has three more full-time lawyers and four trainee lawyers. Today, the law office specializes in providing services in the field of commercial, corporate law as well as rights in the field of constitutional guarantees of individuals as individuals and their protection in the exercise of these rights before domestic and international courts.`,
       text3: `We also represented legal entities (Zastava automobili ad in bankruptcy, Magnohrom doo in bankruptcy, Jugoeksport corporation in bankruptcy joint stock company, Prvi maj Pirot ad in bankruptcy, Elektroporcelan ad in bankruptcy, Pobeda Promet ad in bankruptcy, BD agro ad in bankruptcy PKB fruit plantations in bankruptcy) and other special legal entities ...`,
@@ -63,6 +62,9 @@ export default {
     },
     areas: {
       title: 'Area/Expertise',
+      about: 'about area',
+      work: 'what we do',
+      help: 'how can we help',
 
     },
     contact: {
@@ -75,9 +77,6 @@ export default {
     }
   },
   about_us: {
-    header: {
-      title: 'about us',
-    },
     content:{
       page: 'brief history and job description',
       office: 'founder and owner of the law office Lekić',

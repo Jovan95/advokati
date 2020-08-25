@@ -38,7 +38,7 @@ const AboutUsPage = () => {
               <div className="medium-line" />
               <div className="medium-line" />
             </div>
-            <div className="text">{t('about_us.header.title')}</div>
+            <div className="text">{t('common.title')}</div>
             <div onClick={scrollToContent} className="arrow" />
           </div>
           <div className="long-line" />

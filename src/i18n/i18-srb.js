@@ -62,6 +62,9 @@ export default {
     },
     areas: {
       title: 'Oblasti/Ekspertize',
+      about: 'o oblasti',
+      work: 'sta radimo',
+      help: 'kako mozemo da pomognemo',
 
     },
     contact: {

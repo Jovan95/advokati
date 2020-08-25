@@ -39,7 +39,7 @@ const AreasPage = () => {
     <div className="areas-page">
       <div className="container">
         <div className="width-container">
-          <div className="gray-title">{t('homepage.team.area')}</div>
+          <div className="gray-title">{t('homepage.areas.title')}</div>
         </div>
       </div>
 
@@ -88,19 +88,19 @@ const AreasPage = () => {
           <div className="right">
             <div className="right-title">{title}</div>
             <div className="section">
-              <div className="section-title">o oblasti</div>
+              <div className="section-title">{t('homepage.areas.about')}</div>
               <div className="section-about">
                 {areaAbout}
               </div>
             </div>
             <div className="section">
-              <div className="section-title">sta radimo</div>
+              <div className="section-title">{t('homepage.areas.work')}</div>
               <div className="section-about">
                 {work}
               </div>
             </div>
             <div className="section">
-              <div className="section-title">kako mozemo da pomognemo</div>
+              <div className="section-title">{t('homepage.areas.help')}</div>
               <div className="section-about">
                 {help}
               </div>

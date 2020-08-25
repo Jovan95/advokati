@@ -51,7 +51,7 @@ const HomePage = () => {
 
       <div ref={aboutUsRef} className="about-us">
         <div className="width-container">
-          <div className="title">{t('homepage.about.about')}</div>
+          <div className="title">{t('common.title')}</div>
           <div className="about-us-flex">
             <div className="text">
               {t('homepage.about.text1')}
