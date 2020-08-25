@@ -51,13 +51,13 @@ const HomePage = () => {
 
       <div ref={aboutUsRef} className="about-us">
         <div className="width-container">
-          <div className="title">o nama</div>
+          <div className="title">{t('homepage.about.about')}</div>
           <div className="about-us-flex">
             <div className="text">
-              Advokat Milos Lekić rođen je 10.12.1981. godine u Beogradu. Završio je osnovnu i srednju školu u Beogradu. 2000 godine upisuje Pravni fakultet u Beogradu a koji završava 2005 godine. i nakon završetka osnovnih studija edukaciju i usavršavanje nastavlja na Univerzitetu Berkley USA i u drugim obrazovnim institucijama u Sjedinjenim američkim državama gde je i magistrirao na trgovinskom pravu u međunarodnom poslovanju 2008 godine. Bio je najmladji advokat koji je ikada postupao-branio pred Višim sudom u Beogradu-posebno odeljenje Višeg suda okrivljene od osnivanja specijalnog suda u Beogradu 2003 godine za krivična dela iz oblasti privrednog kriminala. Advokaturom se bavi od 2009 godine te je član advokatske komore Beograda i advokatske komore Srbije.
+              {t('homepage.about.text1')}
             </div>
             <div className="text">
-              Advokat Miloš Lekić poseduje potrebne Sertifikate i Licence za odbranu maloletnih lica u postupcima u Republici Srbiji, za zastupanje oštećenih maloletnih lica a može postupati u svim krivičnim, parničnim, vanparničnim, upravnim i drugim predmetima i u svim drugim oblastima advokatskog rada u Republici Srbiji. Advokatska kancelarija Miloša Lekića danas ima još tri stalno zaposlena advokata te četiri advokatska pripravnika. Advokatska kancelarija je danas specijalizovana za pružanje usluga iz oblasti privrednog, korporativnog prava kao i prava iz oblasti ustavnih garancija fizičkih lica kao pojedinaca te njihove zaštite u ostvarivanju navedenih prava pred domaćim I međunarodnim sudovima.
+              {t('homepage.about.text2')}
             </div>
             <div className="line-text">
               <div className="hor-line" />
@@ -65,13 +65,13 @@ const HomePage = () => {
               <div className="mid">
                 <div className="mid-left">
                   <div className="text">
-                    Takođe zastupnici smo, i zastupali pravna lica (Zastava automobili ad u stečaju, Magnohrom doo u stečaju, Jugoeksport korporacija u stečaju deoničarsko društvo, Prvi maj Pirot ad u stečaju, Elektroporcelan ad u stečaju, Pobeda Promet ad u stečaju, BD agro ad u stečaju PKB voćarske plantaže u stečaju) i drugih posebnih pravnih subjekata ...
+                    {t('homepage.about.text3')}
                   </div>
                 </div>
                 <div className="mid-right">
                   <div className="med-hor-line" />
                   <div className="button-wrapper">
-                    <Link className="button" to="/about-us">SAZNAJ VISE</Link>
+                    <Link className="button" to="/about-us">{t('common.learn')}</Link>
                     <div className="small-hor-line" />
                   </div>
                   <div className="med-hor-line" />
@@ -105,7 +105,7 @@ const HomePage = () => {
                         <div className="name">{name}</div>
                         <div className="lawyer-title">{lawyerTitle}</div>
                         <div className="area">
-                          Oblast/Ekspertiza:
+                          {t('homepage.team.area')}
                           {area}
                         </div>
                       </div>
@@ -126,7 +126,7 @@ const HomePage = () => {
 
       <div className="areas">
         <div className="width-container">
-          <div className="title">ekspertize/oblasti</div>
+          <div className="title">{t('homepage.areas.title')}</div>
           <div className="content-wrapper">
             <div className="top">
               <div className="left">
@@ -180,7 +180,7 @@ const HomePage = () => {
                   }
                   <div className="button-wrapper">
                     <div className="button">
-                      <Link to={`areas/?${activeTab.id}`}>SAZNAJ VISE</Link>
+                      <Link to={`areas/?${activeTab.id}`}>{t('common.learn')}</Link>
                     </div>
                     <div className="line" />
                   </div>
@@ -198,21 +198,21 @@ const HomePage = () => {
       <div className="contact">
         <div className="big-yellow-box" />
         <div className="width-container">
-          <div className="title">kontakt</div>
+          <div className="title">{t('homepage.contact.title')}</div>
           <div className="content-wrapper">
             <div className="long-line" />
             <div className="text-lines-area">
               <div className="text">
                 <div className="text-item">
-                  <div className="item-title">ime firme</div>
+                  <div className="item-title">{t('homepage.contact.comp')}</div>
                   <div className="item-about">Milos Lekic</div>
                 </div>
                 <div className="text-item">
-                  <div className="item-title">adresa</div>
+                  <div className="item-title">{t('homepage.contact.address')}</div>
                   <div className="item-about">Bulevar Oslobodjenja 115, 11 000 Beograd </div>
                 </div>
                 <div className="text-item">
-                  <div className="item-title">kontakt telefon</div>
+                  <div className="item-title">{t('homepage.contact.phone')}</div>
                   <div className="item-about">011 32 12 123</div>
                 </div>
                 <div className="text-item">
