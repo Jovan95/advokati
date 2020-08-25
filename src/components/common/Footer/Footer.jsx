@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import t from 'translate';
 
 import headerLogo from '../../../images/headerLogo.png';
 import './Footer.scss';
@@ -9,18 +10,17 @@ const Footer = () => (
     <div className="top">
       <div className="flex">
         <div className="flex-column">
-          <div className="footer-title">O NAMA</div>
-          <div className="footer-link"><Link to="/about-us">O NAMA</Link></div>
-          <div className="footer-link"><Link to="/lawyers">ADVOKATI</Link></div>
-          <div className="footer-link"><Link to="/areas">OBLASTI</Link></div>
-          <div className="footer-link"><Link to="/contact">KONTAKT</Link></div>
+          <div className="footer-title">{t('common.title')}</div>
+          <div className="footer-link"><Link to="/about-us">{t('common.title')}</Link></div>
+          <div className="footer-link"><Link to="/lawyers">{t('header.lawyers')}</Link></div>
+          <div className="footer-link"><Link to="/areas">{t('header.areas')}</Link></div>
+          <div className="footer-link"><Link to="/contact">{t('header.contact')}</Link></div>
         </div>
         <div className="flex-column right">
-          <div className="footer-title">KONTAKT</div>
-          <div className="footer-link"><Link to="/contact?true">ADRESA</Link></div>
+          <div className="footer-title">{t('homepage.contact.title')}</div>
+          <div className="footer-link"><Link to="/contact?true">{t('homepage.contact.address')}</Link></div>
           <div className="footer-link"><Link to="/contact?true">EMAIL</Link></div>
-          <div className="footer-link"><Link to="/contact?true">TELEFON1</Link></div>
-          <div className="footer-link"><Link to="/contact?true">TELEFON1</Link></div>
+          <div className="footer-link"><Link to="/contact?true">{t('common.number')}</Link></div>
         </div>
       </div>
       <div className="mid">
