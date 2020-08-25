@@ -111,6 +111,16 @@
       }
     }
 
+    .lng-switch {
+      margin-left: 20px;
+
+      .lng:hover {
+          cursor: pointer;
+          font-weight: bold;
+          @include hover-transition;
+      }
+    }
+
     .headerLogo {
       max-width: 95px;
       max-height: 95px;

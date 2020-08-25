@@ -1,19 +1,21 @@
 import I18nEN from './I18-en';
-import I18nSRB from './I18-srb';
+import I18nRS from './I18-rs';
 import { getLangOption } from '../services/translationService';
 
 const lang = getLangOption().value;
+
+console.log('I18nRS', I18nRS);
 
 switch (lang) {
   case 'en': {
     window.I18n = I18nEN;
     break;
   }
-  case 'srb': {
-    window.I18n = i18nEN;
+  case 'rs': {
+    window.I18n = I18nRS;
     break;
   }
   default: {
-    window.I18n = I18nSRB;
+    window.I18n = I18nRS;
   }
 }

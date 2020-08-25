@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import t from 'translate';
 import PropTypes from 'prop-types';
+import t from 'translate';
+import { setLang } from '../../../services/translationService';
 
 
 import headerLogo from '../../../images/headerLogo.png';
@@ -66,7 +67,11 @@ const Header = ({ location: { pathname } }) => {
             </div>
             )
           }
-          <Link to="/" className="nav-item">en|srb</Link>
+          <div className="lng-switch">
+            <span className="lng" onClick={() => { setLang('en'); }}>en</span>
+            <span>|</span>
+            <span className="lng" onClick={() => { setLang('rs'); }}>srb</span>
+          </div>
         </div>
       </div>
     </div>

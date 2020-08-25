@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+export default  {
   common: {
       name: 'NAME',
       learn: 'LEARN MORE',
