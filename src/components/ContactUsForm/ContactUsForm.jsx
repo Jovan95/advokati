@@ -16,7 +16,8 @@ class ContactUsForm extends Component {
 
   render() {
     const {
-      handleSubmit, onSubmit, submittingForm, submittingFormError, error, submittingFormSuccess,
+      handleSubmit, onSubmit, submittingForm, submittingFormError,
+      submittingFormSuccess, pristine, invalid,
     } = this.props;
 
     return (
@@ -83,7 +84,7 @@ class ContactUsForm extends Component {
           <button
             className="button white"
             type="submit"
-            disabled={error || submittingForm}
+            disabled={pristine || invalid || submittingForm}
           >
             { submittingForm ? 'ŠALJE SE' : 'POŠALJI' }
           </button>
@@ -96,8 +97,6 @@ class ContactUsForm extends Component {
 const ComingSoonSubscribeFormComp = reduxForm({
   form: 'contactUsForm',
   validate: contactUsFromValidator,
-  destroyOnUnmount: false,
-  enableReinitialize: true,
 })(ContactUsForm);
 
 ContactUsForm.propTypes = {
@@ -107,7 +106,8 @@ ContactUsForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   resetContactUsForm: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  error: PropTypes.string.isRequired,
+  pristine: PropTypes.bool.isRequired,
+  invalid: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = ({ general }) => ({

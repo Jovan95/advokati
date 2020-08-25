@@ -2,6 +2,7 @@ import React, { Component, lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import { connect, Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import '../../i18n/i18n';
 import HomePage from '../Pages/HomePage/HomePage';
 import AboutUsPage from '../Pages/AboutUsPage/AboutUsPage';
 import LawyerPage from '../Pages/LawyerPage/LawyerPage';

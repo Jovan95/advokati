@@ -21,10 +21,6 @@
     &.wrapper-error {
       padding: 0;
       border-color: $red;
-
-      .input-values input {
-        padding: 19px 23px;
-      }
     }
 
     &.disabled {
