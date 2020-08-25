@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import t from 'translate';
 import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
@@ -11,10 +11,15 @@ import './ContactPage.scss';
 
 const ContactPage = () => {
   const contactRef = useRef(null);
+  const location = useLocation();
 
-  useEffect(() => {
-    window.scrollTo({ top: contactRef.current.offsetTop - 20, behavior: 'smooth' });
-  }, []);
+  const fromFooter = (location.search).split('?');
+
+  if (fromFooter[1] === 'true') {
+    useEffect(() => {
+      window.scrollTo({ top: contactRef.current.offsetTop - 20, behavior: 'smooth' });
+    }, []);
+  }
 
   return (
     <div className="contact-page">

@@ -17,10 +17,10 @@ const Footer = () => (
         </div>
         <div className="flex-column right">
           <div className="footer-title">KONTAKT</div>
-          <div className="footer-link"><Link to="/contact">ADRESA</Link></div>
-          <div className="footer-link"><Link to="/contact">EMAIL</Link></div>
-          <div className="footer-link"><Link to="/contact">TELEFON1</Link></div>
-          <div className="footer-link"><Link to="/contact">TELEFON1</Link></div>
+          <div className="footer-link"><Link to="/contact?true">ADRESA</Link></div>
+          <div className="footer-link"><Link to="/contact?true">EMAIL</Link></div>
+          <div className="footer-link"><Link to="/contact?true">TELEFON1</Link></div>
+          <div className="footer-link"><Link to="/contact?true">TELEFON1</Link></div>
         </div>
       </div>
       <div className="mid">
