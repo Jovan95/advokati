@@ -7,6 +7,7 @@ import './Footer.scss';
 
 const Footer = () => (
   <div className="footer">
+
     <div className="top">
       <div className="flex">
         <div className="flex-column">
@@ -23,6 +24,7 @@ const Footer = () => (
           <div className="footer-link"><Link to="/contact?true">{t('common.number')}</Link></div>
         </div>
       </div>
+      
       <div className="mid">
         <div className="logo">
           <Link to="/"><img className="logo" src={headerLogo} alt="logo" /></Link>
@@ -45,9 +47,11 @@ const Footer = () => (
         </div>
       </div>
     </div>
+
     <div className="bottom">
       <div className="svarog">© svarogdev</div>
     </div>
+
   </div>
 );
 

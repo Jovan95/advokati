@@ -9,13 +9,9 @@
   height: 500px;
   width: 500px;
 
-  .leaflet-map-pane {
-       z-index: 2 !important;
-    }
+  .leaflet-map-pane {  z-index: 2 !important; }
 
-    .leaflet-google-layer {
-        z-index: 1 !important;
-    }
+    .leaflet-google-layer { z-index: 1 !important; }
 
   .leaflet-container {
     width: 100%;
@@ -27,9 +23,7 @@
     height: 450px;
     width: 450px;
 
-    #mapid {
-      margin-left: 0 !important;
-    }
+    #mapid { margin-left: 0 !important; }
   }
 
 
@@ -47,8 +41,6 @@
   @include mobile-break {
     height: 300px !important;
 
-    .leaflet-container {
-      width: 100% !important;
-    }
+    .leaflet-container { width: 100% !important; }
   }
 }

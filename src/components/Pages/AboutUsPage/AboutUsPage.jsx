@@ -29,6 +29,7 @@ const AboutUsPage = () => {
 
   return (
     <div className="about-us">
+
       <div className="header-area">
         <div className="links-area">
           <div className="long-line" />
@@ -84,6 +85,7 @@ const AboutUsPage = () => {
           <div className="medium-line" />
         </div>
       </div>
+
     </div>
   );
 };

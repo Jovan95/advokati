@@ -23,7 +23,6 @@ const AreasPage = () => {
     }
   }, []);
 
-
   const {
     id,
     title,
@@ -52,6 +51,7 @@ const AreasPage = () => {
                 <div className="small-line" />
                 <div className="small-line" />
               </div>
+
               <Select
                 options={OPTIONS.options}
                 onChange={(item) => {
@@ -61,6 +61,7 @@ const AreasPage = () => {
                 placeholder={t('lawyers.select')}
                 classNamePrefix="react-select"
               />
+
               <div className="links">
                 {
                   AREAS.map(({ id, title }) => (
@@ -77,6 +78,7 @@ const AreasPage = () => {
                 }
               </div>
             </div>
+
             <div className="bottom">
               <div className="medium-line" />
               <div className="medium-line" />
@@ -84,6 +86,7 @@ const AreasPage = () => {
               <div className="medium-line" />
             </div>
           </div>
+          
           <div className="right">
             <div className="right-title">{title}</div>
             <div className="section">

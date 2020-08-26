@@ -3,9 +3,7 @@
 @import "partials/variables";
 
 .contact-page {
-  .width-container {
-    width: 100%;
-  }
+  .width-container { width: 100%; }
 
   .content-wrapper {
     display: flex;
@@ -18,9 +16,7 @@
       border: 1px solid $gray;
       margin-bottom: 85px;
 
-      &:first-child {
-        margin-bottom: 65px;
-      }
+      &:first-child { margin-bottom: 65px; }
     }
 
     .middle {
@@ -40,9 +36,7 @@
         .top {
           display: flex;
 
-          .lines {
-            padding-top: 25px;
-          }
+          .lines { padding-top: 25px; }
 
           .text-about {
             font-size: $font-size-small-regular;
@@ -54,9 +48,7 @@
               margin-bottom: 15px;
             }
 
-            .text-descrip {
-                margin-bottom: 35px;
-            }
+            .text-descrip { margin-bottom: 35px; }
           }
         }
 
@@ -69,10 +61,6 @@
 
         .bottom {
           display: flex;
-
-          .lines {
-
-          }
 
           .map {
             margin-left: 20px;
@@ -96,27 +84,18 @@
             font-weight: bold;
             margin-bottom: 20px;
           }
-
-          .form-descrip {
-
-          }
         }
       }
-    }
-
-    .bot {
-
     }
   }
 
   @media only screen and (max-width: 1100px) {
     .container {
       .width-container {
-        .gray-title {
-          font-size: $font-size-title - 1.5;
-        }
+        .gray-title { font-size: $font-size-title - 1.5; }
       }
     }
+
     .content-wrapper {
       .middle {
         flex-direction: column;
@@ -132,9 +111,7 @@
             flex-direction: row-reverse;
           }
 
-          .med-line {
-            display: none;
-          }
+          .med-line { display: none; }
         }
       }
     }
@@ -144,21 +121,15 @@
     .width-container {
       .content-wrapper {
         .middle {
-          .small-line {
-            width: 388px;
-          }
+          .small-line { width: 388px; }
 
           .left {
             flex-direction: column;
             width: 100%;
 
-            .bottom {
-              justify-content: space-between;
-            }
+            .bottom { justify-content: space-between; }
 
-            .top {
-              justify-content: space-around;
-            }
+            .top { justify-content: space-around; }
           }
         }
       }
@@ -196,21 +167,15 @@
             .bottom {
               flex-direction: column;
 
-              .lines {
-                margin-bottom: 30px;
-              }
+              .lines { margin-bottom: 30px; }
 
-              .map {
-                margin-left: 0;
-              }
+              .map { margin-left: 0; }
             }
 
             .top {
               flex-direction: column;
 
-              .lines {
-                display: none;
-              }
+              .lines { display: none; }
             }
           }
         }

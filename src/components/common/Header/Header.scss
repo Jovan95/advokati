@@ -3,21 +3,13 @@
 @import "partials/variables";
 
 @keyframes small-grow {
-  from {
-    height: 0;
-  }
-  to {
-    height: 48px;
-  }
+  from {   height: 0; }
+  to { height: 48px; }
 }
 
 @keyframes menu-grow {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100vh;
-  }
+  from {   height: 0; }
+  to { height: 100vh; }
 }
 
 .header {
@@ -28,22 +20,14 @@
     width: 100%;
 
     .nav-wrapper {
-      .nav-item:nth-child(4) {
-        margin-left: 13px;
-      }
+      .nav-item:nth-child(4) { margin-left: 13px; }
 
       &.rs {
-        .nav-item:nth-child(2) {
-          margin-left: 3px;
-        }
+        .nav-item:nth-child(2) { margin-left: 3px; }
 
-        .nav-item:nth-child(3) {
-          margin-left: -5px;
-        }
+        .nav-item:nth-child(3) { margin-left: -5px; }
 
-        .nav-item:nth-child(4) {
-          margin-left: -2px;
-        }
+        .nav-item:nth-child(4) { margin-left: -2px; }
       }
     }
 
@@ -102,13 +86,9 @@
   &:hover { background-color: #f4f4f4; }
 }
 
-    .menu-btn {
-      display: none;
-    }
+    .menu-btn { display: none; }
 
-    .menu-icon {
-      display: none;
-    }
+    .menu-icon { display: none; }
 
     .nav-item {
       font-size: $font-size-medium-small;
@@ -122,9 +102,7 @@
 
       @include hover-transition;
 
-      &:hover {
-        color: $black-hover;
-      }
+      &:hover { color: $black-hover; }
 
       &.active {
         margin-top: 50px;
@@ -164,13 +142,9 @@
         padding-top: 60px;
         text-align: center;
 
-        &:first-child {
-          border-left: 2px solid $gray;
-        }
+        &:first-child { border-left: 2px solid $gray; }
 
-        &:last-child {
-          border-left: 2px solid $gray;
-        }
+        &:last-child { border-left: 2px solid $gray; }
 
         &.active {
           margin-top: 0;
@@ -218,9 +192,7 @@
           padding: 30px 21px;
 
 
-          &:nth-child(4) {
-            margin-left: 5px;
-          }
+          &:nth-child(4) { margin-left: 5px; }
         }
       }
     }
@@ -232,14 +204,11 @@
     .content-wrapper {
       .nav-wrapper-gray {
         &.en {
-          .nav-item {
-            font-size: 14px;
-          }
+          .nav-item { font-size: 14px; }
         }
+
         .line-wrapper {
-          .small-line:not(:last-child) {
-            margin-right: 45px;
-          }
+          .small-line:not(:last-child) { margin-right: 45px; }
         }
       }
     }
@@ -253,9 +222,7 @@
         max-width: 75px;
         max-height: 75px;
       }
-      .nav-item {
-        padding: 30px 20px;
-      }
+      .nav-item { padding: 30px 20px; }
     }
   }
 }
@@ -264,13 +231,10 @@
   .header {
     .content-wrapper {
       .nav-wrapper-gray {
-        .nav-item:last-child {
-          border: 0;
-        }
+        .nav-item:last-child { border: 0; }
 
         .line-wrapper {
-          display: none;
-        }
+          display: none; }
       }
     }
   }
@@ -280,30 +244,23 @@
 @media only screen and (max-width:975px) {
   .header {
     .content-wrapper {
-
       .nav-wrapper {
 
         &.rs {
           .nav-item {
-            &:nth-child(2) {
-              margin: -8px;
-            }
+            &:nth-child(2) { margin: -8px; }
           }
         }
       }
 
       .nav-wrapper-gray {
         &.rs {
-          .nav-item {
-            margin: 0 !important;
-          }
+          .nav-item { margin: 0 !important; }
         }
 
         &.en {
           .nav-item {
-            &:nth-child(2) {
-              margin: 0;
-            }
+            &:nth-child(2) { margin: 0; }
           }
         }
       }
@@ -312,18 +269,12 @@
       .nav-item {
         padding: 30px 15px;
 
-        &:nth-child(2) {
-          margin-left: -18px;
-        }
+        &:nth-child(2) { margin-left: -18px; }
 
-        &:nth-child(4) {
-          margin-left: -9px !important;
-        }
+        &:nth-child(4) { margin-left: -9px !important; }
       }
 
-      .lng-switch {
-        font-size: $font-size-large;
-      }
+      .lng-switch { font-size: $font-size-large; }
     }
   }
 }
@@ -331,47 +282,34 @@
 @media only screen and (max-width:880px) {
   .header {
     .content-wrapper {
-
       .nav-wrapper {
         &.rs {
           .nav-item {
 
-            &:first-child {
-              margin-left: -15px;
-            }
+            &:first-child { margin-left: -15px; }
 
-            &:nth-child(2) {
-              margin-left: -15px;
-            }
+            &:nth-child(2) { margin-left: -15px; }
           }
         }
       }
 
-      .lng-switch {
-        margin-left: 10px;
-      }
+      .lng-switch { margin-left: 10px; }
+
       .nav-wrapper {
         &.en {
           margin-left: -12px;
+
          .nav-item {
 
-           &:first-child {
-             margin-left: -10px;
-           }
+           &:first-child { margin-left: -10px; }
 
-           &:nth-child(2){
-             margin-left: -20px;
-           }
+           &:nth-child(2){ margin-left: -20px; }
 
-           &:nth-child(3) {
-             margin-left: -10px;
-           }
+           &:nth-child(3) { margin-left: -10px; }
 
-           &:nth-child(4) {
-             margin-left: -5px !important;
-           }
+           &:nth-child(4) {  margin-left: -5px !important; }
          }
-       }
+        }
       }
     }
   }
@@ -387,52 +325,33 @@
 
       .nav-wrapper {
         &.rs {
-
           .nav-item {
-            &:first-child {
-              margin-left: -10px;
-            }
+            &:first-child { margin-left: -10px; }
 
-            &:nth-child(2) {
-              margin-left: -27px;
-            }
-            &:nth-child(3) {
-              margin-left: -20px;
-            }
-            &:nth-child(4) {
-              margin-left: -20px !important;
-            }
+            &:nth-child(2) { margin-left: -27px; }
+
+            &:nth-child(3) { margin-left: -20px; }
+
+            &:nth-child(4) { margin-left: -20px !important; }
           }
 
-          .lng-switch {
-            margin-left: -5px;
-          }
+          .lng-switch { margin-left: -5px; }
         }
       }
 
       .nav-wrapper {
         &.en {
           .nav-item {
-            &:first-child {
-              margin-left: -12px;
-            }
+            &:first-child { margin-left: -12px; }
 
-            &:nth-child(2) {
-              margin-left: -25px;
-            }
+            &:nth-child(2) { margin-left: -25px; }
 
-            &:nth-child(3) {
-              margin-left: -20px;
-            }
+            &:nth-child(3) { margin-left: -20px; }
 
-            &:nth-child(4) {
-              margin-left: -10px !important;
-            }
+            &:nth-child(4) { margin-left: -10px !important; }
           }
 
-          .lng-switch {
-            margin-left: -5px;
-          }
+          .lng-switch { margin-left: -5px; }
         }
       }
     }
@@ -443,55 +362,43 @@
   @media only screen and (max-width:700px) {
     .header {
       .content-wrapper {
-
         .nav-wrapper {
           &.rs {
             .nav-item {
               font-size: 12px;
 
-              &:nth-child(2){
-                margin-left: -30px;
-              }
-              &:nth-child(3){
-                margin-left: -25px;
-              }
-              &:nth-child(4){
-                margin-left: -25px !important;
-              }
+              &:nth-child(2){ margin-left: -30px; }
+
+              &:nth-child(3){ margin-left: -25px; }
+
+              &:nth-child(4){   margin-left: -25px !important; }
+
             }
           }
         }
+
         .nav-wrapper {
           &.en {
             .nav-item {
               font-size: 12px;
 
-              &:first-child {
-                margin-left: -5px;
-              }
+              &:first-child { margin-left: -5px; }
 
-              &:nth-child(2){
-                margin-left: -35px;
-              }
+              &:nth-child(2){ margin-left: -35px; }
 
-              &:nth-child(3){
-                margin-left: -20px;
-              }
+              &:nth-child(3){ margin-left: -20px; }
 
-              &:nth-child(4){
-                margin-left: -23px !important;
-              }
+              &:nth-child(4){ margin-left: -23px !important; }
             }
           }
         }
+
         .nav-item {
           font-size: 11px;
           padding: 15px 9px;
         }
 
-        .lng-switch {
-          margin-left: 5px;
-        }
+        .lng-switch { margin-left: 5px; }
       }
     }
   }
@@ -508,13 +415,9 @@
         box-shadow: 2px 3px 60px 30px #ccc;
         transition: all 0.3s ease-out;
 
-        .lng-switch {
-          font-size: 2.5rem;
-        }
+        .lng-switch { font-size: 2.5rem; }
 
-        .line-wrapper {
-          display: none;
-        }
+        .line-wrapper { display: none; }
 
         &.hidden {
           top: -110px;
@@ -560,44 +463,36 @@
             transition: all .5s ease-in;
             z-index: 20;
 
-            .line-wrapper {
-              display: none;
+            .line-wrapper { display: none;
             }
+
             &.rs, &.en {
               .nav-item {
                 font-size: 17px;
                 padding: 0;
                 margin-bottom: 70px !important;
 
-                &:first-child {
-                  margin: 0;
-                }
+                &:first-child { margin: 0; }
 
-                &:nth-child(2) {
-                  margin: 0;
-                }
+                &:nth-child(2) {   margin: 0; }
 
-                &:nth-child(3) {
-                  margin: 0;
-                }
+                &:nth-child(3) { margin: 0; }
 
                 &:nth-child(4) {
                   margin: 0 !important;
                 }
               }
             }
+
             .nav-item {
               color: $black;
               border: 0;
               font-size: 17px;
 
               &:not(:last-child) {
-                margin-bottom: 30px;
-              }
+                margin-bottom: 30px; }
 
-              &:first-child, &:last-child {
-                border: 0;
-              }
+              &:first-child, &:last-child { border: 0; }
 
               &:hover {
                 font-size: 19px;

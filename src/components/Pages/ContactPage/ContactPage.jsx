@@ -23,6 +23,7 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
+
       <div className="container">
         <div className="width-container">
           <div ref={contactRef} className="gray-title">{t('homepage.contact.title')}</div>
@@ -52,6 +53,7 @@ const ContactPage = () => {
                   <div><img className="text-img" src={email} alt="email" /></div>
                 </div>
               </div>
+              
               <div className="med-line" />
               <div className="bottom">
                 <div className="lines">
@@ -65,6 +67,7 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
+
             <div className="right">
               <div className="form-about">
                 <div className="form-title">{t('homepage.contact.write')}</div>
@@ -75,12 +78,14 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
+
           <div className="bot">
             <div className="long-line" />
             <div className="long-line" />
           </div>
         </div>
       </div>
+
     </div>
   );
 };

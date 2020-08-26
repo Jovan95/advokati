@@ -17,9 +17,7 @@
         width: 0;
         border: 1px solid $gray;
 
-        &:last-child {
-          margin-left: 115px
-        }
+        &:last-child { margin-left: 115px }
       }
 
       .text-line-area {
@@ -47,6 +45,7 @@
           margin-top: 20px;
           padding-left: 8px;
         }
+
         .arrow {
           width: 30px;
           height: 30px;
@@ -55,13 +54,8 @@
         }
       }
     }
-
-    .about-us-img {
-      .about-img {
-
-      }
-    }
   }
+
   .content-wrapper {
     .big-yellow-box {
       width: 37vw;
@@ -71,6 +65,7 @@
       position: absolute;
       z-index: 2;
     }
+
     .width-container {
       margin-top: 115px;
       position: relative;
@@ -109,9 +104,7 @@
         display: flex;
         justify-content: space-between;
 
-        .lines {
-          margin-top: 45px;
-        }
+        .lines { margin-top: 45px; }
 
         .page-text {
           line-height: 20px;
@@ -130,9 +123,7 @@
             margin-bottom: 50px;
           }
 
-          .text-content:not(:last-child) {
-            margin-bottom: 30px;
-          }
+          .text-content:not(:last-child) { margin-bottom: 30px; }
         }
       }
     }
@@ -141,9 +132,7 @@
   @media only screen and (max-width: 1700px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          width: 700px;
-        }
+        .about-img { width: 700px; }
       }
     }
   }
@@ -151,9 +140,7 @@
   @media only screen and (max-width: 1440px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          width: 600px;
-        }
+        .about-img { width: 600px; }
       }
     }
   }
@@ -161,9 +148,7 @@
   @media only screen and (max-width: 1210px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          width: 550px;
-        }
+        .about-img { width: 550px; }
       }
     }
   }
@@ -171,28 +156,21 @@
   @media only screen and (max-width: 1320px) {
     .header-area {
 
-      .text {
-        font-size: $font-size-title - 1;
-      }
+      .text { font-size: $font-size-title - 1; }
 
-      .about-us-img {
-        width: 550px;
-      }
+      .about-us-img { width: 550px; }
+
       .links-area {
         margin-left: 125px;
 
-        .long-line:last-child {
-          margin-left: 60px;
-        }
+        .long-line:last-child {   margin-left: 60px; }
 
         .text-line-area {
           .lines {
             justify-content: normal;
             margin-left: -10px;
 
-            .medium-line:not(:last-child) {
-              margin-right: 107px;
-            }
+            .medium-line:not(:last-child) { margin-right: 107px; }
           }
         }
       }
@@ -201,30 +179,22 @@
 
   @media only screen and (max-width: 1170px){
     .header-area {
-      .about-us-img {
-        width: 500px;
-      }
+      .about-us-img { width: 500px; }
 
       .links-area {
         margin-left: 100px;
 
         .text-line-area {
-          .text {
-            font-size: $font-size-title - 1;
-          }
+          .text { font-size: $font-size-title - 1; }
 
-          .arrow {
-            margin-left: -50px;
-          }
+          .arrow { margin-left: -50px; }
         }
       }
     }
 
     .content-wrapper {
       .width-container {
-
         .page-content {
-
           .page-text {
             margin-bottom: 50px;
             font-size: $font-size-medium-small;
@@ -234,13 +204,9 @@
         }
 
         .page-about {
-          .page-title {
-            font-size: $font-size-title - 1;
-          }
+          .page-title { font-size: $font-size-title - 1; }
 
-          .title-about {
-            font-size :$font-size-medium-small;
-          }
+          .title-about { font-size :$font-size-medium-small; }
         }
       }
     }
@@ -295,35 +261,25 @@
   @media only screen and (max-width: 975px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          margin-left: 0;
-        }
+        .about-img { margin-left: 0; }
       }
 
       .links-area {
         margin-right: 108px;
         margin-left: 96px;
 
-        .long-line:last-child {
-          margin-left: 9px;
-        }
+        .long-line:last-child { margin-left: 9px; }
+
         .text-line-area {
+          .text { margin-left: -35px; }
 
-          .text {
-            margin-left: -35px;
-          }
-
-          .arrow {
-            margin-left: -115px;
-          }
+          .arrow { margin-left: -115px; }
 
           .lines {
             justify-content: normal;
             margin-left: -27px;
 
-            .medium-line:not(:last-child) {
-              margin-right: 92px;
-            }
+            .medium-line:not(:last-child) { margin-right: 92px; }
           }
         }
       }
@@ -333,9 +289,7 @@
   @media only screen and (max-width: 920px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          width: 300px;
-        }
+        .about-img { width: 300px; }
       }
     }
   }
@@ -343,27 +297,19 @@
   @media only screen and (max-width: 880px) {
     .header-area {
       .about-us-img {
-        .about-img {
-          margin-left: -40px;
-        }
+        .about-img { margin-left: -40px; }
       }
       .links-area {
         margin-left: 88px;
 
-        .long-line:last-child {
-          margin-left: -4px;
-        }
+        .long-line:last-child { margin-left: -4px; }
 
         .text-line-area {
 
-          .arrow {
-            margin-left: -120px;
-          }
+          .arrow { margin-left: -120px; }
 
           .lines {
-            .medium-line:not(:last-child) {
-              margin-right: 90px;
-            }
+            .medium-line:not(:last-child) { margin-right: 90px; }
           }
         }
       }
@@ -371,15 +317,10 @@
 
     .content-wrapper {
       .width-container {
-
-        .page-about {
-          margin-left: 140px;
-        }
+        .page-about { margin-left: 140px; }
 
         .page-content {
-          .page-text {
-            font-size: $font-size-medium-small - 0.1;
-          }
+          .page-text { font-size: $font-size-medium-small - 0.1; }
         }
       }
     }
@@ -387,35 +328,22 @@
 
   @media only screen and (max-width: 820px){
     .header-area {
-
-      .text {
-        font-size: $font-size-title - 1.5;
-      }
+      .text { font-size: $font-size-title - 1.5; }
 
       .links-area {
         margin-left: 70px;
-        .long-line:last-child {
-          margin-left: -36px;
-        }
+        .long-line:last-child { margin-left: -36px; }
 
         .text-line-area {
+          .text { margin-left: -55px; }
 
-          .text {
-            margin-left: -55px;
-          }
-
-          .arrow {
-            margin-left: -145px;
-          }
+          .arrow { margin-left: -145px; }
 
           .lines {
             margin-left: -40px;
 
-            .medium-line:not(:last-child) {
-              margin-right: 83px;
-            }
+            .medium-line:not(:last-child) { margin-right: 83px; }
           }
-
         }
       }
     }
@@ -436,28 +364,18 @@
   @media only screen and (max-width: 700px) {
     .header-area {
       .links-area {
-        .long-line:last-child {
-          margin-left: -88px;
-        }
+        .long-line:last-child { margin-left: -88px; }
 
         .text-line-area {
+          .text { margin-left: -73px; }
 
-          .text {
-            margin-left: -73px;
-          }
-
-          .arrow {
-            margin-left: -205px;
-          }
+          .arrow { margin-left: -205px; }
 
           .lines {
             margin-left: -55px;
 
-            .medium-line:not(:last-child) {
-              margin-right: 71px;
-            }
+            .medium-line:not(:last-child) {   margin-right: 71px; }
           }
-
         }
       }
     }
@@ -467,29 +385,19 @@
     .header-area {
       justify-content: center;
 
-      .links-area {
-        margin: 0;
+      .links-area { margin: 0; }
 
-      }
-
-      .about-us-img {
-        display: none;
-      }
+      .about-us-img { display: none; }
     }
     .content-wrapper {
       .width-container {
-
         .page-content {
-          .lines {
-            display: none;
-          }
+          .lines { display: none; }
 
           .page-text {
             max-width: 100%;
 
-            .text-content {
-              max-width: 100vw;
-            }
+            .text-content { max-width: 100vw; }
           }
         }
       }

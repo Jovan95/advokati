@@ -59,9 +59,7 @@
 
   @include mobile-break {
     .form-item-wrapper, .form-item-wrapper.form-item-wrapper-textarea {
-      .form-item, textarea {
-        font-size: $font-size-medium-small;
-      }
+      .form-item, textarea { font-size: $font-size-medium-small; }
     }
   }
 }
