@@ -84,13 +84,19 @@ a {
   background-color: $dark-gray;
   padding: 15px 25px;
   text-align: center;
+  border: none;
   color: $white;
   font-size: $font-size-small-regular;
-
+  cursor: pointer;
   @include hover-transition;
 
-  &:hover {
-    color: $dark-gray-hover;
+  &:hover { background: $dark-gray-hover; }
+  &:disabled {
+    cursor: not-allowed;
+    color: darken($white, 20);
+    background: $dark-gray-disabled;
+
+    &:hover { color: darken($white, 20); }
   }
 }
 

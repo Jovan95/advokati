@@ -4,8 +4,9 @@ import {
   SEND_CONTACT_US_SUCCESS,
   SEND_CONTACT_US_FAILURE,
   RESET_CONTACT_US_FORM,
+  CHANGE_LANGUAGE,
 } from '../actionTypes/generalActionTypes';
-
+import { setLang } from '../services/translationService';
 
 /**
  * Handles redux actions for submitting the contact us form
@@ -31,6 +32,7 @@ export const resetContactUsForm = () => (dispatch) => {
   dispatch(initialize('contactUsForm'));
 };
 
-export const changeLanguage = () => (dispatch) => {
-  dispatch({ type: CHANGE_LANGUAGE});
-}
+export const changeLanguage = lang => (dispatch) => {
+  dispatch({ type: CHANGE_LANGUAGE, payload: lang });
+  setLang(lang);
+};

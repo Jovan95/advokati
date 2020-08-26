@@ -86,7 +86,7 @@ const AreasPage = () => {
               <div className="medium-line" />
             </div>
           </div>
-          
+
           <div className="right">
             <div className="right-title">{title}</div>
             <div className="section">

@@ -15,9 +15,6 @@ import ModalRoot from '../Modals/ModalRoot';
 import Page404 from '../Page404/Page404';
 
 import './App.scss';
-// import '../../common/icons/icons.scss';
-
-// const SomeModuleRoutesLazy = lazy(() => import('../LargeComponentDir/LargeComponentRoot'));
 
 const App = ({ store }) => (
   <Provider store={store}>

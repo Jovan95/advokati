@@ -113,11 +113,13 @@
     .lng-switch {
       margin-left: 13px;
       align-self: center;
+      @include hover-transition;
+      cursor: pointer;
 
-      .lng:hover {
-          cursor: pointer;
-          font-weight: bold;
-          @include hover-transition;
+      .lng {
+
+        &.active { font-weight: $font-weight-bold; }
+        &:hover { color: $black-hover; }
       }
     }
 

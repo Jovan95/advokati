@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import ContactUsForm from '../../ContactUsForm/ContactUsForm';
 import MapView from '../../Map/MapViewContact';
 
-
 import email from '../../../images/email.png';
 import './ContactPage.scss';
 
@@ -42,6 +41,7 @@ const ContactPage = () => {
                   <div className="small-line" />
                   <div className="small-line" />
                 </div>
+
                 <div className="text-about">
                   <div className="text-title">{t('homepage.contact.comp')}</div>
                   <div className="text-descrip">Milos Lekic</div>
@@ -53,8 +53,9 @@ const ContactPage = () => {
                   <div><img className="text-img" src={email} alt="email" /></div>
                 </div>
               </div>
-              
+
               <div className="med-line" />
+
               <div className="bottom">
                 <div className="lines">
                   <div className="small-line" />
@@ -62,9 +63,8 @@ const ContactPage = () => {
                   <div className="small-line" />
                   <div className="small-line" />
                 </div>
-                <div className="map">
-                  <MapView />
-                </div>
+
+                <div className="map"><MapView /></div>
               </div>
             </div>
 
@@ -85,7 +85,6 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

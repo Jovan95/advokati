@@ -9,11 +9,6 @@ export const getLangOption = () => {
   return SUPPORTED_LANGUAGES.find(({ value }) => value === lang);
 };
 
-export const getLangFull = key => ({
-  rs: 'Serbian',
-  en: 'English',
-})[key];
-
 export const setLang = (lang) => {
   if (getLangOption().value === lang) return;
 

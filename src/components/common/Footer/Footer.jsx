@@ -24,7 +24,7 @@ const Footer = () => (
           <div className="footer-link"><Link to="/contact?true">{t('common.number')}</Link></div>
         </div>
       </div>
-      
+
       <div className="mid">
         <div className="logo">
           <Link to="/"><img className="logo" src={headerLogo} alt="logo" /></Link>

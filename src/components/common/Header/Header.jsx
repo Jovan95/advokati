@@ -1,15 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import t from 'translate';
-import { lang } from '../../../i18n/translations';
-import { setLang } from '../../../services/translationService';
-
+import { changeLanguage } from '../../../actions/generalActions';
 
 import headerLogo from '../../../images/headerLogo.png';
 import './Header.scss';
 
-const Header = ({ location: { pathname } }) => {
+const Header = ({ location: { pathname }, changeLanguage, lang }) => {
   const scrollPos = useRef(0);
   const visible = useRef(true);
   const [visibleState, setVisibleState] = useState(true);
@@ -41,10 +40,8 @@ const Header = ({ location: { pathname } }) => {
 
   return (
     <div className="header">
-
-
       <div className={`content-wrapper ${!visibleState ? 'hidden' : ''} ${checked ? 'open' : ''}`}>
-      
+
         <Link onClick={closeMenu} to="/" className="nav-item"><img className="headerLogo" src={headerLogo} alt="headerLogo" /></Link>
 
         <input className="menu-btn" onChange={() => {}} type="checkbox" id="menu-btn" checked={checked} />
@@ -71,9 +68,9 @@ const Header = ({ location: { pathname } }) => {
           }
 
           <div className="lng-switch">
-            <span className="lng" onClick={() => { setLang('en'); }}>en</span>
+            <span className={`lng ${lang === 'en' ? 'active' : ''}`} onClick={() => { changeLanguage('en'); }}>en</span>
             <span>|</span>
-            <span className="lng" onClick={() => { setLang('rs'); }}>srb</span>
+            <span className={`lng ${lang === 'rs' ? 'active' : ''}`} onClick={() => { changeLanguage('rs'); }}>srb</span>
           </div>
         </div>
       </div>
@@ -84,6 +81,16 @@ const Header = ({ location: { pathname } }) => {
 
 Header.propTypes = {
   location: PropTypes.object.isRequired,
+  changeLanguage: PropTypes.func.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
-export default withRouter(Header);
+const mapStateToProps = ({ general }) => ({
+  lang: general.lang,
+});
+
+const mapDispatchToProps = {
+  changeLanguage,
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

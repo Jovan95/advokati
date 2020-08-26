@@ -63,7 +63,7 @@ const LawyerPage = () => {
                     {area}
                   </div>
                 </div>
-                
+
                 <div className="small-lines">
                   <div className="line" />
                   <div className="line" />
