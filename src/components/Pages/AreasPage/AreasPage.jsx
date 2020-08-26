@@ -14,7 +14,6 @@ const AreasPage = () => {
   const location = useLocation();
 
   const exactArea = (location.search).split('?');
-  console.log(exactArea);
 
   useEffect(() => {
     if (exactArea[1]) {

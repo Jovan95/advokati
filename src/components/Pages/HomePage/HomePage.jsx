@@ -28,6 +28,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
+
       <div className="header-area">
         <div className="left">
           <div className="lines">
@@ -244,6 +245,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -30,3 +30,7 @@ export const resetContactUsForm = () => (dispatch) => {
   dispatch({ type: RESET_CONTACT_US_FORM });
   dispatch(initialize('contactUsForm'));
 };
+
+export const changeLanguage = () => (dispatch) => {
+  dispatch({ type: CHANGE_LANGUAGE});
+}

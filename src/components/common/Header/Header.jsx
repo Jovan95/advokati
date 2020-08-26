@@ -44,6 +44,7 @@ const Header = ({ location: { pathname } }) => {
 
 
       <div className={`content-wrapper ${!visibleState ? 'hidden' : ''} ${checked ? 'open' : ''}`}>
+      
         <Link onClick={closeMenu} to="/" className="nav-item"><img className="headerLogo" src={headerLogo} alt="headerLogo" /></Link>
 
         <input className="menu-btn" onChange={() => {}} type="checkbox" id="menu-btn" checked={checked} />
@@ -54,6 +55,7 @@ const Header = ({ location: { pathname } }) => {
           <Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>{t('header.lawyers')}</Link>
           <Link onClick={closeMenu} to="/areas" className={pathname === '/areas' ? 'nav-item active' : 'nav-item'}>{t('header.areas')}</Link>
           <Link onClick={closeMenu} to="/contact" className={pathname === '/contact' ? 'nav-item active' : 'nav-item'}>{t('header.contact')}</Link>
+
           {
             pathname !== '/' && '/about-us' && (
             <div className="line-wrapper">
@@ -67,6 +69,7 @@ const Header = ({ location: { pathname } }) => {
             </div>
             )
           }
+
           <div className="lng-switch">
             <span className="lng" onClick={() => { setLang('en'); }}>en</span>
             <span>|</span>
@@ -74,6 +77,7 @@ const Header = ({ location: { pathname } }) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

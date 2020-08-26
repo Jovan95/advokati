@@ -12,12 +12,11 @@ const LawyerPage = () => {
   const [area, setArea] = useState([]);
   const [activeTitle, setActiveTitle] = useState('');
 
-
   const activeFieldLawyers = LAWYERS.filter(lawyer => lawyer.value.indexOf(area) >= 0);
-  console.log(activeFieldLawyers);
 
   return (
     <div className="lawyer-page">
+
       <div className="container">
         <div className="width-container">
           <div className="gray-title">{ t('lawyers.title') }</div>
@@ -26,7 +25,6 @@ const LawyerPage = () => {
             onChange={(item) => {
               setArea(item.value);
               setActiveTitle(item.label);
-              console.log(item.value, 'areaId');
             }}
             placeholder={t('lawyers.select')}
             classNamePrefix="react-select"
@@ -53,6 +51,7 @@ const LawyerPage = () => {
                   <div className="line" />
                   <div className="line" />
                 </div>
+
                 <div className="middle">
                   <ImageLoader className="lawyer-img" src={require(`images/${img}`)} alt={img} /> {/* eslint-disable-line */}
                   <div className="lawyer-about">
@@ -64,6 +63,7 @@ const LawyerPage = () => {
                     {area}
                   </div>
                 </div>
+                
                 <div className="small-lines">
                   <div className="line" />
                   <div className="line" />
@@ -77,6 +77,7 @@ const LawyerPage = () => {
           }
         </div>
       </div>
+
     </div>
   );
 };
