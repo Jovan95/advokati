@@ -23,7 +23,7 @@ export default  {
         text2: ``,
       },
       3: {
-        title: 'Indemnity',
+        title: 'Damage Compesation',
         text1: `The term damage means the reduction of someone's property (ordinary damage) and the prevention of its increase (lost benefit), as well as causing physical or mental pain or fear to another (non-material damage). By hiring a lawyer who will represent your interests, you will be able to indemnify yourself without direct engagement, ie get adequate financial compensation in cases when one person (pest) committed some kind of violation of the rights of another person (injured party) in the form of causing any material or non-material damage.`,
         text2: `The law office deals with and has experience with the collection of utility services (collection of debts from consumers, both commercial and natural persons). Also, the law office performed and actively participated in the expropriation of land (public interest - gasification) on the territory of Bosnia and Herzegovina, Republika Srpska and participated in the proceedings before the "Commission for Concessions of Republika Srpska".`,
       },
@@ -94,7 +94,7 @@ export default  {
     options: {
       label1: 'Criminal Law',
       label2: 'Corporate Law',
-      label3: 'Indemnity',
+      label3: 'Damage Compesation',
       label4: 'General litigation',
       label5: 'Family Law',
       label6: 'Human Rights',

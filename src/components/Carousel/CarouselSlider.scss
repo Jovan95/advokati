@@ -1,14 +1,17 @@
 .carousel-slider {
   .react-multi-carousel-item {
-    max-width: 333px;
-    margin-left: 100px;
+    // max-width: 333px;
+    // margin-left: 100px;
+    user-select: none;
+    // pointer-events: none;
+    cursor: grab;
   }
 
   .react-multiple-carousel__arrow--right {
-    right: calc(4% + -45px);
+    right: calc(4% + -25px);
   }
 
   .react-multiple-carousel__arrow--left {
-    left: calc(4% + -45px);
+    left: calc(4% + -25px);
   }
 }

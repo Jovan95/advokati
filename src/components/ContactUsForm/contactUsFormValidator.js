@@ -5,12 +5,12 @@ const contactUsFormValidator = ({
 }) => {
   const errors = {};
 
-  if (!firstLastName) errors.firstLastName = '(Required)';
-  if (!message) errors.message = '(Required)';
-  if (!number) errors.number = '(Required)';
+  if (!firstLastName) errors.firstLastName = 'Required';
+  if (!message) errors.message = 'Required';
+  if (!number) errors.number = 'Required';
 
-  if (!email) errors.email = '(Required)';
-  if (email && !EMAIL_REGEX.test(String(email).toLowerCase())) errors.email = '(Invalid)';
+  if (!email) errors.email = 'Required';
+  if (email && !EMAIL_REGEX.test(String(email).toLowerCase())) errors.email = 'Invalid';
 
   return errors;
 };

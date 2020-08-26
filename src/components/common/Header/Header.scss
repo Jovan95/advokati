@@ -38,11 +38,11 @@
         }
 
         .nav-item:nth-child(3) {
-          margin-left: -10px;
+          margin-left: -5px;
         }
 
         .nav-item:nth-child(4) {
-          margin-left: 0  px;
+          margin-left: -2px;
         }
       }
     }
@@ -231,10 +231,11 @@
   .header {
     .content-wrapper {
       .nav-wrapper-gray {
-        .nav-item:last-child {
-
+        &.en {
+          .nav-item {
+            font-size: 14px;
+          }
         }
-
         .line-wrapper {
           .small-line:not(:last-child) {
             margin-right: 45px;

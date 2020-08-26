@@ -34,8 +34,7 @@ const CarouselSlider = ({
 
       <Carousel className="carousel-slider" responsive={responsive}>
         {children}
-      </Carousel>;
-
+      </Carousel>
 
       {/* { useChildren && <button type="button" className="swiper-button-next swiper-button-black" onClick={goNext} /> } */}
     </section>

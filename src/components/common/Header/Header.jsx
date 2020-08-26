@@ -23,7 +23,6 @@ const Header = ({ location: { pathname } }) => {
     const handleScroll = () => {
       if (window.innerWidth < 650) {
         let currentScrollPos = window.pageYOffset;
-        console.log('scroll-cur:', currentScrollPos, 'scroll:', scrollPos);
         if (currentScrollPos < 0) currentScrollPos = 0;
 
         const newVisible = scrollPos.current >= currentScrollPos;

@@ -50,7 +50,7 @@ class ContactUsForm extends Component {
           />
 
           <Field
-            id="contact-number"
+            id="contact-extramarital"
             name="email"
             placeholder="E-MAIL"
             labelText="E-MAIL"

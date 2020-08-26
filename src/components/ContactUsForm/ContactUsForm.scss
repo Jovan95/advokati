@@ -3,20 +3,16 @@
 @import "partials/variables";
 
 
-.form-wrapper {
-  &:last-child {
-    height: 400px;
-  }
+.contact-us-form-wrapper {
 
   .form-item-wrapper div.form-item-error {
     padding: 0 !important;
     position: absolute;
-    top: 74px;
     border: 0;
     right: 0;
     margin-top: 5px;
+    margin-right: 5px;
   }
-
 
   .form-item-wrapper {
     height: 100%;
@@ -26,8 +22,6 @@
     .form-item-error {
       border: 1px solid $error;
       border-radius: 5px;
-
-
     }
 
     .input-values {
@@ -40,7 +34,6 @@
       color: $black;
       padding-left: 10px;
       position: relative;
-
     }
 
     &.form-item-wrapper-textarea {
@@ -48,32 +41,27 @@
       height: auto;
     }
 
-    &.form-item-wrapper-textarea .input-values textarea {
-      font-size: 2rem !important;
-      font-family: "Montserrat", sans-serif;
-
-      .form-item-wrapper {
-        top: 300px;
-      }
-    }
-
-    label {
-      display: none;
-    }
+    label { display: none;}
   }
   .submit-wrapper {
     text-align: right;
     margin-top: 30px;
   }
 
-  .fields-wrapper {
-
-  }
+  .fields-wrapper {}
 
   @media only screen and (min-width: 1100px) {
     .form-item-wrapper:not(:last-child) {
       margin-bottom: 35px;
       height: auto;
+    }
+  }
+
+  @include mobile-break {
+    .form-item-wrapper, .form-item-wrapper.form-item-wrapper-textarea {
+      .form-item, textarea {
+        font-size: $font-size-medium-small;
+      }
     }
   }
 }

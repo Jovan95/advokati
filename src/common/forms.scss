@@ -55,10 +55,10 @@
     .form-item {
       width: 100%;
       color: white;
-      border: none;
       font-size: $font-size-extra-large;
       text-align: right;
       min-width: 0;
+      border: 1px solid transparent;
 
       &::placeholder {
         color: $gray;
@@ -79,10 +79,11 @@
       .input-values { flex-grow: 1; }
 
       textarea {
+        font-family: $main-font;
         resize: none;
         text-align: left;
         flex-grow: 1;
-        font-size: $font-size-small + 0.1;
+        font-size: $font-size-extra-large;
         height: 270px;
       }
     }
