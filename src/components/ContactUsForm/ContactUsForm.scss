@@ -4,15 +4,31 @@
 
 
 .form-wrapper {
+  &:last-child {
+    height: 400px;
+  }
 
   .form-item-wrapper div.form-item-error {
     padding: 0 !important;
-    text-align: right;
+    position: absolute;
+    top: 74px;
+    border: 0;
+    right: 0;
+    margin-top: 5px;
   }
+
 
   .form-item-wrapper {
     height: 100%;
     padding: 0;
+
+
+    .form-item-error {
+      border: 1px solid $error;
+      border-radius: 5px;
+
+
+    }
 
     .input-values {
       height: 100%;
@@ -23,6 +39,8 @@
       text-align: left;
       color: $black;
       padding-left: 10px;
+      position: relative;
+
     }
 
     &.form-item-wrapper-textarea {
@@ -33,6 +51,10 @@
     &.form-item-wrapper-textarea .input-values textarea {
       font-size: 2rem !important;
       font-family: "Montserrat", sans-serif;
+
+      .form-item-wrapper {
+        top: 300px;
+      }
     }
 
     label {
@@ -45,7 +67,6 @@
   }
 
   .fields-wrapper {
-
 
   }
 

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import t from 'translate';
+import { lang } from '../../../i18n/translations';
 import { setLang } from '../../../services/translationService';
 
 
@@ -49,7 +50,7 @@ const Header = ({ location: { pathname } }) => {
         <input className="menu-btn" onChange={() => {}} type="checkbox" id="menu-btn" checked={checked} />
         <label className="menu-icon" htmlFor="menu-btn" onClick={changeChecked}><span className="navicon" /></label>
 
-        <div className={pathname === '/' || pathname === '/about-us' ? 'nav-wrapper' : 'nav-wrapper-gray'}>
+        <div className={`${pathname === '/' || pathname === '/about-us' ? 'nav-wrapper' : 'nav-wrapper-gray'} ${lang}`}>
           <Link onClick={closeMenu} to="/about-us" className={pathname === '/about-us' ? 'nav-item active' : 'nav-item'}>{t('common.title')}</Link>
           <Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>{t('header.lawyers')}</Link>
           <Link onClick={closeMenu} to="/areas" className={pathname === '/areas' ? 'nav-item active' : 'nav-item'}>{t('header.areas')}</Link>

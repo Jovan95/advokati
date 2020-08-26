@@ -25,7 +25,7 @@ const Footer = () => (
       </div>
       <div className="mid">
         <div className="logo">
-          <img className="logo" src={headerLogo} alt="logo" />
+          <Link to="/"><img className="logo" src={headerLogo} alt="logo" /></Link>
         </div>
       </div>
       <div className="flex">
