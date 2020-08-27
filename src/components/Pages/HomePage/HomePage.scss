@@ -7,9 +7,9 @@
 .homepage {
 
   .header-area {
-    height: 80vh;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 300px;
 
     .left {
       border-left: 2px solid $gray;
@@ -1154,8 +1154,6 @@
 @media only screen and (max-width:820px) {
   .homepage {
     .header-area {
-      height: 65vh;
-
       .left {
         max-height: 400px;
         margin-left: 72px;

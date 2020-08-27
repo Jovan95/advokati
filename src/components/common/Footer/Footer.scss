@@ -45,6 +45,8 @@
     }
 
     .mid {
+      margin-right: 35px;
+
       .logo {
          padding-top: 30px;
          max-width: 90px;
@@ -67,6 +69,8 @@
 
         &:last-child { margin-top: 100px; }
       }
+
+      .mid { margin-right: 0; }
     }
   }
 }
