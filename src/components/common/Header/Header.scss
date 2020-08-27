@@ -14,26 +14,22 @@
 
 .header {
   position: absolute;
+  width: 100%;
 
   .content-wrapper {
     display: flex;
-    width: 100%;
-    padding: 0px 15px 0px 15px;
+    padding: 30px 21px;
 
     .nav-wrapper {
-      .nav-item:nth-child(4) { margin-left: 13px; }
 
       &.rs {
-
-        .nav-item:nth-child(3) { margin-left: -5px; }
-
-        .nav-item:nth-child(4) { margin-left: -2px; }
       }
 
       &.en {
-        .nav-item:nth-child(3) { margin-left: 6px; }
-
-        margin-left: -13px;
+        .nav-item:first-child { margin-right: 40px; }
+        .nav-item:nth-child(2) { margin-right: 56px; }
+        .nav-item:nth-child(3) { margin-right: 59px; }
+        .nav-item:nth-child(4) { margin-right: 45px; }
       }
     }
 
@@ -100,10 +96,8 @@
       color: $black;
       line-height: 18px;
       text-transform: uppercase;
-      padding: 30px 25px;
       font-weight: bold;
       z-index: 25;
-      margin-left: -7px;
 
       @include hover-transition;
 
@@ -116,10 +110,10 @@
     }
 
     .lng-switch {
-      margin-left: 13px;
       align-self: center;
       @include hover-transition;
       cursor: pointer;
+      margin-top: -7px;
 
       .lng {
 
@@ -131,7 +125,7 @@
     .headerLogo {
       max-width: 95px;
       max-height: 95px;
-      float: right;
+      margin-right: 49px;
       z-index: 25;
     }
 
@@ -146,7 +140,6 @@
 
       .nav-item {
         border-right: 2px solid $gray;
-        padding-top: 60px;
         text-align: center;
 
         &:first-child { border-left: 2px solid $gray; }
@@ -157,14 +150,13 @@
           margin-top: 0;
           padding-top: 50px;
           font-weight: normal;
-          padding-top: 72px;
         }
       }
 
-      .lng-switch { margin-left: 20px; }
+      .lng-switch {  }
 
       .line-wrapper {
-        display: flex;
+        display: fle;
         justify-content: space-between;
         max-width: 30%;
         width: 100%;
@@ -188,22 +180,20 @@
 @media only screen and (max-width:1320px) {
   .header {
     .content-wrapper {
-      padding: 0 15px 0 5px;
-      .lng-switch { margin-left: 10px; }
+      .headerLogo { margin-right: 27px; }
 
       .nav-wrapper {
-        &.en { margin-left: -22px; }
+        .nav-item { font-size: $font-size-medium-small - 0.2; }
 
-        &.rs {
-          margin-left: -7px;
+        &.en {
+          .nav-item:first-child { margin-right: 30px; }
+          .nav-item:nth-child(2) { margin-right: 45px; }
+          .nav-item:nth-child(3) { margin-right: 46px; }
+          .nav-item:nth-child(4) { margin-right: 32px; }
         }
 
-        .nav-item {
-          font-size: $font-size-medium-small - 0.2;
-          padding: 30px 21px;
+        &.rs {
 
-
-          &:nth-child(4) { margin-left: 5px; }
         }
       }
     }
@@ -215,7 +205,7 @@
     .content-wrapper {
       .nav-wrapper-gray {
         &.en {
-          .nav-item { font-size: 14px; }
+
         }
 
         .line-wrapper {
@@ -232,11 +222,15 @@
       .headerLogo {
         max-width: 75px;
         max-height: 75px;
+        margin-right: 21px;
       }
-      .nav-item {
-        padding: 30px 20px;
+      .lng-switch { margin-top: -4px; }
 
-        &:nth-child(2) { margin-left: 0px; }
+      &.en {
+      }
+
+      &.rs {
+
       }
     }
   }
@@ -259,67 +253,43 @@
 @media only screen and (max-width:975px) {
   .header {
     .content-wrapper {
-      .nav-wrapper {
+      .headerLogo {
+        margin-left: -6px;
+        margin-right: 17px;
+      }
 
-        &.rs {
-          .nav-item {
-            &:nth-child(2) { margin: -10px; }
-            &:nth-child(4) { margin-left: -12px; }
-          }
+      .nav-wrapper {
+        &.en {
+          .nav-item:first-child { margin-right: 21px; }
+          .nav-item:nth-child(2) { margin-right: 35px; }
+          .nav-item:nth-child(3) { margin-right: 37px; }
         }
+
+        &.rs {}
       }
 
       .nav-wrapper-gray {
-        &.rs {
-          .nav-item { margin: 0 !important; }
+        &.rs {}
+
+        &.en {}
         }
 
-        &.en {
-          .nav-item {
-            &:nth-child(2) { margin: 0; }
-          }
-        }
+        .lng-switch { font-size: $font-size-large; }
       }
-
-      .nav-item {
-        padding: 30px 15px;
-
-        &:nth-child(2) { margin-left: -18px; }
-      }
-
-      .lng-switch { font-size: $font-size-large; }
     }
   }
-}
 
 @media only screen and (max-width:880px) {
   .header {
     .content-wrapper {
       .nav-wrapper {
-        &.rs {
-          .nav-item {
-            &:nth-child(2) { margin-left: -15px; }
-          }
-        }
-      }
-
-      .lng-switch { margin-left: 10px; }
-
-      .nav-wrapper {
         &.en {
-          margin-left: -12px;
-
-         .nav-item {
-
-           &:first-child { margin-left: -10px; }
-
-           &:nth-child(2){ margin-left: -20px; }
-
-           &:nth-child(3) { margin-left: -10px; }
-
-           &:nth-child(4) {  margin-left: -5px !important; }
-         }
+          .nav-item:first-child { margin-right: 19px; }
+          .nav-item:nth-child(2) { margin-right: 32px; }
+          .nav-item:nth-child(3) { margin-right: 36px; }
+          .nav-item:nth-child(4) { margin-right: 28px; }
         }
+        &.rs {}
       }
     }
   }
@@ -329,38 +299,20 @@
   .header {
     .content-wrapper {
       .headerLogo {
-        max-width: 52px;
-        max-height: 52px;
+        max-width: 62px;
+        max-height: 62px;
+        margin-left: -15px;
+        margin-right: 10px;
       }
 
-      .nav-wrapper {
-        &.rs {
-          .nav-item {
-
-            &:nth-child(2) { margin-left: -26px; }
-
-            &:nth-child(3) { margin-left: -15px; }
-
-            &:nth-child(4) { margin-left: -20px !important; }
-          }
-
-          .lng-switch { margin-left: -5px; }
-        }
-      }
+      .lng-switch { margin-top: -2px; }
 
       .nav-wrapper {
         &.en {
-          .nav-item {
-            &:first-child { margin-left: -12px; }
-
-            &:nth-child(2) { margin-left: -25px; }
-
-            &:nth-child(3) { margin-left: -20px; }
-
-            &:nth-child(4) { margin-left: -18px !important; }
-          }
-
-          .lng-switch { margin-left: -5px; }
+          .nav-item:first-child { margin-right: 13px; }
+          .nav-item:nth-child(2) { margin-right: 24px; }
+          .nav-item:nth-child(3) { margin-right: 28px; }
+          .nav-item:nth-child(4) { margin-right: 19px; }
         }
       }
     }
@@ -372,43 +324,13 @@
     .header {
       .content-wrapper {
         .nav-wrapper {
-          &.rs {
-            .nav-item {
-              font-size: 12px;
-              margin-left: -1px;
+          .nav-item { font-size: $font-size-small - 0.1; }
 
-              &:nth-child(2){ margin-left: -30px; }
-
-              &:nth-child(3){ margin-left: -25px; }
-
-              &:nth-child(4){   margin-left: -25px !important; }
-
-            }
-          }
-        }
-
-        .nav-wrapper {
           &.en {
-            .nav-item {
-              font-size: 12px;
-
-              &:first-child { margin-left: -5px; }
-
-              &:nth-child(2){ margin-left: -35px; }
-
-              &:nth-child(3){ margin-left: -20px; }
-
-              &:nth-child(4){ margin-left: -23px !important; }
-            }
+            .nav-item:nth-child(3) { margin-right: 23px; }
+            .nav-item:nth-child(4) { margin-right: 15px; }
           }
         }
-
-        .nav-item {
-          font-size: 11px;
-          padding: 15px 9px;
-        }
-
-        .lng-switch { margin-left: 5px; }
       }
     }
   }
@@ -416,7 +338,6 @@
   @include mobile-break {
     .header {
       .content-wrapper {
-        padding-top: 5px;
         background-color: $yellow;
         position: fixed;
         top: 0;
@@ -424,6 +345,11 @@
         z-index: 20;
         box-shadow: 2px 3px 60px 30px #ccc;
         transition: all 0.3s ease-out;
+        padding: 15px 30px;
+
+        .headerLogo {
+          margin: 0;
+        }
 
         .lng-switch { font-size: 2.5rem; }
 
@@ -484,7 +410,7 @@
 
                 &:first-child { margin: 0; }
 
-                &:nth-child(2) {   margin: 0; }
+                &:nth-child(2) { margin: 0; }
 
                 &:nth-child(3) { margin: 0; }
 
