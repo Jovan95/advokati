@@ -15,6 +15,7 @@
       border-left: 2px solid $gray;
       max-height: 595px;
       margin-left: 142px;
+      z-index: 20;
 
       .lines {
         display: flex;
@@ -533,6 +534,7 @@
         .header-area {
           .left {
             max-height: 550px;
+            margin-left: 125px;
 
             .lines {
               .long-line {
@@ -843,7 +845,7 @@
   .homepage {
     .header-area {
       .left {
-        margin-left: 115px;
+        margin-left: 100px;
 
         .text {
           .header-title { font-size: $font-size-title-home-page - 0.1; }
@@ -994,7 +996,7 @@
     .header-area {
       .left {
         max-height: 450px;
-        margin-left: 105px;
+        margin-left: 95px;
 
         .lines {
           .long-line {
@@ -1105,7 +1107,7 @@
     .header-area {
       .left {
         max-height: 420px;
-        margin-left: 87px;
+        margin-left: 95px;
 
         .lines {
           .long-line {
@@ -1230,7 +1232,7 @@
     .header-area {
       .left {
         max-height: 380px;
-        margin-left: 65px;
+        margin-left: 70px;
 
         .arrow { padding: 6px; }
 

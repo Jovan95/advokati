@@ -163,14 +163,16 @@
       .links-area {
         margin-left: 125px;
 
-        .long-line:last-child {   margin-left: 60px; }
+        .long-line:last-child {  margin-left: 40px; }
 
         .text-line-area {
+          margin-left: 110px;
+
           .lines {
             justify-content: normal;
             margin-left: -10px;
 
-            .medium-line:not(:last-child) { margin-right: 107px; }
+            .medium-line:not(:last-child) { margin-right: 99px; }
           }
         }
       }
@@ -300,7 +302,7 @@
         .about-img { margin-left: -40px; }
       }
       .links-area {
-        margin-left: 88px;
+        margin-left: 95px;
 
         .long-line:last-child { margin-left: -4px; }
 
@@ -340,7 +342,6 @@
           .arrow { margin-left: -145px; }
 
           .lines {
-            margin-left: -40px;
 
             .medium-line:not(:last-child) { margin-right: 83px; }
           }
@@ -364,7 +365,7 @@
   @media only screen and (max-width: 700px) {
     .header-area {
       .links-area {
-        .long-line:last-child { margin-left: -88px; }
+        .long-line:last-child { margin-left: -73px; }
 
         .text-line-area {
           .text { margin-left: -73px; }
@@ -372,9 +373,9 @@
           .arrow { margin-left: -205px; }
 
           .lines {
-            margin-left: -55px;
+            margin-left: -40px;
 
-            .medium-line:not(:last-child) {   margin-right: 71px; }
+            .medium-line:not(:last-child) {   margin-right: 70px; }
           }
         }
       }
