@@ -806,8 +806,6 @@
                 .text2 {
                   margin-bottom: 50px;
                   max-width: 540px;
-                  height: 100px;
-                  max-width: 540px;
                 }
               }
 
@@ -1009,6 +1007,12 @@
           .header-title { font-size: $font-size-medium - 0.2; }
 
           .header-about { font-size: $font-size-giant + 0.3; }
+        }
+      }
+
+      .content-wrapper {
+        &.rs {
+          .nav-item:nth-child(3) { margin-left: 0 !important; }
         }
       }
     }
@@ -1251,7 +1255,7 @@
   .homepage {
 
     .header-area {
-      height: 50vh;
+      margin-bottom: 150px;
 
       .left {
         margin: 0 auto;
@@ -1333,7 +1337,6 @@
         }
       }
     }
-
 
     .areas {
       .width-container {

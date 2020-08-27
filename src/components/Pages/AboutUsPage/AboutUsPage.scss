@@ -145,14 +145,6 @@
     }
   }
 
-  @media only screen and (max-width: 1210px) {
-    .header-area {
-      .about-us-img {
-        .about-img { width: 550px; }
-      }
-    }
-  }
-
   @media only screen and (max-width: 1320px) {
     .header-area {
 
@@ -175,6 +167,14 @@
             .medium-line:not(:last-child) { margin-right: 99px; }
           }
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1210px) {
+    .header-area {
+      .about-us-img {
+        .about-img { width: 550px; }
       }
     }
   }
@@ -298,7 +298,7 @@
 
   @media only screen and (max-width: 880px) {
     .header-area {
-      
+
       .links-area {
         margin-left: 95px;
 

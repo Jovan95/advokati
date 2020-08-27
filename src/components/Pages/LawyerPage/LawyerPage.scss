@@ -157,7 +157,7 @@
         font-size: $font-size-small-regular - 0.2;
       }
     }
-    
+
     .width-container {
       .area-title {
         font-size: $font-size-title - 3;
@@ -185,7 +185,19 @@
       }
     }
 
+    .width-container {
+      .lawyers-container {
+        .single-lawyer {
+          .middle {
+            img { max-width: 190px; }
+          }
+        }
+      }
+    }
+
     .react-select__control {
+      font-size: $font-size-large;
+
       .react-select__placeholder {
         font-size: $font-size-small-regular - 0.4;
       }
