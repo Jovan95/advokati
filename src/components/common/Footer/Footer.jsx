@@ -49,7 +49,9 @@ const Footer = () => (
     </div>
 
     <div className="bottom">
-      <div className="svarog">© svarogdev</div>
+      <div className="svarog">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.svarogdev.com">© svarogdev</a>
+      </div>
     </div>
 
   </div>
