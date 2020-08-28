@@ -4,7 +4,7 @@ export default  {
       name: 'NAME',
       learn: 'LEARN MORE',
       area: 'area name',
-      number: 'MOBILE PHONE',
+      number: 'PHONE',
       message: 'YOUR MESSAGE',
       send: 'SEND',
       sending: 'SENDING',

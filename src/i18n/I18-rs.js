@@ -4,7 +4,7 @@ export default  {
       name: 'IME',
       learn: 'SAZNAJ VISE',
       area: 'ime oblasti',
-      number: 'BROJ TELEFONA',
+      number: 'TELEFON',
       message: 'VASA PORUKA',
       send: 'POSALJI',
       sending: 'SALJE SE',
