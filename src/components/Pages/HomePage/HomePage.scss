@@ -183,6 +183,14 @@
         border-right: 2px solid $gray;
         font-size: $font-size-small-regular;
 
+        .carousel-slider .react-multiple-carousel__arrow--left {
+          left: calc(4% + -45px);
+        }
+
+        .carousel-slider .react-multiple-carousel__arrow--right {
+          right: calc(4% + -45px);
+        }
+
         .content {
           display: flex;
           justify-content: center;
@@ -593,6 +601,20 @@
                     font-size: $font-size-small-regular - 0.2;
                   }
                 }
+              }
+            }
+          }
+        }
+
+        .our-team {
+          .width-container {
+            .content-wrapper {
+              .carousel-slider .react-multiple-carousel__arrow--left {
+                left: calc(4% + -25px);
+              }
+
+              .carousel-slider .react-multiple-carousel__arrow--right {
+                right: calc(4% + -25px);
               }
             }
           }
@@ -1110,6 +1132,39 @@
   }
 }
 
+@media only screen and (max-width: 910px) {
+  .homepage {
+    .our-team {
+      .width-container {
+        .content-wrapper {
+          .carousel-slider .react-multiple-carousel__arrow--left {
+            left: calc(4% + -35px);
+          }
+
+          .carousel-slider .react-multiple-carousel__arrow--right {
+            right: calc(4% + -35px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .homepage {
+    .our-team {
+      .width-container {
+        .content-wrapper {
+
+          .carousel-slider .react-multiple-carousel__arrow--left { left: calc(4% + -25px); }
+
+          .carousel-slider .react-multiple-carousel__arrow--right { right: calc(4% + -25px); }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width:880px) {
   .homepage {
     .header-area {
@@ -1338,6 +1393,16 @@
               }
             }
           }
+        }
+      }
+    }
+
+    .our-team {
+      .width-container {
+        .content-wrapper {
+          .carousel-slider .react-multiple-carousel__arrow--left { left: calc(4% + 15px); }
+
+          .carousel-slider .react-multiple-carousel__arrow--right { right: calc(4% + 15px); }
         }
       }
     }
