@@ -183,13 +183,9 @@
         border-right: 2px solid $gray;
         font-size: $font-size-small-regular;
 
-        .carousel-slider .react-multiple-carousel__arrow--left {
-          left: calc(4% + -45px);
-        }
+        .carousel-slider .react-multiple-carousel__arrow--left { left: calc(4% + -45px); }
 
-        .carousel-slider .react-multiple-carousel__arrow--right {
-          right: calc(4% + -45px);
-        }
+        .carousel-slider .react-multiple-carousel__arrow--right { right: calc(4% + -45px); }
 
         .content {
           display: flex;
@@ -609,13 +605,9 @@
         .our-team {
           .width-container {
             .content-wrapper {
-              .carousel-slider .react-multiple-carousel__arrow--left {
-                left: calc(4% + -25px);
-              }
+              .carousel-slider .react-multiple-carousel__arrow--left { left: calc(4% + -25px); }
 
-              .carousel-slider .react-multiple-carousel__arrow--right {
-                right: calc(4% + -25px);
-              }
+              .carousel-slider .react-multiple-carousel__arrow--right { right: calc(4% + -25px); }
             }
           }
         }
@@ -1137,13 +1129,9 @@
     .our-team {
       .width-container {
         .content-wrapper {
-          .carousel-slider .react-multiple-carousel__arrow--left {
-            left: calc(4% + -35px);
-          }
+          .carousel-slider .react-multiple-carousel__arrow--left { left: calc(4% + -35px); }
 
-          .carousel-slider .react-multiple-carousel__arrow--right {
-            right: calc(4% + -35px);
-          }
+          .carousel-slider .react-multiple-carousel__arrow--right { right: calc(4% + -35px); }
         }
       }
     }
