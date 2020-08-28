@@ -142,6 +142,7 @@ const HomePage = () => {
                   onChange={(item) => {
                     setActiveArea(item.value);
                   }}
+                  isSearchable={false}
                   className="homepage-select"
                   placeholder={t('lawyers.select')}
                   classNamePrefix="react-select"

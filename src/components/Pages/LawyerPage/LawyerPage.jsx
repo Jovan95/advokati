@@ -26,6 +26,7 @@ const LawyerPage = () => {
               setArea(item.value);
               setActiveTitle(item.label);
             }}
+            isSearchable={false}
             placeholder={t('lawyers.select')}
             classNamePrefix="react-select"
           />

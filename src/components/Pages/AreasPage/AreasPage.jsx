@@ -57,6 +57,7 @@ const AreasPage = () => {
                 onChange={(item) => {
                   setActiveArea(item.value);
                 }}
+                isSearchable={false}
                 className="area-select"
                 placeholder={t('lawyers.select')}
                 classNamePrefix="react-select"
