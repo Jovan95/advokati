@@ -5,6 +5,7 @@ import Select from 'react-select';
 import t from 'translate';
 import { LAWYERS } from '../../../constants/Lawyers';
 import { AREAS, OPTIONS } from '../../../constants/Areas';
+import EmailLink from '../../EmailLink/EmailLink';
 import MapView from '../../Map/MapView';
 import CarouselSlider from '../../Carousel/CarouselSlider';
 import ImageLoader from '../../ImageLoader/ImageLoader';
@@ -13,6 +14,7 @@ import Milos from '../../../images/Milos.png';
 import homepage from '../../../images/homepage.png';
 import arrow from '../../../images/arrow.png';
 import email from '../../../images/email.png';
+import number from '../../../images/number.png';
 import './HomePage.scss';
 
 const HomePage = () => {
@@ -215,11 +217,11 @@ const HomePage = () => {
                 </div>
                 <div className="text-item">
                   <div className="item-title">{t('homepage.contact.phone')}</div>
-                  <div className="item-about">011 32 12 123</div>
+                  <div className="item-about"><img src={number} alt="number" /></div>
                 </div>
                 <div className="text-item">
                   <div className="item-title">e-mail</div>
-                  <div className="item-about"><ImageLoader src={email} alt="email" /></div>
+                  <EmailLink />
                 </div>
               </div>
               <div className="lines">
