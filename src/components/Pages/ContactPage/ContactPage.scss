@@ -76,13 +76,14 @@
 
         .form-about {
           margin-bottom: 30px;
-          font-size: $font-size-small-regular;
+          font-size: $font-size-small-regular + 0.2;
 
           .form-title {
             line-height: 150%;
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: 20px;
+            font-size: $font-size-medium - 0.3;
           }
         }
       }
@@ -120,6 +121,14 @@
   @media only screen and (max-width: 955px) {
     .width-container {
       .content-wrapper {
+        .right {
+          .form-about {
+            font-size: $font-size-small-regular + 0.1;
+
+            .form-title { font-size: $font-size-medium - 0.5; }
+          }
+        }
+
         .middle {
           .small-line { width: 388px; }
 
@@ -165,6 +174,14 @@
   @include mobile-break {
     .width-container {
       .content-wrapper {
+
+        .right {
+          .form-about {
+            font-size: $font-size-small-regular;
+
+            .form-title { font-size: $font-size-regular; }
+          }
+        }
 
         .long-line {
 
