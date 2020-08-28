@@ -127,7 +127,23 @@
             flex-direction: column;
             width: 100%;
 
-            .bottom { justify-content: space-between; }
+            .top {
+              .lines {
+                padding-top: 0;
+
+                .small-line:not(:last-child) { margin-bottom: 100px; }
+              }
+            }
+
+            .bottom {
+               justify-content: space-between;
+
+               .lines {
+                 margin-top: -50px;
+
+                 .small-line:not(:last-child) { margin-bottom: 118px; }
+               }
+            }
 
             .top { justify-content: space-around; }
           }
@@ -167,7 +183,14 @@
             .bottom {
               flex-direction: column;
 
-              .lines { margin-bottom: 30px; }
+              .lines {
+                margin-bottom: 30px;
+                margin-top: 0;
+
+                .small-line:not(:last-child) {
+                  margin-bottom: 70px;
+                }
+              }
 
               .map { margin-left: 0; }
             }
