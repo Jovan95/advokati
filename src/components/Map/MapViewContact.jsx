@@ -8,8 +8,8 @@ import './MapViewContact.scss';
 class MapView extends React.Component {
   componentDidMount() {
     const L = window['L']; // eslint-disable-line
-    const mymap = L.map('mapid', { scrollWheelZoom: false }).setView([43.2858773, 20.7998124], 13);
-    const marker = L.marker([43.2858773, 20.7998124]).addTo(mymap);
+    const mymap = L.map('mapid', { scrollWheelZoom: false }).setView([44.781203, 20.467933], 13);
+    const marker = L.marker([44.781203, 20.467933]).addTo(mymap);
     delete L.Icon.Default.prototype._getIconUrl;
 
     L.Icon.Default.mergeOptions({
