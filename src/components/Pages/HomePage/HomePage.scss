@@ -799,13 +799,13 @@
                     background-color: $gray-hover;
                     font-size: $font-size-small-regular;
                     height: 80px;
-                    color: $white;
+                    color: $black;
                     margin-top: 0;
+                    background-color: $yellow;
                   }
 
                   &:hover {
                     background-color: $yellow;
-                    color: $black;
                   }
                 }
               }
