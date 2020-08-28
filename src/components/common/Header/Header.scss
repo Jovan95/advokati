@@ -18,10 +18,22 @@
 
   .content-wrapper {
     display: flex;
-    padding: 30px 21px;
+    padding: 15px 21px;
     width: 100%;
 
+    &.gray {
+      padding: 0 21px;
+
+      .nav-item:first-child { margin-left: 15px; }
+    }
+
     .nav-wrapper {
+      .nav-item {
+        &.active {
+          margin-top: 50px;
+          font-weight: normal;
+        }
+      }
 
       &.rs {
         .nav-item:first-child {
@@ -114,10 +126,6 @@
 
       &:hover { color: $black-hover; }
 
-      &.active {
-        margin-top: 50px;
-        font-weight: normal;
-      }
     }
 
     .lng-switch {
@@ -148,25 +156,22 @@
       display: flex;
       max-height: 120px;
 
+      .lng-switch { margin-left: 15px; }
+
       .nav-item {
         border-right: 2px solid $gray;
         text-align: center;
+        padding: 50px 15px;
 
         &:first-child { border-left: 2px solid $gray; }
 
         &:last-child { border-left: 2px solid $gray; }
 
-        &.active {
-          margin-top: 0;
-          padding-top: 50px;
-          font-weight: normal;
-        }
+        &.active { padding-top: 70px; }
       }
 
-      .lng-switch {  }
-
       .line-wrapper {
-        display: fle;
+        display: flex;
         justify-content: space-between;
         max-width: 30%;
         width: 100%;
@@ -392,11 +397,18 @@
         background-color: $yellow;
         position: fixed;
         top: 0;
-        max-height: 100px;
         z-index: 20;
         box-shadow: 2px 3px 60px 30px #ccc;
         transition: all 0.3s ease-out;
-        padding: 15px 30px;
+
+        &.gray {
+            padding: 15px 21px;
+
+            .nav-item:first-child {
+              margin: 0;
+            }
+        }
+
 
         .headerLogo {
           margin: 0;
@@ -428,6 +440,7 @@
 
           .nav-wrapper-gray {
             max-height: 100%;
+
             .nav-item {
               color: $black;
               border-left: 0;

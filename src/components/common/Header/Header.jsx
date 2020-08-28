@@ -40,7 +40,7 @@ const Header = ({ location: { pathname }, changeLanguage, lang }) => {
 
   return (
     <div className="header">
-      <div className={`content-wrapper ${!visibleState ? 'hidden' : ''} ${checked ? 'open' : ''}`}>
+      <div className={`content-wrapper ${!visibleState ? 'hidden' : ''} ${checked ? 'open' : ''} ${pathname === '/' || pathname === '/about-us' ? '' : 'gray'}`}>
 
         <Link onClick={closeMenu} to="/" className="nav-item"><img className="headerLogo" src={headerLogo} alt="headerLogo" /></Link>
 
