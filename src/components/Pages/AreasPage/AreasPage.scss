@@ -181,7 +181,6 @@
               height: 100px;
 
               .link {
-                border: 2px solid $gray;
                 margin: 0;
                 padding: 10px 24px;
                 justify-content: center;
@@ -190,11 +189,15 @@
                 color: $white;
                 font-weight: normal;
 
+                &:not(:last-child) {
+                  border-right: 2px solid $black;
+                }
+
                 &.active {
-                  background-color: $gray-hover;
                   font-size: $font-size-small-regular;
-                  color: $white;
+                  color: $black;
                   margin-top: 0;
+                  background-color: $yellow;
                 }
 
                 &:hover {
