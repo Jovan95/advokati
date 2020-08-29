@@ -55,7 +55,14 @@
     }
   }
 
-  .bottom { text-align: center; }
+  .bottom {
+    text-align: center;
+    @include hover-transition;
+
+    .svarog:hover {
+      color: $black-hover;
+    }
+  }
 }
 
 @media only screen and (max-width: 975px) {
