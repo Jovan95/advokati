@@ -188,6 +188,7 @@
                 margin-bottom: 0;
                 color: $white;
                 font-weight: normal;
+                @include hover-transition;
 
                 &:not(:last-child) {
                   border-right: 2px solid $black;

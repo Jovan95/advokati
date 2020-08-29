@@ -148,9 +148,7 @@
 
             .bottom {
                justify-content: space-between;
-
-               .map { margin-top: 0; }
-
+               
                .lines {
                  margin-top: -50px;
 
@@ -225,5 +223,9 @@
         }
       }
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+
   }
 }
