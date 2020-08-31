@@ -191,7 +191,7 @@
                 @include hover-transition;
 
                 &:not(:last-child) {
-                  border-right: 2px solid $black;
+                  border-right: 1px solid $black;
                 }
 
                 &.active {
