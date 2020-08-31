@@ -32,10 +32,7 @@
       z-index: 30;
 
       .nav-item {
-        &.active {
-          margin-top: 50px;
-          font-weight: normal;
-        }
+        &.active { margin-top: 50px; }
       }
 
       &.rs {
