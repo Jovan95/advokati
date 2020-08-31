@@ -29,6 +29,8 @@
     }
 
     .nav-wrapper {
+      z-index: 30;
+      
       .nav-item {
         &.active {
           margin-top: 50px;

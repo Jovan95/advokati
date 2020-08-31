@@ -57,10 +57,11 @@
 
   .bottom {
     text-align: center;
-    @include hover-transition;
 
-    .svarog:hover {
-      color: $black-hover;
+    .svarog {
+      @include hover-transition;
+
+      &:hover { color: $black-hover; }
     }
   }
 }
