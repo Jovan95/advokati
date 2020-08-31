@@ -6,7 +6,7 @@
   .container {
     .width-container {
       position: relative;
-      z-index: 20;  
+      z-index: 20;
     }
   }
 
@@ -124,9 +124,7 @@
 
         .single-lawyer {
           .middle {
-            .lawyer-about {
-              font-size: $font-size-extra-large;
-            }
+            .lawyer-about { font-size: $font-size-extra-large; }
           }
         }
       }
@@ -136,29 +134,23 @@
   @media only screen and (max-width: 820px) {
     .container {
       .width-container {
-        .gray-title {
-          font-size: $font-size-title - 2;
-        }
+        .gray-title { font-size: $font-size-title - 2; }
       }
     }
 
     .react-select__control {
-      .react-select__placeholder {
-        font-size: $font-size-small-regular - 0.2;
-      }
+      .react-select__placeholder { font-size: $font-size-small-regular - 0.2; }
+
+      .react-select__single-value { font-size: $font-size-small-regular - 0.2; }
     }
 
     .width-container {
-      .area-title {
-        font-size: $font-size-title - 3;
-      }
+      .area-title { font-size: $font-size-title - 3; }
 
       .lawyers-container {
         .single-lawyer {
           .middle {
-            .lawyer-about {
-              font-size: $font-size-extra-large - 0.2;
-            }
+            .lawyer-about { font-size: $font-size-extra-large - 0.2; }
           }
         }
       }
@@ -169,9 +161,7 @@
   @include mobile-break {
     .container {
       .width-container {
-        .gray-title {
-          font-size: $font-size-title - 2.3;
-        }
+        .gray-title { font-size: $font-size-title - 2.3; }
       }
     }
 
