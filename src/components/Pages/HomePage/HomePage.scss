@@ -1421,6 +1421,8 @@
                   border-left: none;
                   border-right: none;
                   background-color: transparent;
+
+                  .react-select__single-value { font-size: $font-size-medium-small; }
                 }
                 .react-select__menu {
                   border: none;
