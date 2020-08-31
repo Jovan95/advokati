@@ -452,7 +452,7 @@
           }
 
           .nav-wrapper, .nav-wrapper-gray {
-            background: $yellow;
+            background-image: linear-gradient($yellow, $gray);
             width: 100vw;
             left: 0;
             right: 0;
