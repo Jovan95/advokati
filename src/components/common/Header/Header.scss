@@ -30,7 +30,7 @@
 
     .nav-wrapper {
       z-index: 30;
-      
+
       .nav-item {
         &.active {
           margin-top: 50px;
@@ -295,6 +295,7 @@
            }
           .nav-item:nth-child(2) { margin-right: 35px; }
           .nav-item:nth-child(3) { margin-right: 37px; }
+          .nav-item:nth-child(4) { margin-right: 20px; }
         }
 
         &.rs {
@@ -322,7 +323,7 @@
           .nav-item:first-child { margin-right: 19px; }
           .nav-item:nth-child(2) { margin-right: 32px; }
           .nav-item:nth-child(3) { margin-right: 36px; }
-          .nav-item:nth-child(4) { margin-right: 28px; }
+          .nav-item:nth-child(4) { margin-right: 17px; }
         }
 
         &.rs {
