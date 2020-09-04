@@ -49,7 +49,6 @@ const Header = ({ location: { pathname }, changeLanguage, lang }) => {
 
         <div className={`${pathname === '/' || pathname === '/about-us' ? 'nav-wrapper' : 'nav-wrapper-gray'} ${lang}`}>
           <Link onClick={closeMenu} to="/about-us" className={pathname === '/about-us' ? 'nav-item active' : 'nav-item'}>{t('common.title')}</Link>
-          <Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>{t('header.lawyers')}</Link>
           <Link onClick={closeMenu} to="/areas" className={pathname === '/areas' ? 'nav-item active' : 'nav-item'}>{t('header.areas')}</Link>
           <Link onClick={closeMenu} to="/contact" className={pathname === '/contact' ? 'nav-item active' : 'nav-item'}>{t('header.contact')}</Link>
 

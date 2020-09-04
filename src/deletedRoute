@@ -1,0 +1,2 @@
+
+<Link onClick={closeMenu} to="/lawyers" className={pathname === '/lawyers' ? 'nav-item active' : 'nav-item'}>{t('header.lawyers')}</Link>
